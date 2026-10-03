@@ -1,0 +1,20 @@
+[project]
+name = "parsemeter-bench"
+version = "0.0.0"
+description = "ParseMeter scoring: probes, olmOCR-Bench slice, aggregation and figures"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "olmocr[bench]",
+  "pypdfium2>=4.30",
+  "pyyaml>=6",
+  "pandas>=2.0",
+  "rapidfuzz>=3.9",
+  "huggingface_hub>=0.30",
+  "pytest>=8",
+  "tabulate>=0.10.0",
+  "matplotlib>=3.11.2",
+  "adjusttext>=1.4.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

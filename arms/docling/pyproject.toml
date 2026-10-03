@@ -1,0 +1,5 @@
+[project]
+name = "arm-docling"
+version = "0.0.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["docling[vlm]==2.132.0"]

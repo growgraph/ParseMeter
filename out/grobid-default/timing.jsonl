@@ -1,0 +1,12 @@
+{"id":"natcomm-2020","set":"docs","pages":7,"status":"ok","seconds":2.158,"max_rss_mb":43.6}
+{"id":"apple-10k-2025","set":"docs","pages":80,"status":"ok","seconds":5.812,"max_rss_mb":43.6}
+{"id":"apple-10q-2026q3","set":"docs","pages":32,"status":"ok","seconds":2.387,"max_rss_mb":43.6}
+{"id":"sfix-10k-2026","set":"docs","pages":110,"status":"ok","seconds":5.594,"max_rss_mb":43.6}
+{"id":"arxiv-math-tables","set":"docs","pages":13,"status":"ok","seconds":4.087,"max_rss_mb":78.4}
+{"id":"arxiv-math-heavy","set":"docs","pages":19,"status":"ok","seconds":2.442,"max_rss_mb":78.4}
+{"id":"arxiv-tables","set":"docs","pages":15,"status":"ok","seconds":2.835,"max_rss_mb":78.4}
+{"id":"journal-tables-footnotes","set":"docs","pages":20,"status":"ok","seconds":2.816,"max_rss_mb":78.4}
+{"id":"gov-report-footnotes","set":"docs","pages":18,"status":"ok","seconds":2.425,"max_rss_mb":78.4}
+{"id":"naca-rm-e7b11c","set":"docs","pages":15,"status":"error","error":"HTTPError: 500 Server Error: Server Error for url: http://localhost:8070/api/processFulltextDocument","seconds":1.028,"max_rss_mb":78.4}
+{"id":"nbs-rp1","set":"docs","pages":14,"status":"ok","seconds":1.745,"max_rss_mb":78.4}
+{"id":"usgs-b580j","set":"docs","pages":14,"status":"ok","seconds":1.71,"max_rss_mb":78.4}

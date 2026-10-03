@@ -1,0 +1,36 @@
+{"pdf": "arxiv-tables", "page": 1, "id": "arxiv-tables_001", "type": "absent", "category": "furniture", "text": "arXiv:2609.39072v1", "max_diffs": 1, "case_sensitive": false, "note": "arXiv stamp"}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_002", "type": "table", "category": "tables", "cell": "60.299", "max_diffs": 0, "left_heading": "Zero-shot", "top_heading": "LLaMA-3.3-70B", "note": "Table 1, fully ruled grid"}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_003", "type": "table", "category": "tables", "cell": "73.196", "max_diffs": 0, "left_heading": "LoRA", "top_heading": "LLaMA-2-7B"}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_004", "type": "table", "category": "tables", "cell": "0.4778", "max_diffs": 0, "left": "0.4406", "right": "0.4653", "top_heading": "3.1-8B", "note": "Table 2, two-level header"}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_005", "type": "table", "category": "tables", "cell": "0.6311", "max_diffs": 0, "left_heading": "Valence", "top_heading": "Few-shot"}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_006", "type": "table", "category": "tables", "cell": "0.2990", "max_diffs": 0, "left_heading": "Dominance", "left": "0.1235", "right": "0.3046"}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_007", "type": "table", "category": "tables", "cell": "0.736", "max_diffs": 0, "left": "0.603", "right": "0.604", "note": "Table 3"}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_008", "type": "table", "category": "tables", "cell": "84", "max_diffs": 0, "left_heading": "FT LLaMA-3.1-8B", "left": "66", "right": "74", "note": "Table 4, small font"}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_009", "type": "table", "category": "tables", "cell": "38", "max_diffs": 0, "left_heading": "LLaMA-3.1-8B FS", "top_heading": "Angry"}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_010", "type": "present", "category": "footnotes", "text": "The proposed here is LLaMA-3.3-70B with LoRA fine-tuning", "max_diffs": 0, "case_sensitive": true, "note": "note line under Table 3"}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_011", "type": "present", "category": "footnotes", "text": "ZS: zero-shot; FS: few-shot; FT: fine-tuned.", "max_diffs": 0, "case_sensitive": true, "note": "note under Table 4"}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_012", "type": "order", "category": "footnotes", "before": "Table 3: Comparison with Prior Work on VAD Evaluation on IEMOCAP", "after": "Annotator Reliability", "max_diffs": 0}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_013", "type": "present", "category": "figures", "text": "Table 1: Discrete ER Performance of All Models (Weighted F1 score)", "max_diffs": 0, "case_sensitive": true}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_014", "type": "present", "category": "figures", "text": "Table 2: VAD Evaluation Performance Comparison Across Different Models", "max_diffs": 0, "case_sensitive": true}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_015", "type": "order", "category": "reading_order", "before": "Table 2: VAD Evaluation Performance Comparison Across Different Models", "after": "Error Analysis for Discrete ER", "max_diffs": 0}
+{"pdf": "arxiv-tables", "page": 1, "id": "arxiv-tables_016", "type": "present", "category": "reading_order", "text": "which assigns a single categorical label(e.g. happiness, frustration, etc.) to an utterance", "max_diffs": 2, "case_sensitive": true}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_017", "type": "present", "category": "reading_order", "text": "the confusion rates of 46.5-75.3 for GPT models on misinterpreting anger as frustration", "max_diffs": 0, "case_sensitive": true}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_018", "type": "present", "category": "reading_order", "text": "while GPT-4o-mini, in contrast, is more conservative about the positive levels", "max_diffs": 0, "case_sensitive": true}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_019", "type": "order", "category": "reading_order", "before": "Annotator Reliability", "after": "Ablation Studies", "max_diffs": 0}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_020", "type": "order", "category": "reading_order", "before": "The Impact of Acoustic Feature Descriptions", "after": "The Impact of Past VAD Context", "max_diffs": 0}
+{"pdf": "arxiv-tables", "page": 1, "id": "arxiv-tables_021", "type": "present", "category": "stitching", "text": "rhythm, and speaking rate all carry affective signals that text transcriptions discard", "max_diffs": 0, "case_sensitive": true}
+{"pdf": "arxiv-tables", "page": 13, "id": "arxiv-tables_022", "type": "present", "category": "stitching", "text": "best represents the dominant emotion of the target utterance", "max_diffs": 0, "case_sensitive": true, "note": "prompt text crossing p13->p14"}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_023", "type": "regex_present", "category": "chars", "pattern": "Krippendorff['’]s\\s?\\$?\\s?(?:α|\\\\alpha)"}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_024", "type": "regex_present", "category": "chars", "pattern": "Happy\\s?(?:→|\\\\rightarrow|\\$\\\\rightarrow\\$)\\s?Excite"}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_025", "type": "regex_present", "category": "chars", "pattern": "(?:α|\\\\alpha)\\s?\\$?\\s?=\\s?\\$?\\s?0\\.680"}
+{"pdf": "arxiv-tables", "page": 1, "id": "arxiv-tables_026", "type": "heading", "category": "headings", "text": "Beyond Text: LLM-Based Dimensional Emotion Evaluation in Multimodal Dialogue"}
+{"pdf": "arxiv-tables", "page": 1, "id": "arxiv-tables_027", "type": "heading", "category": "headings", "text": "Abstract"}
+{"pdf": "arxiv-tables", "page": 1, "id": "arxiv-tables_028", "type": "heading", "category": "headings", "text": "Introduction"}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_029", "type": "heading", "category": "headings", "text": "Error Analysis for Discrete ER"}
+{"pdf": "arxiv-tables", "page": 6, "id": "arxiv-tables_030", "type": "heading", "category": "headings", "text": "VAD Evaluation Performance Analysis"}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_031", "type": "heading", "category": "headings", "text": "Annotator Reliability"}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_032", "type": "heading", "category": "headings", "text": "Ablation Studies"}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_033", "type": "heading", "category": "headings", "text": "The Impact of Past VAD Context"}
+{"pdf": "arxiv-tables", "page": 7, "id": "arxiv-tables_034", "type": "heading", "category": "headings", "text": "GPT Models with Prompting"}
+{"pdf": "arxiv-tables", "page": 9, "id": "arxiv-tables_035", "type": "heading", "category": "headings", "text": "Conclusion"}
+{"pdf": "arxiv-tables", "page": 1, "id": "arxiv-tables_036", "type": "regex_absent", "category": "chars", "pattern": "&(?:amp|lt|gt|quot|apos|#\\d+);", "note": "HTML entity left in the text"}

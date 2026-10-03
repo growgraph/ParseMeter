@@ -1,0 +1,5 @@
+[project]
+name = "arm-pymupdf4llm"
+version = "0.0.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["pymupdf4llm==1.28.2", "pymupdf-layout==1.28.2"]

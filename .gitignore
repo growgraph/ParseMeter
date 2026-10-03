@@ -218,3 +218,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- ParseMeter ---
+# olmOCR-Bench slice: fetched at a pinned revision by `study.olmocr_slice`
+data/
+# llama.cpp binaries: fetched by arms/fetch_llama.sh
+arms/*/bin/
+arms/*/llama-server.log
+# per-arm run outputs: markdown, timing, env and scores are kept; extracted images are not
+out/*/assets/**
+!out/grobid-default/assets/**/
+!out/grobid-default/assets/**/*.tei.xml
+out/*/run.log
+out/_*/
+out/*.log
+out/*.nohup

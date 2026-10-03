@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Medicare Drug Price Negotiation Under the Inflation Reduction Act: Industry Responses and Potential Effects</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2023-12-08">December 8, 2023</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct status="extracted">
+					<analytic>
+						<author>
+							<persName><forename type="first">Kevin</forename><forename type="middle">J</forename><surname>Hickey</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Suzanne</forename><forename type="middle">M</forename><surname>Kirchhoff</surname></persName>
+						</author>
+						<author>
+							<persName><forename type="first">Hannah-Alise</forename><surname>Rogers</surname></persName>
+						</author>
+						<title level="a" type="main">Medicare Drug Price Negotiation Under the Inflation Reduction Act: Industry Responses and Potential Effects</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2023-12-08">December 8, 2023</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">CB9BE1A88106A10DDC1CE3F0A30462D9</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.9.1" ident="GROBID" when="2026-10-02T16:46+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">0.9.1</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=0, consolidateHeader=0, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[], flavor=null, debugLabelingCollector=disabled</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The 2022 budget reconciliation legislation commonly known as the Inflation Reduction Act (IRA; P.L. 117-169) established the Medicare Drug Price Negotiation Program (Program). The Program authorizes the Secretary of Health and Human Services (Secretary) to negotiate prices for certain single-source chemical drugs and biological products under Medicare Part B (physician-administered drugs) or Part D (retail prescription drugs). Among other requirements, to qualify for selection by the Program, a chemical drug (a.k.a. "small-molecule" drug) must have had Food and Drug Administration (FDA) approval for at least 7 years, and a biological product must have been FDA-licensed for at least 11 years. The negotiated prices are subject to a ceiling known as the maximum fair price (MFP).</p><p>In accordance with the statute, the Secretary must negotiate MFPs for 10 drugs to take effect in 2026, 15 additional drugs for 2027 and 2028, and 20 additional drugs for 2029 and each following year. In 2026 and 2027, the Program applies only to Part D drugs.</p><p>In August 2023, the Department of Health and Human Services (HHS) selected the first 10 Part D drugs for negotiation under the Program. In October 2023, HHS announced that manufacturers of all 10 drugs had agreed to participate in negotiations with the Secretary.</p><p>Even as manufacturers participate in the negotiations, several have filed lawsuits challenging both the constitutionality of the Program and its implementation by the Centers for Medicare &amp; Medicaid Services (CMS). Stakeholders are also asking Congress to alter certain provisions of the IRA that they assert will harm pharmaceutical research and development and undercut current patent and marketing protections.</p><p>This report provides information related to several topics of recent congressional interest with respect to the implementation of the IRA, including litigation surrounding the Program; concerns about its impact on future drug innovation, research, and development; and questions about its interaction with patents and other federal marketing protections for pharmaceuticals.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Tables</head> <ref type="table" target="#tab_0">Table 1.</ref> <p>his report provides information related to several topics of recent congressional concern with respect to the implementation of the prescription drug negotiation provisions of the 2022 budget reconciliation legislation commonly known as the Inflation Reduction Act (IRA; P.L. 117-169), <ref type="bibr">1</ref> including litigation surrounding the Medicare Drug Price Negotiation Program (Program); concerns about its impact on future drug innovation, research, and development; and questions about its interaction with patents and other federal marketing protections for pharmaceuticals.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Medicare Coverage of Prescription Drugs</head><p>The federal Medicare program pays for covered health care services of qualified beneficiaries, including prescription drugs. <ref type="bibr">2</ref> Medicare Part A covers inpatient hospital services, skilled nursing care, hospice care, and some home health services. Part A typically pays providers for drugs as part of a predetermined, per-episode payment. Medicare Part B covers physician care, outpatient services, and some home health and preventive services. Medicare pays most health care practitioners for Part B prescription drugs based on a statutory formula, which is the drug's average sales price (ASP) plus a percentage add-on payment. <ref type="bibr" target="#b35">3</ref> Medicare Part D is a voluntary benefit that provides coverage of outpatient prescription drugs to beneficiaries who enroll in stand-alone private prescription drug plans (PDPs) or Medicare Part C (Medicare Advantage, or MA) managed care plans (which cover Part A hospital coverage and B services) with a Part D component (MA-PDs).</p><p>The Medicare Prescription Drug, Improvement, and Modernization Act of 2003 4 (MMA), which created the Part D program, included a "noninterference" provision that barred the Health and Human Services (HHS) Secretary (the Secretary) from negotiating Part D prices, requiring a set formulary (list of covered drugs), or pricing structure. <ref type="bibr">5</ref> Instead, Part D plan sponsors (insurers), working with pharmacy benefit managers (PBMs), negotiate prescription drug price discounts and rebates with pharmaceutical manufacturers and dispensing pharmacies. <ref type="bibr">6</ref> Overall, Medicare accounts for about 32% of U.S. retail drug spending, with much of the spending concentrated in higher-cost brand name and specialty drugs. <ref type="bibr">7</ref> 1 Pub. L. No. 117-169, tit. I, subtit. B, pt. 1, 136 Stat. 1818, 1833-464 (2022) (codified at 42 U.S.C. § § 1320f-1 to f-7 and 26 U.S.C. § 5000D). <ref type="bibr">2</ref> CRS Report R40425, Medicare Primer, coordinated by Patricia A. Davis (2020). <ref type="bibr" target="#b35">3</ref> For the ASP methodology, see 42 U.S.C. § 1395w-3a. <ref type="bibr">4</ref> Pub. L. No. 118-173 (2003). <ref type="bibr">5</ref> 42 U.S.C. § 1395w-111(i). <ref type="bibr">6</ref> For more information about PBMs, their role in the prescription drug market, and federal and state regulations over them, see CRS Legal Sidebar LSB11080, Pharmacy Benefit Managers: Current Legal Framework, by Hannah-Alise Rogers, Jennifer A. Staman, and Alexander H. Pepper (2023). <ref type="bibr">7</ref> HHS, National Health Expenditure Data, Projected, Downloads, NHE Projections-Tables, tbl. 11 (Sept. 6, 2023), <ref type="url" target="https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/projected">https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/projected</ref>. The NHE figures do not include Medicare-covered drugs dispensed as a part of a hospital stay. For the Medicare Part D program, specialty drugs are defined as those that cost more than $830 per year in 2023. Private health plans may have their own definition of specialty drug based on factors in addition to cost, such as difficulty in handling and administration.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>T</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Selected Drug Negotiation Provisions of the IRA</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Drugs Eligible for Negotiation</head><p>The IRA requires the Secretary to negotiate prices for certain single-source chemical drugs and biologics 8 covered under Medicare Parts D and B. To be selected for negotiation, a chemical drug cannot have a marketed generic substitute and must have been approved by FDA for at least 7 years, while a biologic cannot have a marketed biosimilar substitute and must have been licensed by the Food and Drug Administration (FDA) for at least 11 years. In addition, the product must be among the 50 qualifying single-source drugs with the highest gross spending in Part B or Part D.</p><p>The Secretary must negotiate maximum fair prices (MFPs) for 10 drugs to take effect in 2026, 15 additional drugs for each of 2027 and 2028, and 20 additional drugs for 2029 and each following year. For the first two years (2026 and 2027), the Program applies only to Part D drugs.</p><p>The IRA excludes the following drugs from negotiation:</p><p>• low-spend drugs (i.e., drugs with Medicare spending of less than $200 million; indexed for inflation in subsequent years); • plasma-derived products;</p><p>• orphan drugs designated for only one rare disease and for which the only FDAapproved indication is for such disease; 9 and • certain products made by small biotech firms (through 2028). <ref type="bibr">10</ref> The Secretary may delay negotiation of qualifying biologic products for up to two years when the Secretary determines that there is a high likelihood that a biosimilar will soon enter the market. <ref type="bibr">11</ref> In August 2023, HHS announced the first 10 drugs selected for negotiation under the Program, with negotiated prices to become effective in 2026. 12 (See Table <ref type="table" target="#tab_0">1</ref>.) In October 2023, the 8 Biologics are pharmaceuticals derived from a living organism, see 42 U.S.C. § 262(i) (1), that can be many times the size of a conventional (small-molecule or chemical) drug and have a more complex structure. A biosimilar is a followon to a biologic that is "highly similar," notwithstanding minor differences in clinically inactive components. Id. § 262(k)(2) (A). There are no clinically meaningful differences between a biosimilar and the reference biologic product in terms of safety, purity, and potency of the product. Id. § 262(k)(2)(b). The Patient Protection and Affordable Care Act (ACA) provided a period of exclusivity for manufacturers of certain biologic brand-name drugs and biosimilar products. See Pub. L. No. 111-148, tit. VII, subtit. A, § 7002 (codified at 42 U.S.C. § 262(k)(7)). <ref type="bibr">9</ref> For more information about the Orphan Drug Act (ODA), see CRS Report R47653, The Orphan Drug Act and Catalyst Pharmaceuticals, Inc., v. Becerra, by Hannah-Alise Rogers (2023). The ODA covers drugs intended to treat rare conditions, generally defined as those affecting fewer than 200,000 people in the United States, or those affecting more than 200,000 people but for which there is no reasonable expectation that the costs of developing the drug will be recouped in the United States. 21 U.S.C. § 360bb. Under the ODA, an orphan drug may be indicated for use in multiple diseases or conditions. The IRA's orphan drug exception is thus not inclusive of all orphan drugs. 10 See 42 U.S.C. § 1320f-1(d)(2). <ref type="bibr">11</ref> 42 U.S.C. § 1320f-1(f). 12 Press Release, HHS, Medicare Drug Price Negotiation Program: Selected Drugs for Initial Price Applicability Year 2026 (Aug. 29, 2023), <ref type="url" target="https://www.hhs.gov/about/news/2023/08/29/hhs-selects-the-first-drugs-for-medicare-drug-">https://www.hhs.gov/about/news/2023/08/29/hhs-selects-the-first-drugs-for-medicare-drug-</ref>price-negotiation.html; ASPE INFLATION REDUCTION ACT RESEARCH SERIES FACT SHEET NO. HP-2023-21: Medicare Enrollees' Use and Out-of-Pocket Expenditures for Drugs Selected for Negotiation under the Medicare Drug Price Negotiation Program (Sept. 2023). CMS was required to choose the 10 drugs from the negotiation-eligible pool of 50 qualifying drugs based on their total spending rank.</p><p>Secretary announced that all manufacturers of the selected drugs had agreed to participate in negotiations. 13 Notes: According to HHS, from June 1, 2022 to May 31, 2023 (the time period used to determine which drugs were eligible for negotiation), about 8.3 million Part D enrollees used these drugs. The selected drugs accounted for $50.5 billion in total Part D gross covered prescription drug costs, or about 20% of total Part D gross covered prescription drug costs during that period. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>MFP Ceiling</head><p>The Secretary and manufacturers are to engage in negotiations on MFPs for the first round of selected drugs from October 1, 2023, to August 1, 2024. During the negotiation period, the Secretary will consider factors including each manufacturer's research and development (R&amp;D) costs for the drug, production cost, any federal financial support for development of the drug, and data on patents and existing and pending exclusivities. The Secretary is to publish the negotiated MFPs for 2026 no later than September 1, 2024. Each subsequent year under the Program, MFPs are to take effect two years after new drugs are selected for negotiation.</p><p>The IRA sets a ceiling on the MFP, based on the lesser of 1. the weighted average net price of the drug or biologic under Part D (and starting in 2028, average Part B prices); 14 or 2. a percentage of the nonfederal average manufacturer price (non-FAMP). The non-FAMP is a wholesaler price, minus certain discounts, that is used in calculating a maximum price for drugs by the "big four" federal purchasers: the Department of Veterans Affairs, the Department of Defense, the Public Health Service, and the Coast Guard. The MFP ceiling is 75% of the non-FAMP for a drug approved for less than 16 years or 40% of the non-FAMP for a drug approved for 16 years or more. <ref type="bibr">15</ref> An MFP is calculated across all dosage forms and strengths of a drug and is in effect until the first year beginning at least nine months after a generic or biologic substitute for a drug is marketed.</p><p>Manufacturers that do not comply with the Program could be subject to a civil monetary penalty or an excise tax. The excise tax would be set as a percentage of the sum of the drug's sales price plus the excise tax imposed by the IRA. This percentage could range from 65% up to a maximum of 95%, if a manufacturer were out of compliance more than 270 days. <ref type="bibr">16</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Industry Responses to IRA Negotiation Program</head><p>Even though all the manufacturers of selected drugs for 2026 agreed to enter into negotiations with the Secretary, several manufacturers and other stakeholders have sued the government to strike down or alter the IRA negotiation provisions as unconstitutional. <ref type="bibr">17</ref> Industry representatives, patient advocates, and other stakeholder groups have also asked Congress and the Centers for Medicare &amp; Medicaid Services (CMS) to alter certain provisions of the statute or update regulatory guidance for implementing the law. Industry and patient advocacy groups have sought <ref type="bibr">14</ref> For Part B drugs, the average price is the ASP from the previous year. For Part D, the average price is based on data form the most recent year available. <ref type="bibr">15</ref> Starting in 2030, the IRA includes a third MFP ceiling, which is to be 65% of the non-FAMP for a selected drug that has been approved or licensed for at least 12 years but fewer than 16 years. <ref type="bibr">16</ref> Section 11003 of the IRA amended IRC Subtitle D to add a new Section 5000D, containing the excise tax. See 26 U.S.C. § 5000D. <ref type="bibr">17</ref> See, e.g., Complaint, Merck &amp; Co. v. Becerra, No. 23-1616 (D.D.C. Jun. 6, 2023), ECF No. 1.</p><p>changes to two aspects of the IRA in particular: (1) its treatment of orphan drugs, and (2) its different timelines for the negotiation of drugs versus biologics. <ref type="bibr" target="#b0">18</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Orphan Drug Provisions</head><p>The IRA exempts from the Program orphan drugs used to treat only one rare disease or condition and for which the only approved indication (or indications) is for such disease or condition. <ref type="bibr" target="#b1">19</ref> In addition, drugs with an annual Medicare cost of less than $200 million are exempt from negotiation, a provision that could shield some orphan products from negotiation.</p><p>Some stakeholders have expressed concern that the orphan drug exemption is insufficient and could deter innovation, especially for existing approved orphan products. <ref type="bibr" target="#b3">20</ref> At least one manufacturer has also challenged CMS's interpretation of "qualifying single source drug" as it applies to the IRA's orphan drug exception. <ref type="bibr" target="#b4">21</ref> Federal law provides tax breaks and extended marketing exclusivity for developers of orphan drugs, and the majority of all novel drugs approved by FDA in the past several years have been orphan products. <ref type="bibr">22</ref> Orphan drug manufacturers may seek orphan drug approval of a new indication for an already-approved orphan drug or an already-approved nonorphan drug, allowing use for more than one condition. <ref type="bibr" target="#b7">23</ref> Although orphan drugs are intended to serve small patient populations or conditions for which therapies are not expected to be profitable, a recent report from the HHS Office of Inspector General found that a majority of 40 high-spending Medicare drugs it studied had orphan-drug designations, including drugs initially approved to treat common conditions. <ref type="bibr" target="#b8">24</ref> CMS is considering additional actions in its implementation of the Program to support orphan drug development, including considering a drug's impact on unmet medical need and on specific populations during negotiations with manufacturers to set a final MFP. 25</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IRA Timelines for Selection of Chemical and Biologic Products</head><p>Existing federal law provides for disparate treatment of chemical and biological products in many ways. (See "Drug Patent and Marketing Protections.") Even so, some pharmaceutical firms and investors have questioned the rationale for having different timelines for negotiating MFPs for chemical and biologic prescription products, saying it will make chemical drugs less financially attractive for investment. <ref type="bibr">26</ref> The final version of the IRA was developed in negotiations outside the formal committee process, so there is limited public legislative history of the timeline provision. Congress debated drug price negotiation bills before the IRA that did not distinguish between chemical and biological products or set time-on-market requirements for negotiation eligibility. In 2019, the House passed H.R. 3, which would have required the Secretary to negotiate MFPs for insulins and single-source drugs and biologics that were FDA approved or licensed, were still marketed, and were among the 125 drugs with the estimated highest net spending in Medicare Part D or in the United States. New drugs likely to meet high-spending criteria were negotiation-eligible immediately following approval or licensure.</p><p>In September 2021, the House Ways and Means Committee approved drug negotiation provisions as part of the FY2023 reconciliation measure known as the Build Back Better Act (BBBA) that largely tracked H.R. 3 from 2019. <ref type="bibr">27</ref> The Energy and Commerce Committee did not advance the provisions after three majority Members voted "no," concerned that the bill would weaken incentives for drug development. <ref type="bibr">28</ref> During the Energy and Commerce markup, Representative Scott Peters raised but withdrew an amendment based on bills (H.R. 5260 and H.R. 5237) to allow the Secretary to negotiate prices only for single-source Medicare Part B drugs where federal marketing and patent protection had expired. <ref type="bibr">29</ref> In November 2021, the House approved a revised version of the BBBA (H.R. 5376) which specified that MFPs could not apply until 9 years after approval for chemical drugs, or 13 years after licensure for biologics. In August 2022, Congress passed the final version of the IRA, which had these provisions as well. <ref type="bibr">25</ref> CMS REVISED GUIDANCE, supra note 19, § 60.3. <ref type="bibr">26</ref> See, e.g., Daniel Skovronsky, The IRA's Nonsensical Distinction between Small-and Large-molecule Drugs, STAT (May 9, 2023), <ref type="url" target="https://www.statnews.com/2023/05/09/ira-inflation-reduction-act-small-large-molecule-drugs/">https://www.statnews.com/2023/05/09/ira-inflation-reduction-act-small-large-molecule-drugs/</ref>. <ref type="bibr">27</ref> The House Ways and Means Committee drug negotiation provisions were in Subtitle J of the committee draft of the Build Back Better Act. See Press Release, House Ways and Means Committee Democrats, Chairman Neal Announces Additional Day of Markup of the Build Back Better Act (Sept. 10, 2021), <ref type="url" target="https://democrats-">https://democrats-</ref>waysandmeans.house.gov/media-center/press-releases/chairman-neal-announces-additional-day-markup-build-backbetter-act. The House Energy and Commerce Committee considered the drug pricing provision in Subtitle E of the committee draft bill. See Markup of the Build Back Better Act, Full Committee, H. ENERGY AND COMMERCE COMM. DEMOCRATS, (Sept. 13, 2021), <ref type="url" target="https://democrats-energycommerce.house.gov/committee-activity/markups/markup-of-">https://democrats-energycommerce.house.gov/committee-activity/markups/markup-of-</ref>the-build-back-better-act-full-committee-september-13-2021. <ref type="bibr">28</ref> Alice Miranda Ollstein and Sarah Ferris, Centrist Democrats Scramble House Drug Pricing Effort, POLITICO (Sept. 15, 2021), <ref type="url" target="https://www.politico.com/news/2021/09/15/centrist-democrats-drug-pricing-511955">https://www.politico.com/news/2021/09/15/centrist-democrats-drug-pricing-511955</ref>. 29 Rep. Scott Peters, Don't Slow Research on Promising Drugs, REP. SCOTT PETERS (Sept. 29, 2021), <ref type="url" target="https://scottpeters.house.gov/2021/9/dont-slow-research-on-promising-drugs">https://scottpeters.house.gov/2021/9/dont-slow-research-on-promising-drugs</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Legal Challenges</head><p>Drug manufactures have challenged the Program on a number of legal grounds, making its ultimate implementation uncertain. In the various lawsuits, the government has attempted to refute manufacturers' claims that the IRA will significantly change the drug industry, that the negotiation of the MFPs will ultimately decrease revenues, and that manufacturers will be discouraged from investing in research and development for new drugs. <ref type="bibr" target="#b9">30</ref> At least seven pharmaceutical manufacturers and two trade associations have filed lawsuits against CMS, arguing that the IRA is unconstitutional. <ref type="bibr" target="#b11">31</ref> The plaintiffs claim that the IRA violates the First Amendment because it compels speech, <ref type="bibr" target="#b27">32</ref> and that it violates the Fifth Amendment Due Process and Takings Clauses. <ref type="bibr">33</ref> A few plaintiffs also claim that the excise tax violates the Eighth Amendment Excessive Fines Clause, <ref type="bibr" target="#b30">34</ref> and that various provisions of the IRA violate the Nondelegation Doctrine. <ref type="bibr" target="#b31">35</ref> The plaintiffs also argue that the IRA cannot be justified under Congress's Spending Clause power because it does not condition Medicare reimbursement on participation in the Program and that it is unconstitutionally coercive. <ref type="bibr" target="#b32">36</ref> At least two pharmaceutical manufacturer plaintiffs have also claimed that CMS's implementation of the Program violates the Administrative Procedure Act (APA). Although the statute requires CMS to implement the Program via agency guidance, the manufacturers claim that the guidance violates the APA because parts of it were finalized without stakeholder input. <ref type="bibr" target="#b33">37</ref> Manufacturers argue that the guidance should have been promulgated as a legislative rule, as it legally binds manufacturers and will subject them to steep penalties for noncompliance. <ref type="bibr">38</ref> Another manufacturer argues that CMS's guidance "override[s]" the IRA's definition of "qualifying single source drug" by making it overly broad, so as to include more than one drug. <ref type="bibr">39</ref> They also dispute CMS's "bona fide marketing" requirement, arguing that this could make a drug eligible for selection even if it has market competition. <ref type="bibr">40</ref> At least one manufacturer has challenged CMS's interpretation of the IRA's orphan drug exclusion provision. The manufacturer argues that although the IRA excludes some orphan drugs from price negotiation, 41 CMS's guidance aggregates drugs and biologics with the same active ingredient, such that the orphan drug exclusion will apply only if the entire group of products with the same active moiety is approved to treat a single orphan disease. <ref type="bibr">42</ref> The government has filed at least one motion to dismiss, <ref type="bibr" target="#b36">43</ref> and summary judgment motions have been filed by both the plaintiffs and the government in several of the cases, <ref type="bibr" target="#b37">44</ref> which could fast track decisions in the cases. Some observers expect that at least one of the cases will eventually reach the U.S. Supreme Court. <ref type="bibr" target="#b39">45</ref> The lawsuits have not yet interfered with CMS's implementation of the Program. For example, in September 2023, an Ohio district court denied a motion for a preliminary injunction to halt temporarily CMS's implementation of the Program, finding that the plaintiffs had not presented sufficient evidence that they would prevail on the merits of their constitutional arguments. <ref type="bibr" target="#b40">46</ref> It could take years for all of the cases to be finally resolved, and the outcome of the litigation will determine how effectively CMS will be able to carry out the Program and uphold the Program's stated goals of lowering prescription drug prices for Medicare.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Drug Patent and Marketing Protections</head><p>Some industry concerns involve the potential impact of the Program on existing patent and marketing protections for pharmaceuticals.</p><p>New drugs and biologics are typically protected from generic and biosimilar competition by two distinct forms of intellectual property (IP) protection. <ref type="bibr">47</ref> To encourage innovation, patents grant inventors the exclusive right to make and sell a novel invention. <ref type="bibr">48</ref> Many innovations relating to a pharmaceutical product (such as the active ingredient, particular formulations, manufacturing processes, or methods of using a drug against particular diseases) may be patented. <ref type="bibr">49</ref> Patents typically expire 20 years after the filing date of the relevant patent application. <ref type="bibr">50</ref> Similarly, the FDA grants regulatory exclusivities to innovative pharmaceuticals meeting certain criteria. <ref type="bibr">51</ref> During a period of regulatory exclusivity, the FDA cannot approve applications for a generic or biosimilar form of the product. <ref type="bibr">52</ref> The main regulatory exclusivity for new chemical drugs lasts 5 years, <ref type="bibr">53</ref> and the main exclusivity for new biologics lasts 12 years. <ref type="bibr">54</ref> There are also a number of more specific exclusivities (such as the seven-year orphan drug exclusivity) that may apply to a particular product. <ref type="bibr" target="#b41">55</ref> By design, both patents and regulatory exclusivities may enable drug manufacturers to charge higher-than-competitive prices because the product is protected from generic and biosimilar competition while these rights are in effect. <ref type="bibr">56</ref> IP rights are typically justified as necessary to encourage innovation and for manufacturers to recoup their R&amp;D costs, but are sometimes criticized as contributing to high prices for pharmaceutical products. <ref type="bibr">57</ref> For example, some stakeholders and Members of Congress have questioned particular patenting strategies-such as "product hopping," "evergreening," and "patent thickets"-that allegedly misuse the IP system to unduly extend the periods of exclusivity for particular drugs and biologics. <ref type="bibr">58</ref> Precisely when generic or biosimilar competition occurs for any given product depends on a complex interplay of market incentives, patents, regulatory exclusivities, FDA processes, andnot infrequently-litigation. <ref type="bibr">59</ref> Although patents can last up to 20 years, some of the patent term is taken up by the patent application process itself. Still more of a patent's term may also occur prior to market approval for a drug or biologic, particularly for patents granted early in a product's life cycle, such as active-ingredient patents. <ref type="bibr">60</ref> In addition, although patents carry a presumption of validity, <ref type="bibr">61</ref> they may be challenged by generic and biosimilar manufacturers in court. <ref type="bibr">62</ref> In practice, empirical studies usually find that the average effective market exclusivity period for new drugs (i.e., the average time before actual generic entry) is between 12 and 15 years. <ref type="bibr">63</ref> Although data are limited, some studies show that average effective exclusivity periods are longer for biologics. <ref type="bibr">64</ref> This difference may be due to patenting factors <ref type="bibr">65</ref> and to the longer general regulatory exclusivity period (12 years) for new biologics. 66</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Potential Effects of the IRA on the Pharmaceutical Market</head><p>In theory, the provisions of the IRA could alter some economic incentives in the pharmaceutical industry. As a result, the industry may respond with changes to its product development, patent acquisition, and patent assertion practices. Whether and how much such changes occur is uncertain, as this will depend on many factors, including how the Program is implemented.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Potential Effects of the Program on R&amp;D Incentives</head><p>First, according to some analyses, price negotiation under the IRA could reduce the overall revenue for selected brand-name products, because negotiation limits the power to set prices for the Medicare market. <ref type="bibr">67</ref> Presuming a chemical drug is selected for negotiation and has an average effective exclusivity of 13 years, the price-setting power afforded by its patent monopoly will be somewhat weaker in years 9 through 13 if selected for negotiation under the Program. <ref type="bibr">68</ref> Put another way, although Medicare participants may benefit from lower prices under the Program, negotiation arguably reduces overall incentives to invest in new product development. <ref type="bibr">69</ref> On the other hand, it is not clear whether this effect will be practically significant because, among other things, it is unclear how much negotiation will affect manufacturers' revenue, 70 and it is difficult to predict whether a drug still in development will be subject to negotiation years later. Some may also view existing incentives (including patents and regulatory exclusivities) as sufficient to encourage investment in R&amp;D, and question whether selection of a small class of drugs for negotiation meaningfully alters those incentives. <ref type="bibr">71</ref> Second, because chemical drugs are subject to price negotiation earlier than biologics, the IRA could make biologics development comparatively more attractive for investment. <ref type="bibr">72</ref> (This difference may already be true to some degree, given the longer exclusivity period for biologics and the generally weaker effect of biosimilar competition on prices as compared to generic competition. <ref type="bibr">73</ref> ) For example, a 2022 survey by Pharmaceutical Research and Manufacturers of America (PhRMA), a trade group for the drug industry, found 63% of responding member companies planned to shift R&amp;D focus away from small molecules in response to the IRA and 95% to develop fewer uses for new medicines. <ref type="bibr">74</ref> Whether this effect will be significant in practice remains to be seen, and other factors (such as the potential market for a product) may be more significant in R&amp;D decisions than the possibility of MFPs imposed no earlier than 9 or 13 years after approval or licensure. <ref type="bibr">75</ref> Third, because only single-source products are subject to negotiation, brand-name manufacturers may have reduced incentives to litigate generic and biosimilar entry, at least on the margins. Especially for biologics, a brand manufacturer could prefer in some cases to allow biosimilar competition to avoid being subject to price negotiation. <ref type="bibr">76</ref> While brand-name manufacturers generally seek to prevent competition, immunity from price negotiation may influence the cost-benefit analysis when a manufacturer decides whether to file a patent lawsuit seeking to prevent the entry of a generic or biosimilar competitor. 77</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Potential Effects of the Program on Drug Prices</head><p>The Congressional Budget Office (CBO) forecasts that the Program will reduce net prices for selected drugs by about 50%, on average, and that the Secretary will have sufficient leverage to negotiate some prices below the level of the MFP. <ref type="bibr">78</ref> The CBO also expects Medicare drug prices to be affected by other IRA provisions besides the Program. For example, a separate IRA provision requires that manufacturers pay rebates to HHS if certain Part B-and D-covered drugs have price increases above an allowable rate of inflation. The mandatory rebate is separate from the Program, but includes drugs with an MFP. <ref type="bibr">79</ref> The CBO expects that the mandatory rebate provision will slow drug price growth in Part D, even though manufacturers could attempt to set higher launch (list) prices for new drugs to offset some of its impact.</p><p>Overall, the CBO forecasts that under the IRA "the number of drugs that would be introduced to the U.S. market would be reduced by about 1 over the 2023-2032 period, about 5 over the subsequent decade, and about 7 over the decade after that." <ref type="bibr">80</ref> The federal government has also asserted that in some cases manufacturers could realize increased revenues if their products were selected for negotiation under the Program. For example, in a recent motion to dismiss filed by the government in a lawsuit challenging the constitutionality of the IRA, the government argued the pharmaceutical industry's claims of financial harm from the IRA were speculative, stating that "[c]ontrary to the tone of pessimistic inevitability in Plaintiffs' filings, it is possible that manufacturers will agree to prices that result in flat or even greater revenue for them…." <ref type="bibr">81</ref> The government pointed to the IRA formula for determining a Part D drug's MFP, which is the lower of the Part D average net price or the nonfederal AMP. (See "Selected Drug Negotiation Provisions of the IRA.") If the Part D average net price turned out to be the lower price, the MFP ceiling would be the drug's Part D price minus any rebates and certain other price concessions that the manufacturer provided to the insurers that offer Part D plans. In other words, the government argued that the MFP could be near the manufacturer's current net price. <ref type="bibr">82</ref> Though not explicitly described in the legal filing, the IRA includes other provisions that could reduce the need for manufacturers to provide the same level of rebates for drugs with an MFP going forward. For example, manufacturers often provide rebates to Part D sponsors (insurers) and their pharmacy benefit managers to ensure that their drugs are included on Part D plan formularies or are placed on a lower-cost formulary tier. The IRA requires that Part D plans cover all drugs with a negotiated MFP, meaning manufacturers of those drugs might not need to provide</p><p>77 Id. 78 CBO, How CBO Estimated the Budgetary Impact of Key Prescription Drug Provisions in the 2022 Reconciliation Act (Feb. 2023), <ref type="url" target="https://www.cbo.gov/system/files/2023-02/58850-IRA-Drug-Provs.pdf">https://www.cbo.gov/system/files/2023-02/58850-IRA-Drug-Provs.pdf</ref>. CBO forecasts that the negotiation provisions will reduce federal drug spending under Medicare by $25 billion in 2031. Average Part D net prices will be 9% lower in 2031, and average Part B prices will be 8% lower. 79 Id. 80 CBO, SUMMARY ESTIMATED BUDGETARY EFFECTS OF PUBLIC LAW 117-169, at 15 (Sept. 7, 2022), <ref type="url" target="https://www.cbo.gov/system/files/2022-09/PL117-169_9-7-22.pdf">https://www.cbo.gov/system/files/2022-09/PL117-169_9-7-22.pdf</ref>. The CBO stated that "[t]he amounts in this estimate are in the middle of the distribution of possible outcomes, by CBO's assessment, and they are subject to uncertainty." Id. 81 Defendant's Motion to Dismiss at 8, Dayton Area Chamber of Com., et al. v. Becerra, No. 23-0156 (S.D. Ohio Aug. 11, 2023), ECF No. 33. 82 Id.</p><p>rebates at the same level going forward. <ref type="bibr">83</ref> Depending on the Secretary's decision on a final MFP for a drug at the end of the negotiation process, and negotiations with Part D plans regarding formulary placement, a manufacturer's net price after negotiation could be near the current net levels. <ref type="bibr">84</ref> The government added that being selected for a negotiated MFP for a drug "will also trigger other unequivocal benefits to its manufacturer," namely an exemption from the Part D Manufacturer Discount Program. <ref type="bibr">85</ref> Under current law, manufacturers that participate in Part D must provide a 70% discount on brand-name biologic and biosimilar drugs purchased by enrollees with sufficient drug spending to reach a phase of the annual benefit known as the doughnut hole. (See Figure <ref type="figure" target="#fig_0">1</ref>.) For 2023, enrollees enter the doughnut hole when they have $4,660 in total drug spending, and exit when they have about $11,000 in total drug spending ($7,400 in out-of-pocket spending). If an enrollee were prescribed a brand-name drug that cost $40,000 per year, for example, the manufacturer would provide a 70% discount only on the portion of the drug spending that was incurred in the doughnut hole. Source: CRS visual based on CMS program information. Note: CMS has not yet released the 2025 Part D deductible. The IRA eliminates the Part D doughnut hole in 2025. (See Figure <ref type="figure" target="#fig_1">2</ref>.) Instead, drug manufacturers that participate in Part D will be required to provide a 10% discount on drugs purchased by enrollees between the annual deductible and $2,000 in out-of-pocket spending <ref type="bibr">87</ref> and a 20% discount on drugs purchased by enrollees when they have more than $2,000 in out-ofpocket spending. Because the required discounts going forward would apply to the full price of a drug, some manufacturers could provide much higher discounts than under the current program. <ref type="bibr">88</ref> According to CMS: So even if prices for a selected drug fall, any losses could be offset (or more) by exemption from the obligation to offer these discounts-especially if the "maximum fair price" comes in at or near the ceiling price. Indeed, depending on how all these variables shake out, a manufacturer of a selected drug could even see increased revenue.</p><p>To be sure, it is possible that the "maximum fair price" for some selected drugs will be lower than the ceiling price-perhaps significantly so. After all, Congress directed CMS to "aim[] to achieve the lowest maximum fair price" that it can persuade manufacturers to accept. Source: CRS visual based on CMS program information. Note: CMS has not yet released the dollar amount of the 2025 Part D deductible or estimated total drug spending needed to accumulate $2,000 in out-of-pocket spending.</p><p>Industry and academic studies have posited varying outcomes for drug pricing under the IRA. Forecasts differ based on assumptions about the drugs to be selected for Program negotiation, and 87 CMS has not released an estimate for the 2025 deductible for total drug spending needed to generate $2,000 in outof-pocket spending. <ref type="bibr">88</ref> The MFP for a drug is to be adjusted annually to account for inflation, and Medicare beneficiaries may not be charged more than the adjusted MFP price. manufacturer responses. <ref type="bibr">90</ref> Lawmakers are debating legislation in the 118 th Congress that would make further changes to Medicare and the commercial market, including regulation of pharmacy benefit managers and broader requirements for drug price transparency, that could also affect prescription drug pricing and distribution.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>FiguresFigure 1 .</head><label>1</label><figDesc>Figures Figure 1. 2023 Medicare Part D Standard Benefit ........................................................................Figure 2. 2025 Medicare Part D Standard Benefit ........................................................................</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Figure 1. 2023 Medicare Part D Standard Benefit ........................................................................Figure 2. 2025 Medicare Part D Standard Benefit ........................................................................</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><figDesc>Part D Selected Drugs for Negotiation for the Initial 2026 Price Year .............................. Contacts Author Information ........................................................................................................................</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>13</head><figDesc>Press Release, HHS, Biden-Harris Administration Moves Forward with Medicare Drug Price Negotiations to Lower Prescription Drug Costs for People with Medicare (Oct. 3, 2023), https://www.hhs.gov/about/news/2023/10/03/bidenharris-administration-moves-medicare-drug-price-negotiations-lower-prescription-drug-costs-people-medicare.html. Enbrel, Stelara, and Fiasp are biologics. a. The designation also covers the products FiaspFlexTouch, Fiasp PenFill, NovoLog, NovoLog FlexPen, and NovoLog PenFill.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>86 Figure 1 .</head><label>861</label><figDesc>Figure 1. 2023 Medicare Part D Standard Benefit</figDesc><graphic coords="16,91.50,293.69,432.00,203.50" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><figDesc>83  CMS REVISED GUIDANCE, supra note 19. According to CMS, the statute requires Part D plans to include on their formularies all dosage forms and strengths of the selected drug that constitute a covered Part D drug and for which the MFP is in effect. For the 2026 plan year, CMS is not requiring that plan sponsors put drugs with an MFP on lower-cost formulary tiers, but plans to use the Part D formulary review process to ensure plan sponsors do not discriminate against drugs with MFPs.84  Id. According to CMS, the statute requires Part D plans to include on their formularies all dosage forms and strengths of the selected drug that constitute a covered Part D drug and for which the MFP is in effect. CMS is not requiring that plan sponsors put drugs with an MFP on lower-cost formulary tiers, but plans to use its formulary review process to ensure plan sponsors do not discriminate against drugs with MFPs. 85 Defendant's Motion to Dismiss at 10, Dayton Area Chamber of Com., et al. v. Becerra, No. 23-0156 (S.D. Ohio Aug. 11, 2023), ECF No. 33. 86 CRS Report R47396, Health Care Provisions of the Budget Reconciliation Measure P.L. 117-169, coordinated by Katherine M. Kehres (2023).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>89 Figure 2</head><label>892</label><figDesc>Figure 2. 2025 Medicare Part D Standard Benefit</figDesc><graphic coords="17,91.50,303.14,431.95,235.40" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><figDesc>89  Defendant's Motion to Dismiss at 10, Dayton Area Chamber of Com., et al. v. Becerra, No. 23-0156 (S.D. Ohio Aug. 11, 2023), ECF No. 33.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><graphic coords="1,0.00,0.00,612.00,147.87" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 . Part D Selected Drugs for Negotiation for the Initial 2026 Price Year Drug Name Manufacturer Drug Indication Total Part D Gross Drug Spending from June 2022-May 2023 Number of Enrollees Using Drug from June 2022-May 2023</head><label>1</label><figDesc>Press Release, HHS, HHS Selects the First Drugs for Medicare Drug Price Negotiation, (Aug. 29, 2023),</figDesc><table><row><cell>Eliquis</cell><cell>Bristol Myers Squibb</cell><cell>Prevention and</cell><cell>$16,482,621,000</cell><cell>3,706,000</cell></row><row><cell>(apixaban)</cell><cell>Partner: Pfizer</cell><cell>treatment of blood clots</cell><cell></cell><cell></cell></row><row><cell>Jardiance</cell><cell>Boehringer Ingelheim</cell><cell>Diabetes; Heart failure</cell><cell>$7,057,707,000</cell><cell>1,573,000</cell></row><row><cell>(empagliflozin)</cell><cell>Partner: Eli Lilly</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Xarelto</cell><cell>Janssen Pharmaceuticals</cell><cell>Prevention and</cell><cell>$6,031,393,000</cell><cell>1,337,000</cell></row><row><cell>(rivaroxaban)</cell><cell>(Johnson &amp; Johnson)</cell><cell>treatment of blood clots;</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>Reduction of risk for</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>patients with coronary</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>or peripheral artery</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>disease</cell><cell></cell><cell></cell></row><row><cell>Januvia</cell><cell>Merck Sharp Dohme</cell><cell>Diabetes</cell><cell>$4,087,081,000</cell><cell>869,000</cell></row><row><cell>(sitagliptin</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>phosphate)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Farxiga</cell><cell>AstraZeneca AB</cell><cell>Diabetes; Heart failure;</cell><cell>$3,268,329,000</cell><cell>799,000</cell></row><row><cell>(dapagliflozin)</cell><cell></cell><cell>Chronic kidney disease</cell><cell></cell><cell></cell></row><row><cell>Entresto</cell><cell>Novartis</cell><cell>Heart failure</cell><cell>$2,884,877,000</cell><cell>587,000</cell></row><row><cell>(sacubitril</cell><cell>Pharmaceuticals Corp.</cell><cell></cell><cell></cell><cell></cell></row><row><cell>valsartan)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Enbrel</cell><cell cols="2">Immunex Corp (Amgen) Rheumatoid arthritis;</cell><cell>$2,791,105,000</cell><cell>48,000</cell></row><row><cell>(etanercept)</cell><cell></cell><cell>Psoriasis; Psoriatic</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>arthritis</cell><cell></cell><cell></cell></row><row><cell>Imbruvica</cell><cell>Pharmacyclics LLC</cell><cell>Blood cancers</cell><cell>$2,663,560,000</cell><cell>20,000</cell></row><row><cell>(ibrutinib)</cell><cell>(Abbvie)</cell><cell></cell><cell></cell><cell></cell></row><row><cell>Stelara</cell><cell>Janssen Biotech, Inc.</cell><cell>Psoriasis; Psoriatic</cell><cell>$2,638,929,000</cell><cell>22,000</cell></row><row><cell>(ustekinumab)</cell><cell>(Johnson &amp; Johnson)</cell><cell>arthritis; Crohn's</cell><cell></cell><cell></cell></row><row><cell></cell><cell></cell><cell>disease; Ulcerative colitis</cell><cell></cell><cell></cell></row><row><cell>Fiasp a</cell><cell>Novo Nordisk Inc.</cell><cell>Diabetes</cell><cell>$2,576,586,000</cell><cell>777,000</cell></row><row><cell>(insulin aspart)</cell><cell></cell><cell></cell><cell></cell><cell></cell></row><row><cell>Source:</cell><cell></cell><cell></cell><cell></cell><cell></cell></row></table><note><p>https://www.hhs.gov/about/news/2023/10/03/biden-harris-administration-moves-medicare-drug-pricenegotiations-lower-prescription-drug-costs-people-medicare.html; CMS, Medicare Drug Price Negotiation Program: Selected Drugs for Initial Price Applicability Year 2026 (Aug. 2023), https://www.cms.gov/files/document/fact-sheet-medicare-selected-drug-negotiation-list-ipay-2026.pdf.</p></note></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="47" xml:id="foot_0"><p>See generally CRS Report R46679, Drug Prices: The Role of Patents and Regulatory Exclusivities, coordinated by Erin H. Ward (2021).</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="68" xml:id="foot_1"><p>See Rachel Sachs et al., A Holistic View of Innovation Incentives and Pharmaceutical Policy Reform, 1 HEALTH</p></note>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" n="90" xml:id="foot_2"><p>See, e.g., Benjamin Rome et al., Simulated Medicare Drug Price Negotiation Under the Inflation Reduction Act of 2022, JAMA HEALTH FORUM (Jan. 27, 2023), https://jamanetwork.com/journals/jama-health-forum/fullarticle/2800864.</p></note>
+		</body>
+		<back>
+
+			<div type="contribution">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author Information</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Kevin J. Hickey Legislative Attorney</head><p>Hannah-Alise Rogers Legislative Attorney Suzanne M. Kirchhoff Analyst in Health Care Financing</p></div>
+			</div>
+
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Disclaimer</head><p>This document was prepared by the Congressional Research Service (CRS). CRS serves as nonpartisan shared staff to congressional committees and Members of Congress. It operates solely at the behest of and under the direction of Congress. Information in a CRS Report should not be relied upon for purposes other than public understanding of information that has been provided by CRS to Members of Congress in connection with CRS's institutional role. CRS Reports, as a work of the United States Government, are not subject to copyright protection in the United States. Any CRS Report may be reproduced and distributed in its entirety without permission from CRS. However, as a CRS Report may include copyrighted images or material from a third party, you may need to obtain the permission of the copyright holder if you wish to copy or otherwise use copyrighted material.</p></div>			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct status="extracted" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Negotiation with a Gun to Your Head</title>
+		<author>
+			<persName><forename type="first">Kevin</forename><surname>Dunleavy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ceo</forename><surname>Pfizer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Slams</forename><surname>Bourla</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ira</forename><surname>Medicare</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Measure</surname></persName>
+		</author>
+		<ptr target="https://www.fiercepharma.com/pharma/pfizer-ceo-bourla-calls-medicare-ira-measure-negotiation-gun-your-head" />
+	</analytic>
+	<monogr>
+		<title level="m">Press Release, PhRMA, New Analysis: Inflation Reduction Act Undermines Cancer Medicine Development</title>
+		<editor>
+			<persName><forename type="first">E</forename><surname>See</surname></persName>
+		</editor>
+		<imprint>
+			<date type="published" when="2023-05-12">June 1, 2023. May 12, 2023</date>
+		</imprint>
+	</monogr>
+	<note>FIERCE PHARMA</note>
+	<note type="raw_reference">See, e.g., Press Release, PhRMA, New Analysis: Inflation Reduction Act Undermines Cancer Medicine Development, (June 1, 2023), https://phrma.org/resource-center/Topics/Access-to-Medicines/New-Analysis-Inflation- Reduction-Act-Undermines-Cancer-Medicine-Development and Kevin Dunleavy, Pfizer CEO Bourla Slams Medicare IRA Measure as &quot;Negotiation with a Gun to Your Head&quot;, FIERCE PHARMA (May 12, 2023), https://www.fiercepharma.com/pharma/pfizer-ceo-bourla-calls-medicare-ira-measure-negotiation-gun-your-head.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b1">
+	<monogr>
+		<author>
+			<orgName type="collaboration">CMS</orgName>
+		</author>
+		<idno>APPLICABILITY YEAR 2026</idno>
+		<ptr target="https://www.cms.gov/files/document/revised-medicare-drug-price-negotiation-program-guidance-june-2023.pdf" />
+		<title level="m">MEDICARE DRUG PRICE NEGOTIATION PROGRAM: REVISED GUIDANCE</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note>IMPLEMENTATION OF SECTIONS OF THE SOCIAL SECURITY ACT FOR INITIAL PRICE</note>
+	<note type="raw_reference">CMS, MEDICARE DRUG PRICE NEGOTIATION PROGRAM: REVISED GUIDANCE, IMPLEMENTATION OF SECTIONS 1191 - 1198 OF THE SOCIAL SECURITY ACT FOR INITIAL PRICE APPLICABILITY YEAR 2026, (2023), https://www.cms.gov/files/document/revised-medicare-drug-price-negotiation-program-guidance-june-2023.pdf</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b2">
+	<monogr>
+		<title level="m" type="main">definition of orphan drug for purposes of exclusion as a qualifying single source drug, a drug must (1) be designated under Section 526 of the Food, Drug, and Cosmetics Act as a drug used to treat only one rare disease or condition; and (2) be FDA-approved to treat only one indication (or indications) associated with that condition</title>
+		<author>
+			<persName><forename type="first">U</forename><forename type="middle">S C</forename></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page" from="1320" to="1321" />
+		</imprint>
+	</monogr>
+	<note>A), to meet the</note>
+	<note type="raw_reference">U.S.C. § 1320f-1(e)(3)(A), to meet the definition of orphan drug for purposes of exclusion as a qualifying single source drug, a drug must (1) be designated under Section 526 of the Food, Drug, and Cosmetics Act as a drug used to treat only one rare disease or condition; and (2) be FDA-approved to treat only one indication (or indications) associated with that condition.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Letter from National Organization for Rare Disorders, to Chiquita Brooks-LaSure</title>
+		<ptr target="https://rarediseases.org/wp-content/uploads/2023/04/Final_NORD_comments_MDPNP.pdf" />
+		<imprint>
+			<date type="published" when="2023-04-24">Apr. 24, 2023</date>
+		</imprint>
+		<respStmt>
+			<orgName>Administrator CMS &amp; Meena Seshamani</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">Letter from National Organization for Rare Disorders, to Chiquita Brooks-LaSure, Administrator CMS &amp; Meena Seshamani, Deputy Administrator (Apr. 24, 2023), https://rarediseases.org/wp- content/uploads/2023/04/Final_NORD_comments_MDPNP.pdf.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b4">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Amended Complaint, AstraZeneca Pharms. v. Becerra</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="23" to="0931" />
+			<date type="published" when="2023-08-25">Aug. 25, 2023</date>
+		</imprint>
+		<respStmt>
+			<orgName>ECF</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">Amended Complaint, AstraZeneca Pharms. v. Becerra at 30, No. 23-0931 (D. Del. Aug. 25, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">For more information about this claim, see</title>
+	</analytic>
+	<monogr>
+		<title level="j">Legal Challenges</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">For more information about this claim, see &quot;Legal Challenges.&quot; 22</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">54% of new drug approvals were orphan drugs</title>
+		<ptr target="https://www.fda.gov/drugs/new-drugs-fda-cders-new-molecular-entities-and-new-therapeutic-biological-products/new-drug-therapy-approvals-2022" />
+	</analytic>
+	<monogr>
+		<title level="j">New Drug Therapy Approvals</title>
+		<imprint>
+			<date type="published" when="2022-01-10">2022. 2022. Jan. 10, 2023</date>
+		</imprint>
+		<respStmt>
+			<orgName>FDA Center for Drug Evaluation and Research</orgName>
+		</respStmt>
+	</monogr>
+	<note>For example</note>
+	<note type="raw_reference">For example, in 2022, 54% of new drug approvals were orphan drugs. FDA Center for Drug Evaluation and Research, New Drug Therapy Approvals 2022 (Jan. 10, 2023), https://www.fda.gov/drugs/new-drugs-fda-cders-new- molecular-entities-and-new-therapeutic-biological-products/new-drug-therapy-approvals-2022.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Five-Year Sales for Newly Marketed Prescription Drugs With and Without Initial Orphan Drug Act Designation</title>
+		<author>
+			<persName><forename type="first">S</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sean</forename><surname>Tu</surname></persName>
+		</author>
+		<ptr target="https://jamanetwork.com/journals/jama/fullarticle/2804613" />
+	</analytic>
+	<monogr>
+		<title level="j">JAMA</title>
+		<imprint>
+			<date type="published" when="2023-05-09">May 9, 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Sean Tu, et al., Five-Year Sales for Newly Marketed Prescription Drugs With and Without Initial Orphan Drug Act Designation. JAMA (May 9, 2023), https://jamanetwork.com/journals/jama/fullarticle/2804613.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b8">
+	<monogr>
+		<idno>OEI-BL-20-00080</idno>
+		<ptr target="https://oig.hhs.gov/oei/reports/OEI-BL-20-00080.asp" />
+		<title level="m">High-expenditure Medicare drugs often qualified for Orphan Drug Act incentives designed to encourage the development of treatments for rare diseases</title>
+		<imprint>
+			<date type="published" when="2021">Sept. 28, 2021</date>
+		</imprint>
+		<respStmt>
+			<orgName>HHS Office of the Inspector General</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">HHS Office of the Inspector General, High-expenditure Medicare drugs often qualified for Orphan Drug Act incentives designed to encourage the development of treatments for rare diseases (Sept. 28, 2021), OEI-BL-20-00080, https://oig.hhs.gov/oei/reports/OEI-BL-20-00080.asp.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Defendant&apos;s Motion to Dismiss at 16-19, Dayton Area Chamber of Com</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">G</forename><surname>See</surname></persName>
+		</author>
+		<editor>et al. v. Becerra</editor>
+		<imprint>
+			<biblScope unit="page" from="23" to="0156" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">See, e.g., Defendant&apos;s Motion to Dismiss at 16-19, Dayton Area Chamber of Com., et al. v. Becerra, No. 23-0156 (</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b10">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">D</forename><surname>Ohio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ECF</title>
+		<imprint>
+			<date type="published" when="2023-11">Aug. 11. 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S.D. Ohio Aug. 11, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b11">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Merck</forename><surname>Complaint</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="middle">V</forename><surname>Co</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Becerra</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page" from="23" to="1615" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Complaint, Merck &amp; Co. v. Becerra, No. 23-1615 (</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b12">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D C</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ECF</title>
+		<imprint>
+			<date type="published" when="2023-06">Jun. 6. 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">D.D.C. Jun. 6, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Dayton Area Chamber of Com</title>
+		<author>
+			<orgName type="collaboration">Complaint</orgName>
+		</author>
+		<editor>et al. v. Becerra</editor>
+		<imprint>
+			<date type="published" when="2023-09">Jun. 9, 2023</date>
+			<biblScope unit="page" from="23" to="0156" />
+			<pubPlace>S.D. Ohio</pubPlace>
+		</imprint>
+	</monogr>
+	<note>ECF No</note>
+	<note type="raw_reference">Complaint, Dayton Area Chamber of Com., et al. v. Becerra, No. 23-0156 (S.D. Ohio, Jun. 9, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b14">
+	<monogr>
+		<title/>
+		<author>
+			<persName><forename type="first">Bristol</forename><surname>Complaint</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="middle">V</forename><surname>Myers Squibb Co</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Becerra</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page" from="23" to="3335" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Complaint, Bristol Myers Squibb Co. v. Becerra, No. 23-3335 (</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b15">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">N J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ECF</title>
+		<imprint>
+			<date type="published" when="2023">Jun. 16. 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">D.N.J. Jun. 16, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b16">
+	<analytic>
+		<title/>
+		<author>
+			<orgName type="collaboration">Complaint</orgName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pharm. Rsch. &amp; Mfrs. of Am</title>
+		<imprint>
+			<publisher>PhRMA) et al. v</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Complaint, Pharm. Rsch. &amp; Mfrs. of Am. (PhRMA) et al. v.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b17">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Becerra</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="page" from="23" to="0707" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Becerra, No. 23-0707 (</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b18">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">W</forename><forename type="middle">D</forename><surname>Tex</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ECF</title>
+		<imprint>
+			<date type="published" when="2023">Jun. 21. 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">W.D. Tex. Jun. 21, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b19">
+	<analytic>
+		<title/>
+		<author>
+			<persName><surname>Complaint</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Janssen Pharms. Inc. v. Becerra</title>
+		<imprint>
+			<biblScope unit="page" from="23" to="3818" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Complaint, Janssen Pharms. Inc. v. Becerra, No. 23-3818 (</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b20">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">N J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ECF</title>
+		<imprint>
+			<date type="published" when="2023-07-18">July 18. 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">D.N.J. July 18, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b21">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Complaint, Astellas Pharma U.S., Inc. v. Becerra</title>
+		<imprint>
+			<biblScope unit="page" from="23" to="4578" />
+		</imprint>
+	</monogr>
+	<note>hereinafter Janssen Compl.</note>
+	<note type="raw_reference">hereinafter Janssen Compl.]; Complaint, Astellas Pharma U.S., Inc. v. Becerra, No. 23-4578 (</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b22">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">D</forename><surname>Ill</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ECF</title>
+		<imprint>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2023-07-14">July 14, 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">N.D. Ill. July 14, 2023), ECF No. 1</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b23">
+	<monogr>
+		<title/>
+		<author>
+			<orgName type="collaboration">Complaint</orgName>
+		</author>
+		<imprint>
+			<date type="published" when="2023-08-18">Aug. 18, 2023</date>
+			<publisher>Boehringer Ingelheim Pharms., Inc</publisher>
+			<biblScope unit="page" from="23" to="01103" />
+			<pubPlace>D. Conn</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>ECF</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">Complaint, Boehringer Ingelheim Pharms., Inc., v. Becerra, No. 23-01103 (D. Conn. Aug. 18, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Amended Complaint, AstraZeneca Pharms. LP v. Becerra</title>
+		<imprint>
+			<date type="published" when="2023">Sept. 26, 2023</date>
+			<biblScope unit="page" from="23" to="0931" />
+		</imprint>
+		<respStmt>
+			<orgName>ECF</orgName>
+		</respStmt>
+	</monogr>
+	<note>hereinafter Boehringer Compl</note>
+	<note type="raw_reference">hereinafter Boehringer Compl.]; Amended Complaint, AstraZeneca Pharms. LP v. Becerra, No. 23-0931 (D. Del. Sept. 26, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b25">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">hereinafter AstraZeneca Amend. Compl.]; Complaint, Novartis Pharms. Corp. v. Becerra</title>
+		<imprint>
+			<biblScope unit="page" from="23" to="14221" />
+			<date type="published" when="2023">Sept. 1, 2023</date>
+			<pubPlace>D.N.J</pubPlace>
+		</imprint>
+	</monogr>
+	<note>ECF No</note>
+	<note type="raw_reference">hereinafter AstraZeneca Amend. Compl.]; Complaint, Novartis Pharms. Corp. v. Becerra, No. 23-14221, (D.N.J. Sept. 1, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b26">
+	<monogr>
+		<title/>
+		<author>
+			<persName><surname>Complaint</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">Sept. 29, 2023</date>
+			<publisher>Novo Nordisk, Inc. v. Becerra</publisher>
+			<biblScope unit="volume">23</biblScope>
+		</imprint>
+	</monogr>
+	<note>ECF No. 1 hereinafter Novo Nordisk Compl.</note>
+	<note type="raw_reference">Complaint, Novo Nordisk, Inc. v. Becerra, No. 23-20814, (D.N.J. Sept. 29, 2023), ECF No. 1 [hereinafter Novo Nordisk Compl.].</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b27">
+	<monogr>
+		<title level="m" type="main">Merck Compl. at 3; Chamber of Com Compl. at 8; Bristol Myers Compl</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">G</forename><surname>See</surname></persName>
+		</author>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+		</imprint>
+	</monogr>
+	<note>Janssen Compl. at 6; Astellas Compl. at 4 Boehringer Compl</note>
+	<note type="raw_reference">See, e.g., Merck Compl. at 3; Chamber of Com Compl. at 8; Bristol Myers Compl. at 20; Janssen Compl. at 6; Astellas Compl. at 4; Boehringer Compl. at 6.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b28">
+	<monogr>
+		<title level="m" type="main">All of the plaintiffs argue that the IRA violates some provision of the Fifth Amendment, with some claiming Due Process Clause violations, and others claiming</title>
+		<imprint/>
+	</monogr>
+	<note>Takings Clause violations. E.g., Chamber of Com. Compl. at 40</note>
+	<note type="raw_reference">All of the plaintiffs argue that the IRA violates some provision of the Fifth Amendment, with some claiming Due Process Clause violations, and others claiming Takings Clause violations. E.g., Chamber of Com. Compl. at 40;</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">at 6; Merck Compl. at 15; Bristol Myers Compl. at 26. For more information about the Fifth Amendment Due Process Clause</title>
+		<author>
+			<persName><forename type="first">Phrma</forename><surname>Compl</surname></persName>
+		</author>
+		<ptr target="https://constitution.congress.gov/browse/essay/amdt5-9-1/ALDE_00013280/" />
+	</analytic>
+	<monogr>
+		<title level="m">Cong. Research Serv., Amt. 5.7.1, Overview of Substantive Due Process, Constitution Annotated</title>
+		<imprint>
+			<date type="published" when="2023-12-04">Dec. 4, 2023. Dec. 4, 2023</date>
+		</imprint>
+	</monogr>
+	<note>For more information about the Fifth Amendment Takings Clause, see Cong. Research Serv., Amt. 5.9.1, Overview of Takings Clause</note>
+	<note type="raw_reference">PhRMA Compl. at 6; Merck Compl. at 15; Bristol Myers Compl. at 26. For more information about the Fifth Amendment Due Process Clause, see Cong. Research Serv., Amt. 5.7.1, Overview of Substantive Due Process, Constitution Annotated, available at https://constitution.congress.gov/browse/essay/amdt5-7-1/ALDE_00013728/ (last accessed Dec. 4, 2023). For more information about the Fifth Amendment Takings Clause, see Cong. Research Serv., Amt. 5.9.1, Overview of Takings Clause, available at https://constitution.congress.gov/browse/essay/amdt5-9- 1/ALDE_00013280/ (last accessed Dec. 4, 2023).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Chamber of Com. Compl. at 47</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">G</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">PhRMA Compl</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<publisher>Boehringer Compl</publisher>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">E.g., Chamber of Com. Compl. at 47; PhRMA Compl. at 55; Boehringer Compl. at 39.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">For an overview of the Nondelegation Doctrine</title>
+		<ptr target="https://constitution.congress.gov/browse/essay/artI-S1-5-2/ALDE_00000009/" />
+	</analytic>
+	<monogr>
+		<title level="m">Research Serv., Art. I, S.1.5.2 Historical Background on Nondelegation Doctrine, Constitution Annotated</title>
+		<imprint>
+			<date type="published" when="2023-12-07">Dec. 7, 2023. Dec. 7, 2023</date>
+		</imprint>
+	</monogr>
+	<note>For more information on the Nondelegation doctrine and its history, see Cong. Cong. Research Serv., Art. I, S.1.5.1 Overview of Nondelegation Doctrine, Constitution Annotated</note>
+	<note type="raw_reference">For an overview of the Nondelegation Doctrine, see Cong. Research Serv., Art. I, S.1.5.1 Overview of Nondelegation Doctrine, Constitution Annotated, available at https://constitution.congress.gov/browse/essay/artI-S1-5- 1/ALDE_00000014/#ALDF_00016513 (last accessed Dec. 7, 2023). For more information on the Nondelegation doctrine and its history, see Cong. Research Serv., Art. I, S.1.5.2 Historical Background on Nondelegation Doctrine, Constitution Annotated, available at https://constitution.congress.gov/browse/essay/artI-S1-5-2/ALDE_00000009/ (last accessed Dec. 7, 2023).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Bristol Myers Compl. at 24; Merck Compl. at 22; Janssen Compl. at 6; Boehringer Compl. at 42. For more information on the constitutional claims made by the plaintiffs, see CRS Report R47682, Constitutional Challenges to the Medicare Drug Price Negotiation Program, by Hannah-Alise Rogers</title>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">G</forename></persName>
+		</author>
+		<ptr target="https://constitution.congress.gov/browse/essay/artI-S8-C1-2-1/ALDE_00013356/" />
+	</analytic>
+	<monogr>
+		<title level="m">CRS Report R46827, Funding Conditions: Constitutional Limits on Congress&apos;s Spending Power</title>
+		<imprint>
+			<publisher>Victoria L. Killion</publisher>
+			<date type="published" when="2021">2023. Dec. 7, 2023. July 1, 2021</date>
+		</imprint>
+	</monogr>
+	<note>For more information on Congress&apos;s authority under the Spending Clause, see Cong Research Service, Art. I S.8.C1.2.1 Overview of Spending Clause, Constitution Annotated</note>
+	<note type="raw_reference">E.g., Bristol Myers Compl. at 24; Merck Compl. at 22; Janssen Compl. at 6; Boehringer Compl. at 42. For more information on the constitutional claims made by the plaintiffs, see CRS Report R47682, Constitutional Challenges to the Medicare Drug Price Negotiation Program, by Hannah-Alise Rogers (2023). For more information on Congress&apos;s authority under the Spending Clause, see Cong. Research Service, Art. I S.8.C1.2.1 Overview of Spending Clause, Constitution Annotated, available at https://constitution.congress.gov/browse/essay/artI-S8-C1-2- 1/ALDE_00013356/ (last accessed Dec. 7, 2023); see also CRS Report R46827, Funding Conditions: Constitutional Limits on Congress&apos;s Spending Power, by Victoria L. Killion (July 1, 2021).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Compl. at 22. Note that several other plaintiffs allege that the lack of stakeholder input violates the Fifth Amendment Due Process Clause. See, e.g</title>
+		<author>
+			<persName><forename type="first">Astrazeneca</forename><surname>Amend</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Chamber of Com. Compl. at 40</title>
+		<imprint/>
+	</monogr>
+	<note>AstraZeneca Amend. Compl. at 7. 40 Id. at 17; see also Novo Nordisk Compl. at 39. 41</note>
+	<note type="raw_reference">AstraZeneca Amend. Compl. at 22. Note that several other plaintiffs allege that the lack of stakeholder input violates the Fifth Amendment Due Process Clause. See, e.g., Chamber of Com. Compl. at 40. 38 Chamber of Com. Compl. at 40. 39 AstraZeneca Amend. Compl. at 7. 40 Id. at 17; see also Novo Nordisk Compl. at 39. 41 See</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b34">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">U.S.C. §</title>
+		<imprint>
+			<biblScope unit="page" from="132" to="133" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">U.S.C. § 132-f-1(e)</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b35">
+	<monogr>
+		<title level="m" type="main">CMS REVISED GUIDANCE</title>
+		<imprint/>
+	</monogr>
+	<note>supra note 19, § 30.1.1. 42 AstraZeneca Amend. Compl. at 30</note>
+	<note type="raw_reference">A); CMS REVISED GUIDANCE, supra note 19, § 30.1.1. 42 AstraZeneca Amend. Compl. at 30.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Defendant&apos;s Mot. to Dismiss, Dayton Area Chamber of Com</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>See</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ECF</title>
+		<editor>et al. v. Becerra</editor>
+		<imprint>
+			<biblScope unit="page" from="23" to="0156" />
+			<date type="published" when="2023-09">Jun. 9, 2023</date>
+			<pubPlace>S.D. Ohio</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">See, e.g., Defendant&apos;s Mot. to Dismiss, Dayton Area Chamber of Com., et al. v. Becerra, No. 23-0156 (S.D. Ohio, Jun. 9, 2023), ECF No. 33</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b37">
+	<monogr>
+		<title level="m" type="main">Plaintiff&apos;s Mot. for Summary Judgment</title>
+		<author>
+			<persName><forename type="first">E</forename><surname>See</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023-07-11">July 11, 2023</date>
+			<publisher>Merck &amp; Co. v. Becerra</publisher>
+			<biblScope unit="page" from="23" to="1615" />
+			<pubPlace>D.D.C</pubPlace>
+		</imprint>
+	</monogr>
+	<note>ECF No. 23; Defendant&apos;s Cross Mot. for Summary Judgment &amp; Opposition to Plaintiff&apos;s Mot. for Summary Judgment, Merck &amp; Co. v. Becerra</note>
+	<note type="raw_reference">See, e.g., Plaintiff&apos;s Mot. for Summary Judgment, Merck &amp; Co. v. Becerra, No. 23-1615, (D.D.C. July 11, 2023), ECF No. 23; Defendant&apos;s Cross Mot. for Summary Judgment &amp; Opposition to Plaintiff&apos;s Mot. for Summary Judgment, Merck &amp; Co. v. Becerra, No. 23-1615 (</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b38">
+	<monogr>
+		<title level="m" type="main">ECF No. 24; Plaintiff&apos;s Mot. for Summary Judgment, AstraZeneca Pharms. LP</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D C</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023-11-01">Sept. 11. 2023. 23-0931. Sept. 26, 2023. Nov. 1, 2023</date>
+			<biblScope unit="page" from="23" to="0931" />
+		</imprint>
+	</monogr>
+	<note>ECF No. 18; Defendant&apos;s Cross Mot. for Summary Judgment, AstraZeneca Pharms. LP v. Becerra ECF No. 21</note>
+	<note type="raw_reference">D.D.C. Sept. 11, 2023), ECF No. 24; Plaintiff&apos;s Mot. for Summary Judgment, AstraZeneca Pharms. LP v. Becerra, No. 23-0931 (D. Del. Sept. 26, 2023), ECF No. 18; Defendant&apos;s Cross Mot. for Summary Judgment, AstraZeneca Pharms. LP v. Becerra, No. 23-0931 (D. Del. Nov. 1, 2023), ECF No. 21.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Drugmakers Prep Medicare Pricing Suits for March to High Court</title>
+		<author>
+			<persName><forename type="first">Ian</forename><surname>Lopez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BLOOMBERG LAW</title>
+		<imprint>
+			<date type="published" when="2023-08-17">Aug. 17, 2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ian Lopez, Drugmakers Prep Medicare Pricing Suits for March to High Court, BLOOMBERG LAW (Aug. 17, 2023).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b40">
+	<monogr>
+		<title level="m" type="main">Order Denying Plaintiffs&apos; Motion for Preliminary Injunction</title>
+		<editor>et al. v. Becerra</editor>
+		<imprint>
+			<date type="published" when="2023">Sept. 29, 2023</date>
+			<biblScope unit="page" from="23" to="0156" />
+			<pubPlace>S.D. Ohio</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Dayton Area Chamber of Com</orgName>
+		</respStmt>
+	</monogr>
+	<note>ECF No</note>
+	<note type="raw_reference">Order Denying Plaintiffs&apos; Motion for Preliminary Injunction, Dayton Area Chamber of Com., et al. v. Becerra, No. 23-0156, (S.D. Ohio Sept. 29, 2023), ECF No.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b41">
+	<analytic>
+		<title level="a" type="main">estimating hundreds of billions of lost pharmaceutical industry revenue due to price negotiations)</title>
+		<author>
+			<persName><forename type="first">Annika</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Constantino</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">CNBC</title>
+		<imprint>
+			<date type="published" when="2023-08-30">Aug. 30, 2023</date>
+		</imprint>
+	</monogr>
+	<note>Medicare Drug Price Negotiations May Have a Muted Impact in the Near Term</note>
+	<note type="raw_reference">estimating hundreds of billions of lost pharmaceutical industry revenue due to price negotiations); but see Annika Kim Constantino, Medicare Drug Price Negotiations May Have a Muted Impact in the Near Term, CNBC (Aug. 30, 2023)</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b42">
+	<monogr>
+		<title level="m" type="main">nalysts say the drug price talks will likely have a muted financial impact on manufacturers</title>
+		<imprint/>
+	</monogr>
+	<note>at least for this first round of prescription medicines</note>
+	<note type="raw_reference">nalysts say the drug price talks will likely have a muted financial impact on manufacturers, at least for this first round of prescription medicines.&quot;).</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,242 @@
+# Every document the benchmark converts. `excerpt_ok` gates what may be shown in a
+# published report (rendered crops or quoted output); everything is measured.
+documents:
+  - id: natcomm-2020
+    path: corpus/papers/natcomm-2020.pdf
+    group: papers
+    title: "Cooperative excitonic quantum ensemble in perovskite-assembly superlattice microcavities"
+    venue: Nat. Commun. 11, 329 (2020)
+    landing_url: https://doi.org/10.1038/s41467-019-14078-1
+    license: CC-BY-4.0
+    license_url: http://creativecommons.org/licenses/by/4.0/
+    excerpt_ok: true
+    pages: 7
+    layout: two-column
+    sha256: 60bf8b5e7fdb7d26a1d8cbbfcf3ae795d842fc1789ca4ca75e3dd7daa431c58a
+  - id: apple-10k-2025
+    path: corpus/reports/apple-10k-2025.pdf
+    group: reports
+    title: "Apple Inc. Form 10-K, fiscal 2025"
+    venue: SEC EDGAR 0000320193-25-000079
+    landing_url: https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/
+    license: public SEC filing (short factual excerpts)
+    excerpt_ok: true
+    pages: 80
+    layout: single-column
+    sha256: 108590052c3ba5400c63660d787fe7ed4e43868292946d7a7facebe9ab7d1aab
+  - id: apple-10q-2026q3
+    path: corpus/reports/apple-10q-2026q3.pdf
+    group: reports
+    title: "Apple Inc. Form 10-Q, Q3 fiscal 2026"
+    venue: SEC EDGAR 0000320193-26-000020
+    landing_url: https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/
+    license: public SEC filing (short factual excerpts)
+    excerpt_ok: true
+    pages: 32
+    layout: single-column
+    sha256: 3518726963892d32ec11a876a5dfa44810cd557d577b91eae28fccad29962505
+  - id: sfix-10k-2026
+    path: corpus/reports/sfix-10k-2026.pdf
+    group: reports
+    title: "Stitch Fix, Inc. Form 10-K, fiscal 2026"
+    venue: SEC EDGAR 0001628280-26-063365
+    landing_url: https://www.sec.gov/Archives/edgar/data/1576942/000162828026063365/
+    license: public SEC filing (short factual excerpts)
+    excerpt_ok: true
+    pages: 110
+    layout: single-column
+    sha256: e88209f5ec2b795857ae2f95c17741cec70f355eafa7cfca1850f41b2bf93042
+  - id: arxiv-math-tables
+    path: corpus/papers/arxiv-math-tables.pdf
+    group: papers
+    title: 'Rare-earth chalcogenide perovskites: A promising class of materials for optoelectronic applications'
+    authors: Surajit Adhikari, Priya Johari
+    origin_url: https://arxiv.org/pdf/2608.15882v1
+    landing_url: https://arxiv.org/abs/2608.15882
+    license: CC-BY-4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    license_evidence: arXiv abs page 'Rights to this article' link -> http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-01; only version v1)
+    pages: 13
+    layout: two-column
+    features:
+    - display-equations
+    - tables
+    - inline-math
+    - author-footnotes
+    - figures
+    - page-number-header
+    notes: REVTeX/APS two-column, cond-mat.mtrl-sci; 5 tables (TABLE I-V on pp. 4, 7, 8, 9, 11), 8 numbered equations; tables are floats, none crosses a page break; file is ~20 MB because of embedded figures
+    excerpt_ok: true
+    sha256: 83e362b8e94b01db3d556ceaaf470799e61b8ae03daaf1aaebbc2a3f63ec4cf7
+  - id: arxiv-math-heavy
+    path: corpus/papers/arxiv-math-heavy.pdf
+    group: papers
+    title: 'Geometrical BRST Quantization of Gauged Nonlinear Sigma Models: Killing Fields and Physical Cohomology'
+    authors: Teirungumunu Apolinar Torres Zalabata et al.
+    origin_url: https://arxiv.org/pdf/2609.28992v1
+    landing_url: https://arxiv.org/abs/2609.28992
+    license: CC-BY-4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    license_evidence: arXiv abs page 'Rights to this article' link -> http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-01; only version v1)
+    pages: 19
+    layout: single-column
+    features:
+    - display-equations
+    - inline-math
+    - sub-superscripts
+    - footnotes
+    - author-footnotes
+    notes: hep-th, A4 single-column; ~68 numbered display equations; numbered page-bottom footnotes on pp. 3-4 plus a corresponding-author footnote on p. 1 (few footnotes overall); no tables
+    excerpt_ok: true
+    sha256: cabf51fdae873233f31dbb776314ee2fe9f2ca3b687841e666466328c7f90799
+  - id: arxiv-tables
+    path: corpus/papers/arxiv-tables.pdf
+    group: papers
+    title: 'Beyond Text: LLM-Based Dimensional Emotion Evaluation in Multimodal Dialogue'
+    authors: Yutong Hu, Jinho Choi
+    origin_url: https://arxiv.org/pdf/2609.39072v1
+    landing_url: https://arxiv.org/abs/2609.39072
+    license: CC-BY-4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    license_evidence: arXiv abs page 'Rights to this article' link -> http://creativecommons.org/licenses/by/4.0/ (checked 2026-10-01; only version v1)
+    pages: 15
+    layout: two-column
+    features:
+    - tables
+    - multi-level-table-headers
+    - full-width-tables
+    - ruled-grid-tables
+    - table-notes
+    - display-equations
+    notes: 'ACL-style two-column, cs.CL; 11 results tables (Table 2 has a two-level header: model group > Zero-shot/Few-shot/size; Tables 1 and 3 are fully ruled grids; Table 4 has a note line below); 3 numbered
+      equations; no running header'
+    excerpt_ok: true
+    sha256: e464c95288ab7cd0113f351e6a3331ccf4b81b76fd67e313e49cebcdb62c5fe5
+  - id: journal-tables-footnotes
+    path: corpus/papers/journal-tables-footnotes.pdf
+    group: papers
+    title: 'Valorization of waste pharmaceutical residues via pyrolysis: Simultaneous production of biochar for Cd2+ removal and high-quality bio-oil/syngas'
+    authors: Zhizhen Feng et al.
+    origin_url: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0346024&type=printable
+    landing_url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0346024
+    license: CC-BY-4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    license_evidence: 'PLOS ONE article page and PDF p.1: ''(c) 2026 Feng et al. This is an open access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/)'''
+    pages: 20
+    layout: single-column
+    features:
+    - tables
+    - table-footnotes
+    - running-footer
+    - wide-tables
+    notes: PLOS ONE (DOI 10.1371/journal.pone.0346024, 2026-03-27), chemistry/energy (pyrolysis, bio-oil, adsorption); 8 tables; superscript 'a'/'b' table footnotes under several tables (e.g. Table 3 'a This
+      means the default CAS data.'); running footer 'PLOS One | DOI | date  N / 20'; per-table DOI line under each table
+    excerpt_ok: true
+    sha256: 01f498812e7656501e61b528bf1efb925a8e63113c2711065f9fe49795b8bcb8
+  - id: gov-report-footnotes
+    path: corpus/reports/gov-report-footnotes.pdf
+    group: reports
+    title: 'Medicare Drug Price Negotiation Under the Inflation Reduction Act: Industry Responses and Potential Effects'
+    authors: Kevin J. Hickey et al. (Congressional Research Service)
+    origin_url: https://www.everycrsreport.com/files/2023-12-08_R47872_8d9210de20a5183a15a1699df5f51dec1f38fd3f.pdf
+    landing_url: https://www.congress.gov/crs-product/R47872
+    license: public-domain-us-gov
+    license_url: https://www.law.cornell.edu/uscode/text/17/105
+    license_evidence: 'CRS Report R47872 (December 8, 2023), Disclaimer on final page: ''CRS Reports, as a work of the United States Government, are not subject to copyright protection in the United States.
+      Any CRS Report may be reproduced and distributed in its entirety without permission from CRS. However, as a CRS Report may include copyrighted images or material from a third party, you may need to
+      obtain the permission of the copyright holder...'' (17 U.S.C. 105)'
+    pages: 18
+    layout: single-column
+    features:
+    - footnotes
+    - running-header
+    - running-footer
+    - tables
+    - page-break-table
+    - toc
+    - cover-page
+    - sidebar-summary
+    notes: ~80 numbered per-page footnotes (on nearly every page from p.4 on); running header with short title and footer 'Congressional Research Service  N'; Table 1 (p.6 of PDF) has Source/Notes block whose
+      notes continue onto the next page; two figures reproduce CMS benefit diagrams (possible third-party material - text excerpts only)
+    excerpt_ok: true
+    sha256: 0c4fa861c1ff301377f87145509753bc0aa4e9f66ee4e6ac80383169ea3deb68
+  - id: naca-rm-e7b11c
+    path: corpus/scanned/naca-rm-e7b11c.pdf
+    group: scanned
+    title: "Cooling of Gas Turbines. III - Analysis of Rotor and Blade Temperatures in Liquid-Cooled Gas Turbines"
+    authors: W. Byron Brown, John N. B. Livingood (NACA Aircraft Engine Research Laboratory)
+    venue: NACA Research Memorandum RM E7B11c, 1947
+    origin_url: https://ntrs.nasa.gov/api/citations/20030064253/downloads/20030064253.pdf
+    landing_url: https://ntrs.nasa.gov/citations/20030064253
+    license: "Public domain (US government work, 17 U.S.C. §105)"
+    license_url: https://www.law.cornell.edu/uscode/text/17/105
+    license_evidence: "NTRS record copyright.determinationType = GOV_PUBLIC_USE_PERMITTED, containsThirdPartyMaterial = false (https://ntrs.nasa.gov/api/citations/20030064253, checked 2026-10-02); NASA STI disclaimer https://sti.nasa.gov/disclaimers/: 'Documents available from this Web site are not protected by copyright unless noted.'"
+    excerpt_ok: true
+    pages: 15
+    excerpt_of: "pp. 1-15 of 30 (cover + report pp. 1-14)"
+    text_layer: none
+    layout: single-column
+    features:
+    - typewritten
+    - display-equations
+    - numbered-equations
+    - symbol-list
+    - tables
+    - running-header
+    - page-break-table
+    - cover-page
+    - stamps
+    notes: "Image-only scan (1-bit CCITT, 300 dpi, Image Alchemy); pdftotext returns nothing. Numbered equations (1), (2), ... on report pp. 9-10; table on report p. 12 directly after a page break; cover carries RESTRICTED stamps (since cancelled) and handwritten annotations"
+    sha256: b81a69db6896e47e37b73ca543badc492a3a3acb3b91bebd776f911ef51d7abd
+  - id: nbs-rp1
+    path: corpus/scanned/nbs-rp1.pdf
+    group: scanned
+    title: "Accelerated Tests of Organic Protective Coatings"
+    authors: Percy H. Walker, E. F. Hickson (Bureau of Standards)
+    venue: Bureau of Standards Journal of Research 1(1), 1-17 (1928), RP1
+    origin_url: https://nvlpubs.nist.gov/nistpubs/jres/1/jresv1n1p1_A1b.pdf
+    landing_url: https://doi.org/10.6028/jres.001.001
+    license: "Public domain (US government work, 17 U.S.C. §105; published in the US 1928)"
+    license_url: https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications
+    license_evidence: "NIST: 'Works authored by NIST employees are not subject to Copyright protection within the United States'; Bureau of Standards staff authors; US publication 1928 (pre-1930)"
+    excerpt_ok: true
+    pages: 14
+    excerpt_of: "pp. 5-18 of 22 (journal pp. 3-14 incl. 2 photo plates)"
+    text_layer: ocr
+    layout: single-column
+    features:
+    - tables
+    - table-footnotes
+    - grouped-table-rows
+    - footnotes
+    - running-header
+    - figures
+    - photo-plates
+    notes: "Internet Archive scan hosted by NIST, 600 dpi grayscale JPEG with invisible Paper Capture OCR (good on prose, garbled in tables). Table 2 (journal p. 7) has brace-grouped rows, a table footnote and a page footnote on the same page; two full-page photo plates interrupt a sentence crossing journal pp. 4-5; ~13.8 MB"
+    sha256: ad9f6645373d930ab91399374937fd94d4d2d2b4a56ea5139e9db1068c80ae83
+  - id: usgs-b580j
+    path: corpus/scanned/usgs-b580j.pdf
+    group: scanned
+    title: "The Phosphate Deposits of South Carolina"
+    authors: G. S. Rogers (US Geological Survey)
+    venue: USGS Bulletin 580-J (Contributions to Economic Geology, 1913, Part I), pp. 183-220, 1915
+    origin_url: https://pubs.usgs.gov/bul/0580j/report.pdf
+    landing_url: https://pubs.usgs.gov/publication/b580J
+    license: "Public domain (US government work, 17 U.S.C. §105; published in the US 1915)"
+    license_url: https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits
+    license_evidence: "USGS: 'USGS-authored or produced data and information are considered to be in the U.S. Public Domain.'; Publications Warehouse record b580J: publisher U.S. Geological Survey, noUsgsAuthors=false, year 1915 (pre-1930)"
+    excerpt_ok: true
+    pages: 14
+    excerpt_of: "pp. 1-14 of 39 (bulletin pp. 183-195 + Plate II)"
+    text_layer: ocr
+    layout: single-column
+    features:
+    - footnotes
+    - two-column-footnotes
+    - running-header
+    - alternating-running-header
+    - tables
+    - figures
+    - foldout-plate
+    notes: "400 dpi 1-bit CCITT scan with invisible SAFER OCR (good body text, noisy footnote markers). Numbered page-bottom footnotes on nearly every page (up to ~10 on bulletin p. 184), many op. cit./Idem; verso/recto running headers with outer page numbers; landscape foldout map plate at PDF p. 3"
+    sha256: 3b74a682efc51e3e6a19a81984b15e0d66ae7d2c99ac5ce7de21d81569b5e8db

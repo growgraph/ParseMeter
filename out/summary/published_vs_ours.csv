@@ -1,0 +1,55 @@
+arm,published_config,source,category,ours,ours_lo,ours_hi,pdfs,published,diff,within_ci
+docling-default,"Docling default PdfPipelineOptions(), GPU",Datalab [S10],digital_only,62.7,57.8,67.7,25,64.0,-1.3,True
+mineru-basic,"MinerU pipeline -m auto, GPU",Datalab [S10],digital_only,83.0,79.3,86.3,25,83.3,-0.3,True
+mineru-basic,MinerU v1.3.10 pipeline,Ai2 [S3],arxiv_math,71.7,59.6,81.7,25,75.4,-3.7,True
+mineru-basic,MinerU v1.3.10 pipeline,Ai2 [S3],old_scans_math,67.5,57.3,76.0,25,47.4,20.1,False
+mineru-basic,MinerU v1.3.10 pipeline,Ai2 [S3],table_tests,75.9,61.8,88.0,25,60.9,15.0,False
+mineru-basic,MinerU v1.3.10 pipeline,Ai2 [S3],headers_footers,96.4,91.1,100.0,25,96.6,-0.2,True
+mineru-basic,MinerU v1.3.10 pipeline,Ai2 [S3],multi_column,71.7,59.8,82.1,25,59.0,12.7,False
+mineru-basic,MinerU v1.3.10 pipeline,Ai2 [S3],long_tiny_text,87.0,82.5,91.4,25,39.1,47.9,False
+mineru-basic,MinerU v1.3.10 pipeline,Ai2 [S3],baseline,95.3,91.3,98.7,150,96.6,-1.3,True
+mineru-basic,MinerU v1.3.10 pipeline,Ai2 [S3],digital_only,83.0,79.3,86.3,25,71.3,11.7,False
+mineru-standard,MinerU 2.5.4 VLM (MinerU2.5-2509-1.2B),MinerU authors [S1],arxiv_math,71.7,56.7,86.4,10,76.6,-4.9,True
+mineru-standard,MinerU 2.5.4 VLM (MinerU2.5-2509-1.2B),MinerU authors [S1],old_scans_math,74.8,64.0,85.3,10,54.6,20.2,False
+mineru-standard,MinerU 2.5.4 VLM (MinerU2.5-2509-1.2B),MinerU authors [S1],table_tests,62.8,40.0,86.2,10,84.9,-22.1,True
+mineru-standard,MinerU 2.5.4 VLM (MinerU2.5-2509-1.2B),MinerU authors [S1],headers_footers,94.1,81.2,100.0,10,96.6,-2.5,True
+mineru-standard,MinerU 2.5.4 VLM (MinerU2.5-2509-1.2B),MinerU authors [S1],multi_column,65.0,46.2,82.6,10,78.2,-13.2,True
+mineru-standard,MinerU 2.5.4 VLM (MinerU2.5-2509-1.2B),MinerU authors [S1],long_tiny_text,88.0,82.1,97.3,10,83.5,4.5,True
+mineru-standard,MinerU 2.5.4 VLM (MinerU2.5-2509-1.2B),MinerU authors [S1],baseline,96.7,91.7,100.0,60,93.7,3.0,True
+mineru-standard,MinerU 2.5.4 VLM (MinerU2.5-2509-1.2B),MinerU authors [S1],digital_only,79.7,73.3,85.8,10,85.6,-5.9,True
+mineru-standard,MinerU2.5-Pro (H&F not reported),Falcon-OCR card [S47],arxiv_math,71.7,56.7,86.4,10,87.1,-15.4,False
+mineru-standard,MinerU2.5-Pro (H&F not reported),Falcon-OCR card [S47],old_scans_math,74.8,64.0,85.3,10,83.4,-8.6,True
+mineru-standard,MinerU2.5-Pro (H&F not reported),Falcon-OCR card [S47],table_tests,62.8,40.0,86.2,10,86.0,-23.2,True
+mineru-standard,MinerU2.5-Pro (H&F not reported),Falcon-OCR card [S47],multi_column,65.0,46.2,82.6,10,84.4,-19.4,False
+mineru-standard,MinerU2.5-Pro (H&F not reported),Falcon-OCR card [S47],long_tiny_text,88.0,82.1,97.3,10,93.7,-5.7,True
+mineru-standard,MinerU2.5-Pro (H&F not reported),Falcon-OCR card [S47],baseline,96.7,91.7,100.0,60,99.5,-2.8,True
+marker-fast,"Marker 2.0.0 fast, GPU",Datalab [S10],arxiv_math,15.2,8.2,23.3,25,23.4,-8.2,False
+marker-fast,"Marker 2.0.0 fast, GPU",Datalab [S10],old_scans_math,77.3,64.2,87.8,10,59.8,17.5,False
+marker-fast,"Marker 2.0.0 fast, GPU",Datalab [S10],table_tests,67.4,41.3,92.1,10,69.0,-1.6,True
+marker-fast,"Marker 2.0.0 fast, GPU",Datalab [S10],headers_footers,91.1,81.8,98.2,25,93.2,-2.1,True
+marker-fast,"Marker 2.0.0 fast, GPU",Datalab [S10],multi_column,72.5,52.6,89.5,10,76.0,-3.5,True
+marker-fast,"Marker 2.0.0 fast, GPU",Datalab [S10],long_tiny_text,67.5,50.6,84.6,10,68.3,-0.8,True
+marker-fast,"Marker 2.0.0 fast, GPU",Datalab [S10],baseline,98.9,96.7,100.0,90,99.9,-1.0,True
+marker-fast,"Marker 2.0.0 fast, GPU",Datalab [S10],digital_only,68.8,62.8,74.9,10,71.6,-2.8,True
+marker-nocr,"Marker 2.0.0 fast --disable_ocr, CPU",Datalab [S10],arxiv_math,0.0,0.0,0.0,25,0.0,0.0,True
+marker-nocr,"Marker 2.0.0 fast --disable_ocr, CPU",Datalab [S10],old_scans_math,0.0,0.0,0.0,25,0.0,0.0,True
+marker-nocr,"Marker 2.0.0 fast --disable_ocr, CPU",Datalab [S10],table_tests,44.8,31.1,59.0,25,46.1,-1.3,True
+marker-nocr,"Marker 2.0.0 fast --disable_ocr, CPU",Datalab [S10],headers_footers,94.6,88.5,100.0,25,92.8,1.8,True
+marker-nocr,"Marker 2.0.0 fast --disable_ocr, CPU",Datalab [S10],multi_column,67.0,53.8,78.7,25,67.0,-0.0,True
+marker-nocr,"Marker 2.0.0 fast --disable_ocr, CPU",Datalab [S10],long_tiny_text,40.3,21.7,59.9,25,43.2,-2.9,True
+marker-nocr,"Marker 2.0.0 fast --disable_ocr, CPU",Datalab [S10],baseline,83.3,76.7,88.7,150,85.9,-2.6,True
+marker-nocr,"Marker 2.0.0 fast --disable_ocr, CPU",Datalab [S10],digital_only,55.0,50.4,59.9,25,55.8,-0.8,True
+paddle-vl,"PaddleOCR-VL 1.0, GPU",PaddleOCR-VL authors [S24],arxiv_math,75.5,52.7,93.2,10,85.7,-10.2,True
+paddle-vl,"PaddleOCR-VL 1.0, GPU",PaddleOCR-VL authors [S24],old_scans_math,72.3,58.0,85.8,10,71.0,1.3,True
+paddle-vl,"PaddleOCR-VL 1.0, GPU",PaddleOCR-VL authors [S24],table_tests,81.4,57.4,100.0,10,84.1,-2.7,True
+paddle-vl,"PaddleOCR-VL 1.0, GPU",PaddleOCR-VL authors [S24],headers_footers,94.1,81.2,100.0,10,97.0,-2.9,True
+paddle-vl,"PaddleOCR-VL 1.0, GPU",PaddleOCR-VL authors [S24],multi_column,72.5,52.6,88.9,10,79.9,-7.4,True
+paddle-vl,"PaddleOCR-VL 1.0, GPU",PaddleOCR-VL authors [S24],long_tiny_text,85.5,80.5,94.9,10,85.7,-0.2,True
+paddle-vl,"PaddleOCR-VL 1.0, GPU",PaddleOCR-VL authors [S24],baseline,100.0,100.0,100.0,60,98.5,1.5,False
+paddle-vl,"PaddleOCR-VL 1.0, GPU",PaddleOCR-VL authors [S24],digital_only,84.8,78.0,91.0,10,88.5,-3.7,True
+paddle-vl,PaddleOCR-VL 1.6 (H&F not reported),Falcon-OCR card [S47],arxiv_math,75.5,52.7,93.2,10,87.8,-12.3,True
+paddle-vl,PaddleOCR-VL 1.6 (H&F not reported),Falcon-OCR card [S47],old_scans_math,72.3,58.0,85.8,10,68.8,3.5,True
+paddle-vl,PaddleOCR-VL 1.6 (H&F not reported),Falcon-OCR card [S47],table_tests,81.4,57.4,100.0,10,81.3,0.1,True
+paddle-vl,PaddleOCR-VL 1.6 (H&F not reported),Falcon-OCR card [S47],multi_column,72.5,52.6,88.9,10,84.1,-11.6,True
+paddle-vl,PaddleOCR-VL 1.6 (H&F not reported),Falcon-OCR card [S47],long_tiny_text,85.5,80.5,94.9,10,91.6,-6.1,True
+paddle-vl,PaddleOCR-VL 1.6 (H&F not reported),Falcon-OCR card [S47],baseline,100.0,100.0,100.0,60,98.4,1.6,False

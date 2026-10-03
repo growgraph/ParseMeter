@@ -1,0 +1,22 @@
+,seconds_per_page
+pdftotext,0.01
+Kreuzberg (default),0.04
+PyMuPDF4LLM (default),0.31
+"Docling (native, no models)",0.33
+PyMuPDF4LLM (layout),0.79
+Marker (no OCR),0.8
+"Docling (no OCR, no table model)",0.88
+"Docling (no OCR, fast tables)",1.17
+Docling (no OCR),1.6
+"Docling (text layer, no OCR)",1.75
+Unstructured (hi_res),4.15
+MinerU (basic),4.64
+Docling (defaults),4.82
+Docling (full-page OCR),6.44
+Docling (lean),9.75
+Docling (+ formula model),16.39
+"MinerU (standard, +VLM)",24.89
+Marker (fast),37.83
+PaddleOCR-VL 1.6,46.26
+Docling (tuned),52.74
+PP-StructureV3,75.23

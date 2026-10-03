@@ -1,0 +1,23 @@
+	Command being timed: "uv run --project arms/kreuzberg python arms/_driver.py kreuzberg --variant default"
+	User time (seconds): 0.56
+	System time (seconds): 0.07
+	Percent of CPU this job got: 96%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.66
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 141816
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 72
+	Minor (reclaiming a frame) page faults: 35481
+	Voluntary context switches: 453
+	Involuntary context switches: 882
+	Swaps: 0
+	File system inputs: 17736
+	File system outputs: 160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

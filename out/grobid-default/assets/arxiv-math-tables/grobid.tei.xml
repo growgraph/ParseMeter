@@ -1,0 +1,1842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Rare-earth chalcogenide perovskites: A promising class of materials for optoelectronic applications</title>
+				<funder ref="#_pS8yAhc">
+					<orgName type="full">Council of Scientific and Industrial Research</orgName>
+					<orgName type="abbreviated">CSIR</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2026-08-16">16 Aug 2026</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct status="extracted">
+					<analytic>
+						<author>
+							<persName><forename type="first">Surajit</forename><surname>Adhikari</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Physics</orgName>
+								<orgName type="department" key="dep2">School of Natural Sciences</orgName>
+								<orgName type="institution">Shiv Nadar Institution of Eminence</orgName>
+								<address>
+									<addrLine>Gautam Buddha Nagar</addrLine>
+									<postCode>201314</postCode>
+									<settlement>Greater Noida</settlement>
+									<region>Uttar Pradesh</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author role="corresp">
+							<persName><forename type="first">Priya</forename><surname>Johari</surname></persName>
+							<email>priya.johari@snu.edu</email>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">Department of Physics</orgName>
+								<orgName type="department" key="dep2">School of Natural Sciences</orgName>
+								<orgName type="institution">Shiv Nadar Institution of Eminence</orgName>
+								<address>
+									<addrLine>Gautam Buddha Nagar</addrLine>
+									<postCode>201314</postCode>
+									<settlement>Greater Noida</settlement>
+									<region>Uttar Pradesh</region>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Rare-earth chalcogenide perovskites: A promising class of materials for optoelectronic applications</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2026-08-16">16 Aug 2026</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">7F876B84F6B5E9CB995A7CE8EB9900FA</idno>
+					<idno type="arXiv">arXiv:2608.15882v1[cond-mat.mtrl-sci]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.9.1" ident="GROBID" when="2026-10-02T16:46+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">0.9.1</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=0, consolidateHeader=0, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[], flavor=null, debugLabelingCollector=disabled</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p><ref type="url" target="mailto:priya.johari@snu.edu.in">in</ref> structural stability, suitable band gaps, and excellent optoelectronic properties, several members of this family have been identified as promising candidates for lightabsorbing and light-emitting applications <ref type="bibr" target="#b7">[8]</ref><ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref><ref type="bibr" target="#b10">[11]</ref><ref type="bibr" target="#b11">[12]</ref>. Among them, the II-IV chalcogenide perovskites with the general formula ABX 3 (where A = Ca, Sr, Ba; B = Ti, Zr, Sn, Hf; and X = S, Se) are the most extensively studied to date <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b10">11,</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref><ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref>. Further diversification of this materials family can be achieved by exploring alternative elemental combinations at the cationic sites. In this context, the III-III chalcogenide perovskites, although already synthesized, remain largely unexplored as functional materials <ref type="bibr" target="#b17">[18]</ref><ref type="bibr" target="#b18">[19]</ref><ref type="bibr" target="#b19">[20]</ref><ref type="bibr" target="#b20">[21]</ref>. For optoelectronic applications, access to a broader materials palette is highly advantageous, as it enables precise tuning of critical parameters such as band gaps, band alignments, and structural properties, including lattice constants required for epitaxial growth. Consequently, the exploration of III-III chalcogenide perovskites composed of environmentally benign, non-toxic elements is highly desirable, as these materials can effectively complement the existing family of II-IV chalcogenide perovskites.</p><p>Recent studies on III-III chalcogenide perovskites have unveiled promising opportunities for the design of stable and environmentally benign optoelectronic materials. For instance, Zhang et al. theoretically predicted</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Chalcogenide perovskites have attracted significant attention for optoelectronic applications due to their nontoxic composition, robust phase stability, and excellent optoelectronic properties. Among them, rare-earth chalcogenide perovskites have recently emerged as promising candidates for nextgeneration devices. However, their excitonic and polaronic properties remain largely unexplored due to the high computational cost of accurate theoretical treatments. In this work, we present a comprehensive first-principles investigation of excitonic dynamics and polaronic effects in a series of III-III rare-earth chalcogenide perovskites ABX3 (A = Y, La; B = Sc, Y; X = S, Se), along with their structural stability and optoelectronic properties, using state-of-the-art density functional theory in conjunction with many-body perturbation theory within the G0W0 and Bethe-Salpeter equation (BSE) frameworks. All investigated compounds satisfy the dynamical and mechanical stability criteria, although several are thermodynamically metastable at 0 K and may require kinetic stabilization and/or finite-temperature effects for experimental realization. They exhibit quasiparticle band gaps in the range of 2.75-4.47 eV, and the BSE calculations reveal strong optical absorption spanning the visible to ultraviolet regions. The computed excitonic properties indicate intermediate-to-large exciton binding energies (0.148-0.517 eV), moderately localized excitons, and strong electron-hole wavefunction overlap, indicative of favorable radiative recombination characteristics and enhanced light-matter interaction. Furthermore, analysis based on the Fröhlich model demonstrates intermediate-to-strong carrier-phonon coupling, with electron-phonon interactions generally stronger than hole-phonon interactions. Notably, charge-separated polaronic states are energetically less favorable than bound excitonic states in most compounds, with the exception of La(Sc, Y)Se3, while hole polarons exhibit significantly higher mobilities (up to ∼ 40 cm 2 V -1 s -1 ) compared to electron polarons. Overall, rare-earth chalcogenide perovskites ABX3 exhibit a compelling combination of structural stability, tunable optoelectronic properties, pronounced excitonic effects, and favorable polaronic transport, positioning them as promising lead-free materials for next-generation optoelectronic devices, including light-emitting devices and photodetectors.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION:</head><p>Over the last decade, inorganic-organic halide perovskites (IOHPs) have attracted extraordinary interest owing to their outstanding electronic and optical characteristics <ref type="bibr" target="#b0">[1]</ref><ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref>. This intense research focus has led to remarkable progress in perovskite solar cells, with the power conversion efficiency (PCE) rising rapidly from an initial value of 3.8% to a record 27% <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b4">5]</ref>. However, despite these impressive achievements, significant challenges remain. Most high-performance IOHPs are lead (Pb)-based, giving rise to serious toxicity concerns. Moreover, their practical applicability is hindered by poor long-term stability, including degradation and thermal and chemical instability associated with the organic constituents <ref type="bibr" target="#b5">[6,</ref><ref type="bibr" target="#b6">7]</ref>. These limitations have motivated extensive efforts toward the development of environmentally benign, stable perovskite alternatives, opening new pathways for next-generation optoelectronic materials.</p><p>Recently, chalcogenide perovskites have emerged as a novel class of functional materials. Owing to their high the orthorhombic P nma (No. 62) crystal structure of YScS 3 , reporting an indirect G 0 W 0 band gap of 3.16 eV <ref type="bibr" target="#b21">[22]</ref>. Subsequently, through density functional theory calculations, Zhang et al. not only predicted but also experimentally synthesized a light-emitting III-III-S 3 perovskite, LaScS 3 , exhibiting a direct band gap of 2.62 eV <ref type="bibr" target="#b17">[18]</ref>. Furthermore, they also reported the prediction and experimental realization of the direct band gap material LaScSe 3 , with a G 0 W 0 band gap of 2.96 eV <ref type="bibr" target="#b18">[19]</ref>. In addition, the P 2 1 /m crystal structure of the LaYS 3 perovskite has been both theoretically predicted and experimentally synthesized, exhibiting an optimal band gap of 2.0 eV, making it a promising wide band gap photoabsorber for tandem solar energy conversion devices <ref type="bibr" target="#b19">[20,</ref><ref type="bibr" target="#b20">21]</ref>.</p><p>Most of the aforementioned studies have primarily focused on the electronic and optical properties of III-III rare-earth chalcogenide perovskites. In contrast, their excitonic and polaronic properties remain largely unexplored, despite their critical role in determining the performance of optoelectronic devices. Excitonic effects govern fundamental processes such as light absorption, emission, and charge separation. In contrast, polaron formation, arising from carrier-phonon interactions, strongly influences charge transport and carrier mobility <ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref>. A quantitative description of these properties, however, is computationally demanding and has therefore received limited attention. This gap highlights the need for a comprehensive investigation of excitonic and polaronic effects in these compounds, which has not yet been achieved and is addressed in the present work.</p><p>In this work, we undertake a systematic and comprehensive investigation of the structural stability, as well as the electronic, optical, excitonic, and polaronic properties of III-III rare-earth chalcogenide perovskites ABX 3 (A = Y, La; B = Sc, Y; X = S, Se) in the orthorhombic P nma phase, a widely observed and energetically competitive distorted perovskite structure that provides a consistent framework for comparative analysis. Our study is based on first-principles calculations within the frameworks of density functional theory (DFT) <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b23">24]</ref>, density functional perturbation theory (DFPT) <ref type="bibr" target="#b24">[25]</ref>, and many-body perturbation theory (MBPT) <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b26">27]</ref>. Initially, the crystal structures are optimized using the semilocal PBE <ref type="bibr" target="#b27">[28]</ref> as well as PBEsol <ref type="bibr" target="#b28">[29]</ref> exchangecorrelation (xc) functionals, and all compounds are found to be both dynamically and mechanically stable. However, several are thermodynamically metastable at 0 K, suggesting that their experimental realization may require kinetic stabilization and/or finite-temperature effects. Subsequently, the electronic properties are investigated using both the HSE06 hybrid xc functional <ref type="bibr" target="#b29">[30]</ref> and the G 0 W 0 @PBE approach <ref type="bibr" target="#b30">[31,</ref><ref type="bibr" target="#b31">32]</ref>, revealing quasiparticle band gaps in the range of 2.75-4.47 eV. Following that, the optical response is computed by solving the Bethe-Salpeter equation (BSE) <ref type="bibr" target="#b32">[33,</ref><ref type="bibr" target="#b33">34]</ref> on top of G 0 W 0 @PBE, enabling the evaluation of the dielectric function and exciton binding energies. The results indicate that these perovskites exhibit intermediate-tohigh exciton binding energies, moderately localized excitons, and strong electron-hole wavefunction overlap, suggesting favorable radiative transitions and pronounced light-matter interaction. Finally, we investigate the effects of carrier-phonon coupling and estimate the polaron mobility using the Fröhlich model <ref type="bibr" target="#b34">[35]</ref> and the Hellwarth polaron model <ref type="bibr" target="#b35">[36]</ref>. The analysis reveals intermediate to strong carrier-phonon coupling, with electronphonon interactions being more pronounced than those of holes, resulting in lower electron mobility and comparatively higher hole mobility. Overall, this work provides a comprehensive understanding of rare-earth ABX 3 (A = Y, La; B = Sc, Y; X = S, Se) chalcogenide perovskite compounds, highlighting their potential as leadfree perovskites with promising optoelectronic properties for next-generation devices.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. COMPUTATIONAL DETAILS:</head><p>In this work, first-principles calculations were carried out within the framework of density functional theory (DFT) <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b23">24]</ref>, density functional perturbation theory (DFPT) <ref type="bibr" target="#b24">[25]</ref>, and many-body perturbation theory (MBPT) <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b26">27]</ref>, as implemented in the Vienna ab initio Simulation Package (VASP) <ref type="bibr" target="#b36">[37,</ref><ref type="bibr" target="#b37">38]</ref>. The interaction between valence electrons and ionic cores was described using projector augmented-wave (PAW) pseudopotentials <ref type="bibr" target="#b38">[39]</ref>. Structural optimizations were carried out within the generalized gradient approximation (GGA) using the Perdew-Burke-Ernzerhof (PBE) <ref type="bibr" target="#b27">[28]</ref> and the PBEsol <ref type="bibr" target="#b28">[29]</ref> exchange-correlation (xc) functionals. The inclusion of PBEsol is motivated by its improved accuracy in describing equilibrium properties of solids, particularly lattice constants and structural distortions, which are crucial for reliably assessing dynamical stability and phonon properties. A plane-wave cutoff energy of 400 eV was employed, and the electronic self-consistent field convergence criterion was set to 10 -6 eV. All structures were fully optimized until the Hellmann-Feynman forces on each atom were less than 0.01 eV/Å. Brillouin zone integrations were carried out using a Γ-centered 7 × 7 × 5 k-point mesh. The optimized crystal structures were visualized using the VESTA package <ref type="bibr" target="#b39">[40]</ref>. Phonon dispersion curves were calculated using DFPT as implemented in the PHONOPY package <ref type="bibr" target="#b40">[41]</ref>, employing 2 × 2 × 2 supercells. To assess the functional dependence of the dynamical stability, the phonon spectra were computed for crystal structures relaxed using both the PBE and PBEsol exchange-correlation functionals.</p><p>Electronic band structures were initially obtained using the PBE xc functional including spin-orbit coupling (SOC), which was found to have a negligible impact on the overall band dispersion. To achieve improved accuracy in bandgap estimation, hybrid xc functional calculations using HSE06 <ref type="bibr" target="#b29">[30]</ref> and quasiparticle corrections within the G 0 W 0 @PBE <ref type="bibr" target="#b30">[31,</ref><ref type="bibr" target="#b31">32]</ref> approach were per-formed. A Γ-centered 3 × 3 × 2 k-point mesh was employed for the G 0 W 0 calculations. This choice is justified by the demonstrated convergence of the quasiparticle band gaps, while the use of denser k-point meshes for the present 20-atom unit cells would incur a substantially higher computational cost and is therefore beyond the scope of the present work (for details, see Sec. X of the SM <ref type="bibr" target="#b41">[42]</ref>). The convergence of the quasiparticle bandgap with respect to the number of unoccupied bands (NBANDS), the plane-wave cutoff energy (ENCUT), and the response-function cutoff energy (EN-CUTGW) was carefully examined (for details, see Sec. X of the SM <ref type="bibr" target="#b41">[42]</ref>). Based on these convergence tests, 640 bands, a plane-wave cutoff energy of 400 eV, and a response-function cutoff energy of 300 eV were adopted, yielding quasiparticle bandgaps converged to within 0.05 eV. Carrier effective masses were calculated using the SUMO code <ref type="bibr" target="#b42">[43]</ref> via parabolic fitting near the band extrema. Optical properties were further refined by solving the Bethe-Salpeter equation (BSE) <ref type="bibr" target="#b32">[33,</ref><ref type="bibr" target="#b33">34]</ref> on top of G 0 W 0 @PBE, explicitly including electron-hole interactions. The BSE kernel was constructed using 24 occupied and 24 unoccupied bands, based on convergence tests (for details, see Sec. XI of the SM <ref type="bibr" target="#b41">[42]</ref>). Elastic and optical properties were post-processed using the VASPKIT package <ref type="bibr" target="#b43">[44]</ref>, and the ionic contribution to the dielectric constant was obtained from DFPT calculations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. RESULTS AND DISCUSSIONS:</head><p>In the present study, we conduct a comprehensive investigation of the optoelectronic properties of III-III rareearth chalcogenide perovskites ABX 3 (A = Y, La; B = Sc, Y; X = S, Se). The following sections provide an in-depth analysis of their structural stability, electronic structure, and transport characteristics, along with their optical response, excitonic behavior, and polaronic effects. These results aim to establish a fundamental understanding of these materials and offer valuable insights to guide future experimental studies. A. Structural Properties: Figure 1 illustrates the orthorhombic crystal structures of rare-earth chalcogenide perovskites ABX 3 (A = Y, La; B = Sc, Y; and X = S, Se), crystallizing in the P nma space group (No. 62). Owing to the +3 valency of both A-and B-site cations, these materials are categorized as III-III chalcogenide perovskites. The unit cell contains four formula units (20 atoms), comprising 4 A-site cations (Y or La), 4 B-site cations (Sc or Y), and 12</p><p>chalcogen anion atoms (S or Se). In this structure, the Asite cations exhibit 12-fold coordination, forming cuboctahedral environments with the surrounding chalcogen atoms. In contrast, the B-site cations are 6-fold coordinated, giving rise to corner-sharing distorted [BX 6 ] 9- octahedra. These octahedra are both tilted and distorted, leading to the characteristic orthorhombic symmetry of the P nma phase <ref type="bibr" target="#b11">[12]</ref>. In this study, we report for the first time the P nma phase of YScSe 3 , LaYS 3 , and LaYSe 3 compounds. The lattice parameters of the optimized structures are calculated using both PBE and PBEsol xc functionals and are summarized in Table <ref type="table">I</ref>. It is found that the lattice parameters of LaScSe 3 are in good agreement with the available experimental results (a = 6.77 Å, b = 7.53 Å, and c = 10.00 Å <ref type="bibr" target="#b18">[19]</ref>). Moreover, the PBE functional slightly overestimates the lattice parameters, while PBEsol slightly underestimates them, with both deviations being of comparable magnitude. This indicates that both functionals yield similar accuracy, despite exhibiting opposite systematic deviations. In addition, the octahedral distortion parameters, including the average bond length, polyhedral volume, bond angle variance, and bond-length distortion index, for the BX 6 octahedra in these chalcogenide perovskites are computed using both functionals and presented in Table <ref type="table">S1</ref> (for details, see Sec. I of the SM <ref type="bibr" target="#b41">[42]</ref>).</p><p>To assess the thermodynamic stability against decomposition, we calculated the decomposition enthalpy according to</p><formula xml:id="formula_0">ABX 3 → 1/2 A 2 X 3 + 1/2 B 2 X 3 (<label>1</label></formula><formula xml:id="formula_1">)</formula><p>for these III-III-X 3 compounds that pass the phase stability criteria (for details, see Sec. II of the SM <ref type="bibr" target="#b41">[42]</ref>). The decomposition enthalpy (∆H D ) of these compounds is evaluated using both PBE and PBEsol xc functionals and is tabulated in Table <ref type="table">I</ref>. The LaScX 3 (X = S, Se) compounds exhibit positive ∆H D values with both functionals, indicating thermodynamic stability with respect to the considered decomposition pathway. In contrast, the remaining compounds exhibit negative ∆H D values, indicating thermodynamic metastability at 0 K with respect to this decomposition pathway. The only exception is YScS 3 , which yields a positive ∆H D when using the PBEsol functional. Nevertheless, decomposition enthalpy based on a single reaction does not constitute a complete thermodynamic stability criterion, since alternative competing phases and decomposition pathways</p><p>TABLE I. Calculated lattice parameters and decomposition energies (∆H D ) of ABX3 (A = Y, La; B = Sc, Y; and X = S, Se) rare-earth chalcogenide perovskites using the PBE and PBEsol xc functional, respectively (PBEsol values in bold). Configurations Lattice parameters (Å) ∆H D a b c (meV/atom) YScS3 6.39 (6.27) 7.02 (6.97) 9.55 (9.37) -9.1 (5.0) YScSe3 6.67 (6.54) 7.35 (7.29) 10.00 (9.79) -28.9 (-6.8) LaScS3 6.59 (6.46) 7.21 (7.16) 9.65 (9.51) 26.0 (26.1) LaScSe3 6.83 (6.68) 7.58 (7.51) 10.08 (9.92) 13.5 (8.8) LaYS3 6.81 (6.70) 7.42 (7.37) 10.06 (9.88) -2.7 (-19.9) LaYSe3 7.04 (6.90) 7.78 (7.72) 10.48 (10.26) -15.2 (-25) may exist. A rigorous assessment therefore requires construction of the convex-hull phase diagram, which compares the energy of a compound against all known competing phases within the corresponding chemical space. Compounds lying on the convex hull are thermodynamically stable, whereas those with positive energy above the hull (E hull ) are metastable with respect to decomposition into a combination of lower-energy phases.</p><p>To directly address this limitation, we constructed the convex-hull phase diagrams for each A-B-X (A = Y, La; B = Sc, Y; and X = S, Se) chemical space by incorporating all relevant competing binary and ternary phases at the same DFT level. The calculated E hull values are summarized in Table <ref type="table">S3</ref>, while the corresponding convex-hull diagrams are presented in Figure <ref type="figure">S1</ref> (for details, see Sec. III of the SM <ref type="bibr" target="#b41">[42]</ref>). The results show that LaScX 3 (X = S, Se) lie on the convex hull with E hull = 0, confirming their thermodynamic stability at 0 K. The remaining compounds possess finite positive E hull values (0.009-0.029 eV), indicating metastability with respect to competing equilibrium phases. It is important to note, however, that a positive energy above the hull does not necessarily preclude experimental realization. Numerous experimentally synthesized materials are known to exist as metastable phases because finite-temperature vibrational and configurational entropy, kinetic barriers, and non-equilibrium synthesis routes can effectively stabilize compounds that are slightly above the convex hull <ref type="bibr" target="#b44">[45]</ref>. Consequently, the above-hull compounds identified here should be regarded as metastable candidates that may still be experimentally accessible under suitable synthesis conditions rather than as equilibrium-stable phases. However, thermodynamic stability alone is insufficient to ensure stability of these materials; therefore, dynamical and mechanical stability are also examined.</p><p>The dynamical stability of the investigated perovskites serves as a crucial indicator of their structural integrity and suitability for functional applications. It is evaluated through phonon dispersion relations, which describe the vibrational behavior of atoms in the crystal lattice. For a dynamically stable system at 0 K, all phonon frequencies are required to be real and positive across the entire Brillouin zone; the occurrence of imaginary (negative) frequencies signifies possible structural instabilities. To assess this, self-consistent phonon calculations are performed within the DFPT framework using the structures relaxed with both PBE and PBEsol xc functionals. The computed phonon dispersion curves of ABX 3 (A = Y, La; B = Sc, Y; and X = S, Se), obtained using structures relaxed with the PBE and PBEsol xc functionals, are presented in Figs. <ref type="figure" target="#fig_1">S2</ref> and <ref type="figure" target="#fig_1">2</ref>, respectively. Within the PBE functional, YScS 3 , LaScS 3 , LaYS 3 , and LaYSe 3 are dynamically stable at 0 K, as confirmed by the absence of imaginary phonon modes, whereas (Y, La)ScSe 3 shows dynamical instabilities, as indicated by the presence of imaginary modes. Specifically, YScSe 3 shows a maximum imaginary frequency of -0.333 THz at the Γ point, while LaScSe 3 exhibits imaginary frequencies of approximately -0.189 THz along the Γ-X direction and -0.349 THz at the U point. The relatively small magnitudes of these imaginary frequencies suggest the presence of soft lattice instabilities rather than pronounced structural instabilities. This interpretation is further supported by the experimental realization of LaScSe 3 , indicating that these weak instabilities are unlikely to preclude its synthesis and may instead reflect the sensitivity of the lattice dynamics to the equilibrium structural parameters <ref type="bibr" target="#b18">[19]</ref>. In contrast, phonon calculations based on the PBEsol-relaxed structures show no imaginary phonon modes throughout the Brillouin zone for any of the investigated compounds, indicating dynamical stability within the PBEsol framework. Together with the PBE results, these findings suggest that the lattice dynamics of some compounds are sensitive to small variations in the equilibrium lattice parameters and are therefore dependent on the choice of exchange-correlation functional.</p><p>Beyond the thermodynamic and dynamical stability discussed above, the mechanical stability and corresponding elastic properties of ABX 3 (A = Y, La; B = Sc, Y; X = S, Se) chalcogenide perovskites are further examined. It is well known that the suitability of a material for practical device applications is strongly influenced by its elastic behavior. The second-order elastic constants (C ij ) are calculated using the energy-strain method <ref type="bibr" target="#b45">[46]</ref>, from which the relevant elastic properties are derived (for details, see Sec. V of the SM <ref type="bibr" target="#b41">[42]</ref>). Owing to the orthorhombic symmetry of all considered compounds, nine independent elastic constants (C 11 , C 22 , C 33 , C 44 , C 55 , C 66 , C 12 , C 13 , and C 23 ) are sufficient to describe their mechanical stability and elastic behavior. The calculated C ij values, listed in Table <ref type="table">S4</ref>, satisfy the Born stability criteria <ref type="bibr" target="#b45">[46]</ref>, thereby confirming the excellent mechanical stability of these orthorhombic chalcogenide perovskites.</p><p>Further, the bulk modulus (B), shear modulus (G), Young's modulus (Y ), and Poisson's ratio (ν) are evaluated within the Voigt-Reuss-Hill approximation <ref type="bibr" target="#b46">[47,</ref><ref type="bibr" target="#b47">48]</ref> and are summarized in Table <ref type="table">S4</ref>. The relatively larger values of B compared to G indicate that the investigated chalcogenide perovskites exhibit greater resistance to volume change than to shear deformation. The comparatively lower values of G and Y further suggest that these materials possess a certain degree of mechanical flexibility. To assess the ductile or brittle nature of these systems, we employ Pugh's criterion based on the B/G ratio <ref type="bibr" target="#b48">[49]</ref>, along with Poisson's ratio (ν). The obtained values of B/G &gt; 1.75 and ν &gt; 0.26 consistently indicate that all the compounds exhibit ductile behavior. These characteristics suggest that the investigated materials are mechanically robust yet sufficiently flexible for potential device applications.</p><p>Overall, the synthesizability of these III-III chalcogenide perovskites is established by the combined assessment of thermodynamic, dynamical, and mechanical stability. Notably, LaScX 3 (X = S, Se), which has already been experimentally synthesized <ref type="bibr" target="#b17">[18,</ref><ref type="bibr" target="#b18">19]</ref>, is found to be thermodynamically stable, consistent with its positive decomposition enthalpy. In contrast, the remaining compounds are metastable with respect to decomposition. Nevertheless, the absence of imaginary phonon modes (within PBEsol) and the satisfaction of mechanical stability criteria confirm their dynamical and mechanical stability. These results suggest that, despite thermodynamic metastability, the compounds are likely experimentally accessible through kinetic stabilization or finitetemperature effects, with LaScX 3 serving as a benchmark system validating the reliability of the present approach. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Electronic properties:</head><p>Following the assessment of structural stability, the electronic properties, such as the band structure and par-tial density of states (PDOS) of rare-earth chalcogenide perovskites ABX 3 (A = Y, La; B = Sc, Y; and X = S, Se) are evaluated to gain fundamental insight into their suitability for optoelectronic applications. At first, the electronic band structures of these chalcogenide perovskites are calculated using the semilocal GGA-PBE xc functional, both with and without inclusion of spin-orbit coupling (SOC). The GGA-PBE xc functional is found to underestimate the band gaps due to the self-interaction error of electrons (see Table <ref type="table">II</ref>). Furthermore, SOC has a negligible effect on the band gap (see Table <ref type="table">S5</ref> of the SM <ref type="bibr" target="#b41">[42]</ref>), as expected for chalcogenide perovskites <ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref>.</p><p>Subsequently, the band gaps are computed more accurately using the hybrid HSE06 xc functional and the many-body perturbation theory (MBPT)-based GW approach, specifically at the G 0 W 0 @PBE level. Figure <ref type="figure" target="#fig_2">3</ref> presents the band structures of these compounds, calculated using the hybrid HSE06 functional. Our calculated electronic band structures explicitly demonstrate that YScX 3 (X = S, Se) are indirect band gap materials. In these compounds, the valence band maximum (VBM) is located at the Γ-point, whereas the conduction band minimum (CBM) occurs at the S-point in the Brillouin zone [see Fig. <ref type="figure" target="#fig_2">3(a)-(b)</ref>]. This spatial separation of the band extrema confirms the indirect nature of the fundamental band gap, implying that optical transitions near the band edge are phonon-assisted. In contrast, all other compounds investigated in this study exhibit direct band gaps. For these systems, both the VBM and CBM are located at the same high-symmetry k-point, specifically at the Γ-point [see Fig. <ref type="figure" target="#fig_2">3(c)-(f)</ref>]. As a result, the fundamental electronic transition is momentum-conserving, leading to a stronger optical absorption onset compared to the indirect-gap counterparts.</p><p>The band gaps of these compounds, as calculated using the HSE06 functional and the G 0 W 0 @PBE approach, are summarized in Table <ref type="table">II</ref>. The HSE06 band gaps of these chalcogenide perovskites are found to lie in the range of 2.17-3.45 eV, whereas the G 0 W 0 @PBE band gaps are systematically larger, spanning 2.75-4.47 eV. This trend reflects the well-known tendency of manybody perturbation theory within the GW approximation to yield improved quasiparticle energies by explicitly accounting for electron-electron interactions, thereby correcting the band gap underestimation inherent to standard and hybrid density functional approaches. Importantly, the G 0 W 0 @PBE results obtained in this work are in good agreement with previously reported theoretical studies <ref type="bibr" target="#b18">[19,</ref><ref type="bibr" target="#b21">22]</ref>, confirming the reliability of the present computational framework. The absence of exact quantitative agreement with previous reports can be attributed to the sensitivity of G 0 W 0 calculations to the choice of starting functional, convergence parameters, and structural inputs. For the benchmark compound LaScS 3 , the experimentally measured band gap (2.62 eV) is closer to the HSE06 value (2.80 eV) than to the G 0 W 0 @PBE value (3.72 eV) <ref type="bibr" target="#b17">[18]</ref>. This discrepancy is likely attributable to the inherent starting-point dependence of the single-shot G 0 W 0 approximation, the absence of self-consistency in the GW calculations, residual convergence limitations, and the neglect of finite-temperature and excitonic effects. Although G 0 W 0 calculations based on an HSE06 starting point or self-consistent GW schemes could further reduce the starting-point dependence and improve the quantitative accuracy of the quasiparticle energies, such calculations are computationally prohibitive for the large unit cells considered here. Nevertheless, the good agreement with previous theoretical studies supports the reliability of the present G 0 W 0 results. Overall, the calculated band gaps place these chalcogenide perovskites in the visible-to-ultraviolet wide-band-gap regime, highlighting their potential for optoelectronic applications. Direct-gap compounds favor efficient light absorption and emission (e.g., LEDs), whereas indirect-gap systems are advantageous for longer carrier lifetime-based applications such as photodetectors and photocatalysis.</p><p>To gain deeper insight into the electronic structure, the density of states (DOS) is calculated using the HSE06 xc functional, as shown in Fig. <ref type="figure" target="#fig_2">S3</ref> of the SM <ref type="bibr" target="#b41">[42]</ref>. For YScS 3 , the VBM is predominantly derived from S-3p orbitals, whereas the CBM is mainly contributed by Sc-3d orbitals. As expected, the CBM also exhibits hybridization between Y-4d and Sc-3d states. Similarly, in YScSe 3 , the VBM is primarily composed of Se-4p orbitals, while the CBM shows a noticeable downward shift due to enhanced hybridization between Se-4p and transition-metal d states, leading to the observed reduction in the band gap. In contrast, for LaScX 3 (X = S, Se), the CBM arises from hybridized La-5d and Sc-3d states. The direct-toindirect band gap transition primarily arises from the interplay between d-d orbital hybridization and structural distortions. In YScX 3 , stronger Y-4d-Sc-3d coupling and larger octahedral tilting stabilize the CBM at the S-point, resulting in an indirect gap. In contrast, weaker La-5d-Sc-3d coupling and reduced tilting in LaScX 3 shift the conduction band upward at S-point and favor a minimum at Γ-point, leading to a direct band gap <ref type="bibr" target="#b17">[18]</ref>. Furthermore, upon replacing Sc with Y (LaScX 3 → LaYX 3 ), the direct band gap nature is preserved, while the band gap increases due to the higher energy and modified dispersion of Y-4d states relative to Sc-3d states, resulting in an upward shift of the CBM in LaYX 3 .</p><p>To further substantiate the above interpretation, we have included orbital-projected band structures near the VBM and CBM in Fig. <ref type="figure" target="#fig_3">S4</ref> of the SM <ref type="bibr" target="#b41">[42]</ref>. These results explicitly identify the orbital character of the bandedge states and confirm that the evolution from a direct to an indirect band gap is governed by changes in the hybridization between Y-4d/La-5d and Sc-3d orbitals, together with the accompanying structural distortions. The orbital-projected bands provide direct microscopic evidence for the orbital interactions responsible for the shift of the CBM between the Γ and S points, thereby supporting the mechanism proposed from the DOS analysis. To gain insight into charge-carrier transport, we further calculate the effective masses of electrons (m * e ) and holes (m * h ) for all compounds by fitting the E -k dispersion obtained from PBE band structures using the formula, m * = ℏ 2 ∂ 2 E(k)/∂k 2 -1 , and the results are summarized in Table <ref type="table">II</ref>. For the direct band gap compounds, the effective masses are evaluated as the harmonic mean along the Γ-X, Γ-Y, and Γ-Z directions, with results listed in Table <ref type="table">S6</ref> of the SM <ref type="bibr" target="#b41">[42]</ref>. In contrast, for YScX 3 (X = S, Se), the electron effective masses are obtained by averaging along the S-X and S-Y directions, consistent with the location of the CBM. From Table <ref type="table">II</ref>, it is evident that m * e is significantly larger than m * h in these compounds, indicating that holes are expected to possess higher mobility than electrons. This suggests that these materials are more favorable for p-type transport.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Optical Properties:</head><p>Beyond the electronic structure, the optical response provides key insight into the suitability of these materials for optoelectronic applications. In this work, the optical response is accurately described by capturing many-body effects through the Bethe-Salpeter equation (BSE) built upon G 0 W 0 @PBE quasiparticle energies, ensuring a reliable treatment of excitonic contributions to the optical spectra. In this framework, GW calculations determine the fundamental bandgap, which is directly comparable to photoelectron (PES) and inverse photoelectron spectroscopy (IPES) <ref type="bibr" target="#b30">[31,</ref><ref type="bibr" target="#b31">32]</ref>, whereas BSE yields the optical bandgap consistent with experimental absorption measurements <ref type="bibr" target="#b32">[33,</ref><ref type="bibr" target="#b33">34]</ref>.</p><p>To evaluate the optical response of ABX 3 (A = Y, La; B = Sc, Y; and X = S, Se), we focus on the frequencydependent complex dielectric function, ε(ω) = [Re(ε)] + i[Im(ε)], which governs the interaction of electromagnetic radiation with the material. The imaginary part,</p><p>TABLE II. Bandgap (in eV) of ABX3 (A = Y, La; B = Sc, Y; and X = S, Se) rare-earth chalcogenide perovskites calculated using different methods as well as computed average effective mass of electron (m * e ) and hole (m * h ). Here, i, d, t, and e represent indirect, direct, theoretical, and experimental bandgaps, respectively. All values of the effective mass are in terms of free-electron mass (m0). Configurations PBE HSE06 G0W0@PBE Previous Work m * e m * h YScS3 1.76 i (1.88 d ) 2.75 i (2.96 d ) 3.49 i (3.75 d ) 3.16t (G0W0) [22] 1.545 0.494 YScSe3 1.30 i (1.43 d ) 2.17 i (2.39 d ) 2.75 i (3.00 d ) 1.622 0.375 LaScS3 1.69 2.80 3.72 2.62e [18] 0.916 0.457 LaScSe3 1.27 2.27 2.94 2.96t (G0W0) [19] 0.851 0.350 LaYS3 2.25 3.45 4.47 1.255 0.542 LaYSe3 1.79 2.87 3.70 1.180 0.419</p><p>[Im(ε)], describes interband optical absorption arising from electronic transitions between occupied and unoccupied states and is directly related to the absorption spectrum and optical bandgap. In contrast, the real part, [Re(ε)], represents the dispersive response and determines key optical properties such as dielectric screening, refractive index, and polarization behavior. Notably, the static limit ε ∞ provides insight into the screening strength, which influences excitonic effects and chargecarrier interactions. Together, these components offer a comprehensive description of light-matter interaction and are essential for assessing the suitability of these materials for optoelectronic applications. The imaginary part of the dielectric function, [Im(ε)], for ABX 3 (A = Y, La; B = Sc, Y; and X = S, Se) perovskite compounds exhibits broad spectral coverage from the visible to the ultraviolet region, as shown in Figure <ref type="figure" target="#fig_3">4</ref>. This response reflects the interplay of band structure, momentum selection rules, and electron-hole interactions, where direct gaps enable sharp absorption edges, indirect gaps lead to phonon-assisted onset, and excitonic effects renormalize the optical gap and enhance near-edge spectral features. The oscillator strength spectra further identify the optically allowed excitonic transitions. Strong oscillator strength indicates a large tran-sition dipole moment and efficient light-matter coupling, giving rise to intense absorption features, whereas weak or nearly vanishing oscillator strength corresponds to optically inactive (dark) excitonic states that contribute negligibly to the optical response. The energy eigenvalue of the first optically active (bright) exciton, which defines the optical band gap (E o ), spans 2.77-3.96 eV across the series, highlighting the substantial influence of excitonic effects. Since the lowest excitonic state is optically active for all compounds investigated in this work, its eigenvalue directly corresponds to the optical absorption onset. Notably, for LaScS 3 , the experimentally measured optical gap is 2.62 eV <ref type="bibr" target="#b17">[18]</ref>, whereas the present BSE optical gap value is 3.40 eV. This discrepancy can be attributed to the idealized nature of the calculations, which neglect temperature effects, carrier-phonon renormalization, and defect-induced band tailing that typically reduce the measured absorption onset. Overall, the strong and compositionally tunable optical absorption highlights the potential of these materials for optoelectronic applications, including photodetectors, lightemitting diodes, and laser devices.</p><p>In addition to the optical spectra, the electronic dielectric constant (ε ∞ ), defined as the zero-frequency limit of the real part of the dielectric function, is evaluated as a key descriptor of the optoelectronic response. This quantity governs the screening of Coulomb interactions, where larger ε ∞ values reduce electron-hole attraction and suppress carrier recombination, thereby, enhancing device performance <ref type="bibr" target="#b49">[50]</ref>. The calculated ε ∞ values for ABX 3 (A = Y, La; B = Sc, Y; and X = S, Se), obtained within the BSE framework, span the range of 2.26-5.88, as summarized in Table <ref type="table">S13</ref> of the SM <ref type="bibr" target="#b41">[42]</ref>. These dielectric constants also serve as essential input parameters for evaluating excitonic and polaronic properties, as discussed in the following sections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Excitonic Properties:</head><p>In addition to the aforementioned electronic and optical properties, excitonic properties such as, exciton binding energy (E B ), excitonic temperature (T exc ), exciton radius (r exc ), and the probability of the wavefunction for the electron-hole (e-h) pair at zero separation (|ϕ n (0)| 2 ), play a crucial role in determining the performance of optoelectronic devices. An exciton is a Coulomb-bound e -h pair formed upon optical excitation, which renormalizes the optical gap and governs near-edge absorption features. The exciton binding energy (E B ) quantifies the energy required to dissociate the exciton into free charge carriers, i.e., an electron in the conduction band and a hole in the valence band. A lower E B facilitates efficient charge separation at or near room temperature, thereby promoting enhanced photoelectric conversion efficiency, particularly in photovoltaic applications. In contrast, a higher E B implies stronger Coulomb interaction between electrons and holes, leading to more stable and tightly bound excitons. While this can hinder efficient charge separation and reduce photocurrent generation in photovoltaic devices, it is advantageous for applications that rely on strong radiative recombination, such as lightemitting diodes and laser devices, where enhanced excitonic stability can improve emission efficiency.</p><p>The exciton binding energy (E B ) is obtained from firstprinciples Bethe-Salpeter equation (BSE) calculations as,</p><formula xml:id="formula_2">E B = E dir g -E o , where E dir g</formula><p>is the direct quasiparticle band gap from G 0 W 0 @PBE and E o denotes the energy eigenvalue of the first optically active (bright) excitonic state computed within BSE@G 0 W 0 @PBE <ref type="bibr" target="#b50">[51,</ref><ref type="bibr" target="#b51">52]</ref>. As summarized in Table <ref type="table">III</ref>, the calculated E B values for these chalcogenide perovskites decrease from Sto Se-containing counterparts and lie in the range of 0.148-0.517 eV. Such moderately large binding energies indicate pronounced excitonic effects arising from reduced dielectric screening and enhanced electron-hole interactions, which are favorable for efficient radiative recombination in light-emitting and photodetection applications. Notably, LaYX 3 exhibits a clear deviation from the overall trend, showing comparatively enhanced excitonic binding. This behavior can be attributed to its reduced electronic dielectric screening (see Figure <ref type="figure" target="#fig_3">4</ref>), which strengthens the Coulomb interaction between electrons and holes. While the absolute values of E B may be somewhat overestimated due to the use of G 0 W 0 @PBE and the neglect of temperature-and phonon-induced screening effects, the overall trends and qualitative description of excitonic behavior remain robust. In particular, the systematic variation across the series and the identification of intermediate excitonic character are expected to be reliable, as they are primarily governed by dielectric screening and carrier effective masses captured within the present framework.</p><p>It is worth noting that when E B significantly exceeds the longitudinal optical (LO) phonon energy (ℏω LO ), dielectric screening is dominated by the electronic contribution, while the ionic component becomes negligible. Consequently, E B remains largely unaffected by lattice polarization effects <ref type="bibr" target="#b52">[53]</ref>. As shown in Tables III and V, the condition E B ≫ ℏω LO is satisfied for the present compounds, justifying the neglect of ionic screening. This behavior is further corroborated by estimates based on the hydrogenic Wannier-Mott model (for details, see Sec.</p><p>XII of the SM <ref type="bibr" target="#b41">[42]</ref>). From Table <ref type="table">S13</ref>, it is observed that the upper bounds (E Bu = 0.102-1.009 eV) for these compounds closely match the E B values obtained using the BSE@G 0 W 0 @PBE method, whereas the lower bounds (E Bl ) are significantly smaller. This indicates that the ionic contribution to the dielectric constant is negligible, leading to ε eff → ε ∞ . Therefore, at high frequencies, dielectric screening is governed primarily by electronic effects.</p><p>TABLE III. Calculated exciton parameters of ABX3 (A = Y, La; B = Sc, Y; and X = S, Se) rare-earth chalcogenide perovskites. Configurations E dir g Eo EB Texc rexc |ϕn(0)| 2 (eV) (eV) (eV) (K) (nm) (10 27 m -3 ) YScS3 3.747 3.424 0.323 3745 0.69 0.97 YScSe3 3.005 2.772 0.233 2701 1.20 0.19 LaScS3 3.721 3.397 0.324 3757 0.58 1.61 LaScSe3 2.941 2.793 0.148 1716 0.86 0.50 LaYS3 4.472 3.955 0.517 5994 0.32 10.14 LaYSe3 3.701 3.286 0.415 4812 0.43 3.87</p><p>Further, the calculation of E B within the standard first-principles BSE framework includes only electronic screening in the e -h interaction kernel and neglects lattice (phonon) contributions. Such a static treatment can be inadequate for polar materials, where carrier-phonon coupling plays a crucial role in screening Coulomb interactions. To address this limitation, we adopt the approach of Filip et al. <ref type="bibr" target="#b53">[54,</ref><ref type="bibr" target="#b54">55]</ref>, who introduced a correction of phonon-screening under the assumption of isotropic and parabolic band dispersion. The correction to the exciton binding energy is given by</p><formula xml:id="formula_3">∆E ph B = -2ω LO 1 - ε ∞ ε s 1 + ω LO /E B + 3 1 + 1 + ω LO /E B 3 ,<label>(2)</label></formula><p>where ω LO denotes the characteristic longitudinal optical phonon frequency, and ε ∞ and ε s represent the electronic and static dielectric constants, respectively. The effective ω LO is evaluated using the thermal "B" approach developed by Hellwarth et al. <ref type="bibr" target="#b35">[36]</ref>, which accounts for the spectral contributions of multiple phonon branches through an appropriate averaging scheme (for details, see Sec. XIII of the SM <ref type="bibr" target="#b41">[42]</ref>). Table <ref type="table">IV</ref> shows that phonon screening reduces E B by 3.20-9.26%, indicating that the overall reduction is not substantial in these rare-earth chalcogenide perovskites. After incorporating the phonon-screening correction, the renormalized exciton binding energy (E ′ B ) spans 0.134-0.498 eV. This behavior suggests that the electronic contribution to dielectric screening dominates over the ionic (phononmediated) component in these systems.</p><p>TABLE IV. Calculated exciton binding energy (EB), phonon screening corrections (∆E ph B ), percentage of phonon screening contribution to the reduction of exciton binding energy (%), and corrected values of exciton binding energy (E ′ B ) for ABX3 (A = Y, La; B = Sc, Y; and X = S, Se) rare-earth chalcogenide perovskites. Configurations EB ∆E ph B Reduction of EB E ′ B (eV) (meV) (%) (eV) YScS3 0.323 -19.20 5.94 0.304 YScSe3 0.233 -13.55 5.82 0.219 LaScS3 0.324 -19.41 5.99 0.305 LaScSe3 0.148 -13.70 9.26 0.134 LaYS3 0.517 -18.67 3.61 0.498 LaYSe3 0.415 -13.29 3.20 0.402</p><p>Next, several additional excitonic parameters, including the excitonic temperature (T exc ), exciton radius (r exc ), and the probability of the wavefunction for the e -h pair at zero separation (|ϕ n (0)| 2 ), are evaluated and summarized in Table <ref type="table">III</ref>. The excitonic temperature (T exc ) serves as a useful metric to quantify the thermal stability of bound e-h pairs in semiconductors and insulators. It is defined by relating the exciton binding energy (E B ) to thermal energy via the Boltzmann constant (k B ) as T exc = E B /k B . Physically, T exc represents the characteristic temperature above which excitons are thermally ionized into free carriers. When T exc significantly exceeds room temperature (∼ 300 K), excitons are expected to remain stable under ambient conditions, giving rise to pronounced excitonic features in optical absorption and emission spectra. Conversely, if T exc is comparable to or lower than room temperature, thermal dissociation becomes efficient, and the optoelectronic response is dominated by free carriers. In our study, the rare-earth chalcogenide perovskite compounds exhibit high excitonic temperatures (1716-5994 K), reflecting strongly bound excitons that remain thermally stable far above room temperature and yield pronounced excitonic effects in their optical response. Such robust excitonic stability is advantageous for optoelectronic applications, particularly in light-emitting devices and photodetectors, where strong light-matter interaction and efficient exciton generation are desirable.</p><p>The exciton radius (r exc ) is evaluated within the hydrogenic Wannier-Mott model as <ref type="bibr" target="#b55">[56,</ref><ref type="bibr" target="#b56">57]</ref>:</p><formula xml:id="formula_4">r exc = m 0 µ * dir ε eff n 2 r Ry ,<label>(3)</label></formula><p>where µ * dir is the reduced effective mass at the direct band edge, ε eff denotes the effective dielectric constant, n is the exciton energy level, and r Ry is the Bohr radius (0.0529 nm). In this work, the high-frequency dielectric constant (ε ∞ ) is employed as the effective dielectric screening (ε eff ), and n = 1 is considered, corresponding to the ground-state exciton and yielding the minimum exciton radius. The exciton radius serves as a key descriptor of the spatial extent of the e -h pair, distinguishing between localized and delocalized excitonic states. In our study, the obtained r exc values (∼ 3.2-12 Å) indicate moderately to strongly bound excitons with spatial extents ranging from near unit-cell localization to a few lattice constants, suggesting an intermediate character approaching the Wannier-Frenkel crossover regime. Such excitons promote strong light-matter interaction, highlighting the potential of these materials for optoelectronic applications. Within this framework, LaYX 3 stands out by exhibiting a comparatively smaller exciton radius, reflecting enhanced localization of the electronhole pair. This behavior originates from its relatively weak electronic screening, which strengthens Coulomb interactions and stabilizes more tightly bound excitonic states.</p><p>To qualitatively assess the radiative recombination propensity of excitons, we evaluate the probability density of the e -h pair at zero separation, |ϕ n (0)| 2 , which is given by <ref type="bibr" target="#b55">[56,</ref><ref type="bibr" target="#b56">57]</ref>:</p><formula xml:id="formula_5">|ϕ n (0)| 2 = 1 π(r exc ) 3 n 3 . (<label>4</label></formula><formula xml:id="formula_6">)</formula><p>Within the framework of radiative recombination, the radiative decay rate is proportional to the e -h overlap, i.e., τ -1 rad ∝ |ϕ n (0)| 2 . Consequently, larger values of |ϕ n (0)| 2 indicate stronger e -h overlap and a greater propensity for radiative transitions. In the present case, LaYX 3 exhibits an enhanced |ϕ n (0)| 2 , consistent with its reduced exciton radius, confirming stronger wavefunction overlap and potentially larger oscillator strength. Since neither radiative nor non-radiative exciton lifetimes are explicitly calculated in this work, |ϕ n (0)| 2 is employed only as a qualitative descriptor of the radiative recombination tendency rather than as a direct measure of the exciton lifetime (τ exc ). These results indicate pronounced light-matter interaction in the studied systems, which is beneficial for optoelectronic and light-emitting applications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Polaronic Properties:</head><p>Understanding the fundamental limits of carrier mobility in these chalcogenide perovskites requires a rigorous treatment of carrier-phonon interactions within a first-principles framework <ref type="bibr" target="#b57">[58,</ref><ref type="bibr" target="#b58">59]</ref>. In polar semiconductors, transport at ambient conditions is primarily limited by scattering with longitudinal optical phonons, arising from the macroscopic electric fields associated with lattice polarization <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b51">52]</ref>. This interaction leads to the formation of polarons, wherein charge carriers become dressed by lattice distortions, thereby altering their effective mass and transport dynamics. As a consequence, mobility cannot be accurately described within a simple band-like picture of free carriers.</p><p>The interaction between charge carriers and polar optical phonons can be effectively described within the framework of the Fröhlich Hamiltonian, which is valid in the low carrier-density regime <ref type="bibr" target="#b34">[35]</ref>. The strength of this interaction is quantified by the dimensionless Fröhlich coupling constant, α, which incorporates the effects of dielectric screening, carrier effective mass, and the longitudinal optical phonon frequency. It is defined as <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b59">60]</ref>:</p><formula xml:id="formula_7">α = 1 4πε 0 1 2 1 ε ∞ - 1 ε s e 2 ℏω LO 2m * ω LO ℏ 1/2 (<label>5</label></formula><formula xml:id="formula_8">)</formula><p>The calculated carrier-phonon coupling constants (α) for the investigated compounds are summarized in Table <ref type="table">V</ref>. In general, α &gt; 10 signifies strong carrier-phonon coupling, whereas α ≪ 1 corresponds to the weak-coupling regime <ref type="bibr" target="#b57">[58]</ref>. Our results place these materials in the intermediate-to-strong coupling regime, with α values ranging from 1.92 to 10.72. Furthermore, the carrierphonon interaction is found to be stronger for electrons than for holes, with this trend being particularly pronounced in LaYX 3 (X = S, Se), suggesting more significant polaronic renormalization of electron transport. It should be emphasized that the present analysis is based on the Fröhlich formalism, which provides a physically meaningful description of the long-range interaction between charge carriers and longitudinal optical phonons in polar materials using first-principles quantities, including the dielectric constants, effective carrier masses, and longitudinal optical phonon frequencies. Consequently, the calculated Fröhlich coupling constants provide useful estimates of the strength of the long-range polar electron-phonon interaction and the associated largepolaron characteristics. However, this approach does not explicitly evaluate the momentum-and mode-resolved electron-phonon coupling matrix elements or identify the individual phonon modes and electronic states contributing to the coupling. A comprehensive microscopic treatment based on first-principles electron-phonon coupling calculations using density-functional perturbation theory together with Wannier interpolation would provide such information but is beyond the scope of the present work <ref type="bibr" target="#b60">[61]</ref>. Nevertheless, the Fröhlich model remains a widely adopted framework for describing large-polaron behavior in polar semiconductors and is appropriate for the objectives of the present study.</p><p>Polaron formation refers to the interaction of a charge carrier, either an electron or a hole, with the surrounding lattice, leading to a local structural distortion. This coupling lowers the quasiparticle (QP) energies, so that both electron and hole states are stabilized during polaron formation. The polaron energy, E p , can be estimated as follows <ref type="bibr" target="#b14">[15,</ref><ref type="bibr" target="#b55">56]</ref>:</p><formula xml:id="formula_9">E p = (-α -0.0123α 2 )ℏω LO . (<label>6</label></formula><formula xml:id="formula_10">)</formula><p>The QP gap associated with the polaronic states, obtained from the electron and hole polaron energies (Table V), is compared with the exciton binding energies, E B , listed in Table <ref type="table">III</ref>. This comparison reveals that, for most of the examined chalcogenide perovskites, the energy of the charge-separated polaronic states is lower than that of the bound exciton states, indicating that the bound excitons are energetically more stable. However, in the case of La(Sc, Y)Se 3 , the charge-separated polaronic states become more favorable than the bound exciton states.</p><p>Feynman introduced a powerful variational approach to address the Fröhlich Hamiltonian, which describes the interaction between an electron (or hole) and a continuum of independent, harmonically oscillating phonon modes within a quantum field theoretical framework <ref type="bibr" target="#b61">[62]</ref>. As the electron (or hole) moves through the lattice, it interacts with the polarization field it induces, which evolves and decays over time. Within this formalism, and in the weak-coupling limit (small α), the polaron effective mass, m p , can be expressed as <ref type="bibr" target="#b16">[17,</ref><ref type="bibr" target="#b61">62]</ref>:</p><formula xml:id="formula_11">m p = m * 1 + α 6 + α 2 40 + ... .<label>(7)</label></formula><p>As shown in Table <ref type="table">V</ref>, carrier-phonon coupling leads to a substantial enhancement of the effective mass, with m p increasing by approximately 41-466%. This significant renormalization indicates the presence of intermediate to strong carrier-lattice interactions in the examined systems.</p><p>To further assess the impact of the enhanced polaron effective mass, the polaron mobility is estimated using the Hellwarth polaron model as <ref type="bibr" target="#b35">[36,</ref><ref type="bibr" target="#b56">57]</ref>:</p><formula xml:id="formula_12">µ p = (3 √ πe) 2πcω LO m * α sinh(β/2) β 5/2 w 3 v 3 1 K(a, b) (<label>8</label></formula><formula xml:id="formula_13">)</formula><p>where e is the electronic charge, β = hcω LO /k B T , w and v are temperature-dependent variational parameters, and K(a, b) is a function of β, w, and v (for details, see Sec. XIII of the SM <ref type="bibr" target="#b41">[42]</ref>). The polaron mobility quantifies the ease with which a polaron propagates through the lattice and is governed by both its effective mass and the strength of carrier-lattice interactions. As the effective mass increases due to strong carrier-phonon coupling, the mobility correspondingly decreases, leading to slower carrier transport. This behavior is evident in the present systems (Table <ref type="table">V</ref>), where hole polarons exhibit significantly higher mobilities (2.12-39.94 cm 2 V -1 s -1 ) compared to electron polarons (0.21-3.87 cm 2 V -1 s -1 ). This indicates stronger electron-phonon coupling and/or larger effective masses for electrons, leading to more localized electron polarons and consequently reduced mobility. In contrast, the relatively lighter and less strongly coupled hole polarons enable more efficient charge transport. Despite the relatively low electron mobility, the favorable hole transport, combined with the structural stability and non-toxicity of these materials, underscores their potential for optoelectronic applications, particularly in devices where hole conduction plays a dominant role.</p><p>TABLE V. Calculated polaron parameters of ABX3 (A = Y, La; B = Sc, Y; and X = S, Se) rare-earth chalcogenide perovskites. Configurations ωLO (THz) α Ep (meV) mp/m * µp (cm 2 V -1 s -1 ) e h e h e h e h YScS3 6.50 4.39 2.48 124.55 68.79 2.21 1.57 2.18 19.04 YScSe3 4.86 3.99 1.92 84.25 39.56 2.06 1.41 2.94 39.94 LaScS3 5.92 5.56 3.93 145.63 101.01 2.70 2.04 2.27 9.67 LaScSe3 4.47 4.94 3.17 97.00 60.97 2.43 1.78 3.87 21.31 LaYS3 5.32 10.72 7.04 267.32 168.53 5.66 3.41 0.21 2.12 LaYSe3 3.87 10.58 6.30 191.63 108.79 5.56 3.04 0.34 5.05</p><p>A broader perspective can be obtained by comparing the present III-III chalcogenide perovskites with the more extensively studied II-IV systems ABX 3 (A = Ca, Sr, Ba; B = Ti, Zr, Sn, Hf; and X = S, Se). The latter typically exhibit smaller band gaps (∼ 1.0-2.5 eV), larger dielectric screening, and correspondingly weaker excitonic effects, resulting in more delocalized Wanniertype excitons and longer carrier diffusion lengths that are advantageous for photovoltaic applications <ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref><ref type="bibr" target="#b14">[15]</ref><ref type="bibr" target="#b15">[16]</ref><ref type="bibr" target="#b16">[17]</ref>. In addition, relatively weaker carrier-phonon coupling in these systems leads to lighter polarons and higher carrier mobility. In contrast, the III-III compounds investigated here display wider band gaps (2.75-4.47 eV), reduced dielectric screening, and moderately large exciton binding energies, giving rise to more localized excitons with enhanced electron-hole overlap. This enhanced localization is further accompanied by stronger carrier-phonon coupling, leading to heavier polaronic quasiparticles and reduced carrier mobility. While such polaronic effects may limit efficient charge transport and charge separation, they can simultaneously stabilize excitonic states and suppress non-radiative recombination. Consequently, the combination of strong excitonic binding and polaronic localization results in pronounced light-matter interaction and enhanced radiative recombination, making these materials particularly promising for light-emitting and photodetection applications, albeit less favorable for photovoltaic performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. CONCLUSION:</head><p>In summary, we have systematically investigated the ground-and excited-state properties of III-III rare-earth chalcogenide perovskites ABX 3 (A = Y, La; B = Sc, Y; and X = S, Se) using state-of-the-art density functional theory, density functional perturbation theory, and many-body perturbation theory. The calculated phonon band structures and elastic constants confirm the dynamical and mechanical stability of these compounds. Our electronic structure analysis reveals quasiparticle band gaps (G 0 W 0 @PBE) in the range of 2.75-4.47 eV, accompanied by lower hole effective masses compared to electrons, indicating favorable p-type transport. The optical properties, computed within the BSE framework, exhibit a strong absorption onset spanning the visible to ultraviolet region, highlighting their potential for optoelectronic applications. Importantly, these compounds exhibit pronounced excitonic effects, hosting stable excitons as evidenced by their intermediate-to-large binding energies (0.148-0.517 eV), high excitonic temperatures, Wannier-Frenkel crossover character, and strong electron-hole wavefunction overlap, indicative of pronounced light-matter interaction and favorable radiative recombination characteristics. Fröhlich's mesoscopic analysis indicates appreciable carrier-phonon coupling in these systems, with electron-phonon interactions consistently outweighing their hole counterparts. Remarkably, bound excitonic states dominate over charge-separated polaronic configurations in nearly all compounds, with La(Sc, Y)Se 3 as an exception, while hole polarons demonstrate substantially higher mobilities (reaching up to ∼ 40 cm 2 V -1 s -1 ) than electrons. Overall, the interplay between strong excitonic effects and favorable polaronic transport, combined with excellent structural stability and lead-free composition, establishes rare-earth chalcogenide perovskites ABX 3 as promising candidates for next-generation optoelectronic technologies. These materials are particularly attractive for applications in lightemitting devices and photodetectors, and they offer a viable platform for exploring excitonic optoelectronics in environmentally benign systems.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>FIG. 1 .Figure 1</head><label>11</label><figDesc>FIG. 1. Crystal structures of rare-earth chalcogenide perovskites (a) YScX3, (b) LaScX3, and (c) LaYX3, respectively, where X = S, Se.</figDesc><graphic coords="3,54.60,585.92,243.88,90.56" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FIG. 2 .</head><label>2</label><figDesc>FIG. 2. Phonon dispersion curves of the rare-earth chalcogenide perovskites (a) YScS3, (b) YScSe3, (c) LaScS3, (d) LaScSe3, (e) LaYS3, and (f) LaYSe3, computed using the DFPT method based on PBEsol-relaxed structures.</figDesc><graphic coords="5,54.60,453.48,243.88,144.71" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>FIG. 3 .</head><label>3</label><figDesc>FIG. 3. Electronic band structures of the rare-earth chalcogenide perovskites (a) YScS3, (b) YScSe3, (c) LaScS3, (d) LaScSe3, (e) LaYS3, and (f) LaYSe3, calculated using the HSE06 xc functional. The Fermi level is set to be zero and marked by the dashed line.</figDesc><graphic coords="6,317.62,52.08,243.87,144.95" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>FIG. 4 .</head><label>4</label><figDesc>FIG. 4. Spatially averaged real [Re(ε)] and imaginary part [Im(ε)] of the electronic dielectric function for rare-earth chalcogenide perovskites (a) YScS3, (b) YScSe3, (c) LaScS3, (d) LaScSe3, (e) LaYS3, and (f) LaYSe3, respectively, calculated using the BSE@G0W0@PBE method. Peaks with cyan color represent the oscillator strength.</figDesc><graphic coords="7,54.60,363.62,243.87,131.62" type="bitmap" /></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>ACKNOWLEDGMENTS</head><p>The authors would like to acknowledge the <rs type="funder">Council of Scientific and Industrial Research (CSIR), Government of India</rs> [Grant No. <rs type="projectName">3WS</rs>(<rs type="grantNumber">007)/2023-24/EMR-II/ASPIRE</rs>] for financial support. The authors acknowledge the <rs type="institution" subtype="infrastructure">High Performance Computing Cluster (HPCC) 'Magus</rs>' at <rs type="institution">Shiv Nadar Institution of Eminence</rs> for providing computational resources that have contributed to the research results reported within this paper.</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funded-project" xml:id="_pS8yAhc">
+					<idno type="grant-number">007)/2023-24/EMR-II/ASPIRE</idno>
+					<orgName type="project" subtype="full">3WS</orgName>
+				</org>
+			</listOrg>
+
+			<listOrg type="infrastructure">
+				<org type="infrastructure">					<orgName type="extracted">High Performance Computing Cluster (HPCC) &apos;Magus</orgName>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DATA AVAILABILITY</head><p>The data that support the findings of this article are not publicly available. The data are available from the authors upon reasonable request.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct status="extracted" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Organometal Halide Perovskites as Visible-Light Sensitizers for Photovoltaic Cells</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kojima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Teshima</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shirai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Miyasaka</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/ja809598r</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Am. Chem. Soc</title>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="page">6050</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A. Kojima, K. Teshima, Y. Shirai, and T. Miyasaka, Organometal Halide Perovskites as Visible-Light Sensi- tizers for Photovoltaic Cells, J. Am. Chem. Soc. 131, 6050 (2009).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Organometal Perovskite Light Absorbers Toward a 20% Efficiency Low-Cost Solid-State Mesoscopic Solar Cell</title>
+		<author>
+			<persName><forename type="first">N.-G</forename><surname>Park</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/jz400892a</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. Lett</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">2423</biblScope>
+			<date type="published" when="2013">2013</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">N.-G. Park, Organometal Perovskite Light Absorbers To- ward a 20% Efficiency Low-Cost Solid-State Mesoscopic Solar Cell, J. Phys. Chem. Lett. 4, 2423 (2013).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Hybrid Organic-Inorganic Perovskites (HOIPs): Opportunities and Challenges</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Berry</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Buonassisi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Egger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Hodes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kronik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-L</forename><surname>Loo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Lubomirsky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">R</forename><surname>Marder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Mastai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">S</forename><surname>Miller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Mitzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Paz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Rappe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Riess</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Rybtchinski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Stafsudd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><surname>Stevanovic</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">F</forename><surname>Toney</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zitoun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kahn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Ginley</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Cahen</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/adma.201502294</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Mater</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page">5102</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">J. Berry, T. Buonassisi, D. A. Egger, G. Hodes, L. Kro- nik, Y.-L. Loo, I. Lubomirsky, S. R. Marder, Y. Mastai, J. S. Miller, D. B. Mitzi, Y. Paz, A. M. Rappe, I. Riess, B. Rybtchinski, O. Stafsudd, V. Stevanovic, M. F. Toney, D. Zitoun, A. Kahn, D. Ginley, and D. Cahen, Hybrid Organic-Inorganic Perovskites (HOIPs): Opportunities and Challenges, Adv. Mater. 27, 5102 (2015).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Hybrid Organic-Inorganic Perovskites on the Move</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">A</forename><surname>Egger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Rappe</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Kronik</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.accounts.5b00540</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acc. Chem. Res</title>
+		<imprint>
+			<biblScope unit="volume">49</biblScope>
+			<biblScope unit="page">573</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">D. A. Egger, A. M. Rappe, and L. Kronik, Hybrid Organic-Inorganic Perovskites on the Move, Acc. Chem. Res. 49, 573 (2016).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b4">
+	<monogr>
+		<ptr target="https://www.nrel.gov/pv/cell-efficiency.html" />
+		<title level="m">Best Research Cell Efficiency Chart</title>
+		<imprint>
+			<date type="published" when="2021-01">2021-01-07 (2021</date>
+		</imprint>
+		<respStmt>
+			<orgName>National Renewable Energy Laboratory (NREL)</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">National Renewable Energy Laboratory (NREL), Best Research Cell Efficiency Chart, https://www.nrel.gov/ pv/cell-efficiency.html, Accessed 2021-01-07 (2021).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Understanding the Instability of the Halide Perovskite CsPbI3 through Temperature-Dependent Structural Analysis</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">B</forename><surname>Straus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Abeykoon</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">J</forename><surname>Cava</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/adma.202001069</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Adv.Mater</title>
+		<imprint>
+			<biblScope unit="volume">32</biblScope>
+			<biblScope unit="page">2001069</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">D. B. Straus, S. Guo, A. M. Abeykoon, and R. J. Cava, Understanding the Instability of the Halide Per- ovskite CsPbI3 through Temperature-Dependent Struc- tural Analysis, Adv.Mater. 32, 2001069 (2020).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Toxicity of organometal halide perovskite solar cells</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Babayigit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ethirajan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Muller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Conings</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/nmat4572</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nat. Mater</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">247</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A. Babayigit, A. Ethirajan, M. Muller, and B. Conings, Toxicity of organometal halide perovskite solar cells, Nat. Mater. 15, 247 (2016).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Chalcogenide perovskites for photovoltaics: current status and prospects</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Tiwari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">S</forename><surname>Hutter</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Longo</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/2515-7655/abf41c</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Energy</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">34010</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">D. Tiwari, O. S. Hutter, and G. Longo, Chalcogenide per- ovskites for photovoltaics: current status and prospects, J. Phys. Energy 3, 034010 (2021).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Bandgap Control via Structural and Chemical Tuning of Transition Metal Perovskite Chalcogenides</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Niu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Huyan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yeung</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Blankemeier</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Orvis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Sarkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Kapadia</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Ravichandran</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/adma.201604733</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Mater</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="page">1604733</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Niu, H. Huyan, Y. Liu, M. Yeung, K. Ye, L. Blanke- meier, T. Orvis, D. Sarkar, D. J. Singh, R. Kapadia, and J. Ravichandran, Bandgap Control via Structural and Chemical Tuning of Transition Metal Perovskite Chalco- genides, Adv. Mater. 29, 1604733 (2017).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Defect tolerance in chalcogenide perovskite photovoltaic material BaZrS3</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Gao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ming</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-Y</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s40843-021-1683-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. China Mater</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="page">2976</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">X. Wu, W. Gao, J. Chai, C. Ming, M. Chen, H. Zeng, P. Zhang, S. Zhang, and Y.-Y. Sun, Defect tolerance in chalcogenide perovskite photovoltaic material BaZrS3, Sci. China Mater. 64, 2976 (2021).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Chalcogenide Perovskites for Photovoltaics</title>
+		<author>
+			<persName><forename type="first">Y.-Y</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">L</forename><surname>Agiorgousis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/nl504046x</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nano Lett</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">581</biblScope>
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Y.-Y. Sun, M. L. Agiorgousis, P. Zhang, and S. Zhang, Chalcogenide Perovskites for Photovoltaics, Nano Lett. 15, 581 (2015).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Sulphides with the GdFeO3 structure</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Lelieveld</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">J W</forename><surname>Ijdo</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S056774088000845X</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Cryst. B</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page">2223</biblScope>
+			<date type="published" when="1980">1980</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">R. Lelieveld and D. J. W. IJdo, Sulphides with the GdFeO3 structure, Acta Cryst. B 36, 2223 (1980).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Optoelectronic Properties of Chalcogenide Perovskites by Many-Body Perturbation Theory</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Gill</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bhattacharya</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.jpclett.1c01034</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. Lett</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page">5301</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">M. Kumar, A. Singh, D. Gill, and S. Bhattacharya, Op- toelectronic Properties of Chalcogenide Perovskites by Many-Body Perturbation Theory, J. Phys. Chem. Lett. 12, 5301 (2021).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Chalcogenide Perovskites (ABS3; A = Ba, Ca, Sr; B = Hf, Sn): An Emerging Class of Semiconductors for Optoelectronics</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Basera</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bhattacharya</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.jpclett.2c01337</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Chem. Lett</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">6439</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">P. Basera and S. Bhattacharya, Chalcogenide Perovskites (ABS3; A = Ba, Ca, Sr; B = Hf, Sn): An Emerging Class of Semiconductors for Optoelectronics, J. Phys. Chem. Lett. 13, 6439 (2022).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Photovoltaic properties of ABSe3 chalcogenide perovskites (A = Ca, Sr, Ba; B = Zr, Hf)</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Johari</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.109.174114</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">109</biblScope>
+			<biblScope unit="page">174114</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Adhikari and P. Johari, Photovoltaic properties of ABSe3 chalcogenide perovskites (A = Ca, Sr, Ba; B = Zr, Hf), Phys. Rev. B 109, 174114 (2024).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Post-transition metal Sn-based chalcogenide perovskites: a promising leadfree and transition metal alternative for stable, highperformance photovoltaics</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Das</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Johari</surname></persName>
+		</author>
+		<idno type="DOI">10.1039/D4TC04701J</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mater. Chem. C</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">7792</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Adhikari, S. Das, and P. Johari, Post-transition metal Sn-based chalcogenide perovskites: a promising lead- free and transition metal alternative for stable, high- performance photovoltaics, J. Mater. Chem. C 13, 7792 (2025).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Optimizing lead-free chalcogenide perovskites for high-efficiency photovoltaics via alloying</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Johari</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/wbdp-6n6g</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="page">85206</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Adhikari and P. Johari, Optimizing lead-free chalco- genide perovskites for high-efficiency photovoltaics via al- loying, Phys. Rev. B 112, 085206 (2025).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Indirect-to-direct band gap transition induced by d-d coupling between cations in rare-earth chalcogenide perovskites</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Pan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ming</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Xin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-Y</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.110.L041201</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="page">41201</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">H. Zhang, Y. Pan, Z. Liu, B. Zeng, X. Wu, C. Ming, G. Xin, W. Zhou, H. Zeng, S. Zhang, and Y.-Y. Sun, Indirect-to-direct band gap transition induced by d-d coupling between cations in rare-earth chalcogenide per- ovskites, Phys. Rev. B 110, L041201 (2024).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Prediction and Synthesis of a Selenide Perovskite for Optoelectronics</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ming</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Bai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-Y</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.chemmater.2c03676</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Chem. Mater</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page">4128</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">H. Zhang, X. Wu, K. Ding, L. Xie, K. Yang, C. Ming, S. Bai, H. Zeng, S. Zhang, and Y.-Y. Sun, Prediction and Synthesis of a Selenide Perovskite for Optoelectronics, Chem. Mater. 35, 4128 (2023).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Sulfide perovskites for solar energy conversion applications: computational screening and synthesis of the selected compound LaYS3</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Kuhar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Crovetto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pandey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">S</forename><surname>Thygesen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Seger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">C K</forename><surname>Vesborg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Chorkendorff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">W</forename><surname>Jacobsen</surname></persName>
+		</author>
+		<idno type="DOI">10.1039/C7EE02702H</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Energy Environ. Sci</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page">2579</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">K. Kuhar, A. Crovetto, M. Pandey, K. S. Thygesen, B. Seger, P. C. K. Vesborg, O. Hansen, I. Chorkendorff, and K. W. Jacobsen, Sulfide perovskites for solar en- ergy conversion applications: computational screening and synthesis of the selected compound LaYS3, Energy Environ. Sci. 10, 2579 (2017).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Shining Light on Sulfide Perovskites: LaYS3 Material Properties and Solar Cells</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Crovetto</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Nielsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Pandey</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Watts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">G</forename><surname>Labram</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Geisler</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Stenger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">W</forename><surname>Jacobsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Seger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Chorkendorff</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">C K</forename><surname>Vesborg</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.chemmater.9b00478</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Chem. Mater</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page">3359</biblScope>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A. Crovetto, R. Nielsen, M. Pandey, L. Watts, J. G. Labram, M. Geisler, N. Stenger, K. W. Jacobsen, O. Hansen, B. Seger, I. Chorkendorff, and P. C. K. Ves- borg, Shining Light on Sulfide Perovskites: LaYS3 Ma- terial Properties and Solar Cells, Chem. Mater. 31, 3359 (2019).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Chalcogenide Perovskite YScS3 as a Potential p-Type Transparent Conducting Material</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Ming</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-Y</forename><surname>Sun</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0256-307X/37/9/097201</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Chinese Phys. Lett</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page">97201</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">H. Zhang, C. Ming, K. Yang, H. Zeng, S. Zhang, and Y.-Y. Sun, Chalcogenide Perovskite YScS3 as a Potential p-Type Transparent Conducting Material, Chinese Phys. Lett. 37, 097201 (2020).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Inhomogeneous Electron Gas</title>
+		<author>
+			<persName><forename type="first">P</forename><surname>Hohenberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Kohn</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRev.136.B864</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev</title>
+		<imprint>
+			<biblScope unit="volume">136</biblScope>
+			<biblScope unit="page">864</biblScope>
+			<date type="published" when="1964">1964</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">P. Hohenberg and W. Kohn, Inhomogeneous Electron Gas, Phys. Rev. 136, B864 (1964).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Self-Consistent Equations Including Exchange and Correlation Effects</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Kohn</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">J</forename><surname>Sham</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRev.140.A1133</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev</title>
+		<imprint>
+			<biblScope unit="volume">140</biblScope>
+			<biblScope unit="page">1133</biblScope>
+			<date type="published" when="1965">1965</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">W. Kohn and L. J. Sham, Self-Consistent Equations In- cluding Exchange and Correlation Effects, Phys. Rev. 140, A1133 (1965).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Linear optical properties in the projectoraugmented wave methodology</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Gajdoš</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Hummer</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kresse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Furthmüller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Bechstedt</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.73.045112</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page">45112</biblScope>
+			<date type="published" when="2006">2006</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">M. Gajdoš, K. Hummer, G. Kresse, J. Furthmüller, and F. Bechstedt, Linear optical properties in the projector- augmented wave methodology, Phys. Rev. B 73, 045112 (2006).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Electronic properties of lanthanide oxides from the GW perspective</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Rinke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Scheffler</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.86.125115</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">86</biblScope>
+			<biblScope unit="page">125115</biblScope>
+			<date type="published" when="2012">2012</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">H. Jiang, P. Rinke, and M. Scheffler, Electronic proper- ties of lanthanide oxides from the GW perspective, Phys. Rev. B 86, 125115 (2012).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Efficient O(N 2 ) approach to solve the Bethe-Salpeter equation for excitonic bound states</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Fuchs</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Rödl</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Schleife</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Bechstedt</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.78.085103</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">78</biblScope>
+			<biblScope unit="page">85103</biblScope>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">F. Fuchs, C. Rödl, A. Schleife, and F. Bechstedt, Efficient O(N 2 ) approach to solve the Bethe-Salpeter equation for excitonic bound states, Phys. Rev. B 78, 085103 (2008).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Generalized Gradient Approximation Made Simple</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Perdew</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Burke</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ernzerhof</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.77.3865</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="page">3865</biblScope>
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">J. P. Perdew, K. Burke, and M. Ernzerhof, Generalized Gradient Approximation Made Simple, Phys. Rev. Lett. 77, 3865 (1996).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Restoring the Density-Gradient Expansion for Exchange in Solids and Surfaces</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">P</forename><surname>Perdew</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Ruzsinszky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">I</forename><surname>Csonka</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">A</forename><surname>Vydrov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Scuseria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">A</forename><surname>Constantin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Burke</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.100.136406</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">100</biblScope>
+			<biblScope unit="page">136406</biblScope>
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vy- drov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Restoring the Density-Gradient Expansion for Exchange in Solids and Surfaces, Phys. Rev. Lett. 100, 136406 (2008).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Hybrid functionals based on a screened Coulomb potential</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Heyd</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">E</forename><surname>Scuseria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Ernzerhof</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/1.1564060</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="volume">118</biblScope>
+			<biblScope unit="page">8207</biblScope>
+			<date type="published" when="2003">2003</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">J. Heyd, G. E. Scuseria, and M. Ernzerhof, Hybrid func- tionals based on a screened Coulomb potential, J. Chem. Phys. 118, 8207 (2003).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">New Method for Calculating the One-Particle Green&apos;s Function with Application to the Electron-Gas Problem</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Hedin</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRev.139.A796</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev</title>
+		<imprint>
+			<biblScope unit="volume">139</biblScope>
+			<biblScope unit="page">796</biblScope>
+			<date type="published" when="1965">1965</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">L. Hedin, New Method for Calculating the One-Particle Green&apos;s Function with Application to the Electron-Gas Problem, Phys. Rev. 139, A796 (1965).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">First-Principles Theory of Quasiparticles: Calculation of Band Gaps in Semiconductors and Insulators</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">S</forename><surname>Hybertsen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">G</forename><surname>Louie</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.55.1418</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">55</biblScope>
+			<biblScope unit="page">1418</biblScope>
+			<date type="published" when="1985">1985</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">M. S. Hybertsen and S. G. Louie, First-Principles Theory of Quasiparticles: Calculation of Band Gaps in Semicon- ductors and Insulators, Phys. Rev. Lett. 55, 1418 (1985).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Ab Initio Calculation of Excitonic Effects in the Optical Spectra of Semiconductors</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Albrecht</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Reining</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Del Sole</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Onida</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.80.4510</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="page">4510</biblScope>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Albrecht, L. Reining, R. Del Sole, and G. Onida, Ab Initio Calculation of Excitonic Effects in the Opti- cal Spectra of Semiconductors, Phys. Rev. Lett. 80, 4510 (1998).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Electron-Hole Excitations in Semiconductors and Insulators</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Rohlfing</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">G</forename><surname>Louie</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.81.2312</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">81</biblScope>
+			<biblScope unit="page">2312</biblScope>
+			<date type="published" when="1998">1998</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">M. Rohlfing and S. G. Louie, Electron-Hole Excitations in Semiconductors and Insulators, Phys. Rev. Lett. 81, 2312 (1998).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Electrons in lattice fields</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Fröhlich</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/00018735400101213</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Phys</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">325</biblScope>
+			<date type="published" when="1954">1954</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">H. Fröhlich, Electrons in lattice fields, Adv. Phys. 3, 325 (1954).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Mobility of an electron in a multimode polar lattice</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">W</forename><surname>Hellwarth</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Biaggio</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.60.299</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page">299</biblScope>
+			<date type="published" when="1999">1999</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">R. W. Hellwarth and I. Biaggio, Mobility of an electron in a multimode polar lattice, Phys. Rev. B 60, 299 (1999).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kresse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Furthmüller</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.54.11169</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page">11169</biblScope>
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">G. Kresse and J. Furthmüller, Efficient iterative schemes for ab initio total-energy calculations using a plane-wave basis set, Phys. Rev. B 54, 11169 (1996).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Efficiency of Ab-initio Total Energy Calculations for Metals and Semiconductors Using a Plane-wave Basis Set</title>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kresse</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Furthmüller</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0927-0256(96)00008-0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Mater. Sci</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">15</biblScope>
+			<date type="published" when="1996">1996</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">G. Kresse and J. Furthmüller, Efficiency of Ab-initio To- tal Energy Calculations for Metals and Semiconductors Using a Plane-wave Basis Set, Comput. Mater. Sci. 6, 15 (1996).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Projector augmented-wave method</title>
+		<author>
+			<persName><forename type="first">P</forename><forename type="middle">E</forename><surname>Blöchl</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.50.17953</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">50</biblScope>
+			<biblScope unit="page">17953</biblScope>
+			<date type="published" when="1994">1994</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">P. E. Blöchl, Projector augmented-wave method, Phys. Rev. B 50, 17953 (1994).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">VESTA3 for three-dimensional visualization of crystal, volumetric and morphology data</title>
+		<author>
+			<persName><forename type="first">K</forename><surname>Momma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Izumi</surname></persName>
+		</author>
+		<idno type="DOI">10.1107/S0021889811038970</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Crystallogr</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="page">1272</biblScope>
+			<date type="published" when="2011">2011</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">K. Momma and F. Izumi, VESTA3 for three-dimensional visualization of crystal, volumetric and morphology data, J. Appl. Crystallogr. 44, 1272 (2011).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Implementation strategies in phonopy and phono3py</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Togo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chaput</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Tadano</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">I</forename><surname>Tanaka</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/1361-648X/acd831</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Phys. Condens. Matter</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page">353001</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A. Togo, L. Chaput, T. Tadano, and I. Tanaka, Imple- mentation strategies in phonopy and phono3py, J. Phys. Condens. Matter 35, 353001 (2023).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b41">
+	<monogr>
+		<title level="m" type="main">See Supplemental Material (SM) at [URL will be inserted by publisher] for details of distortion parameters, decomposition energy, convex hull, phonon dispersion curves, mechanical properties, electronic DOS, effect of spinorbit coupling on bandgap, orbital projected band structures, effective masses of charge carriers, convergence of G0W0 and BSE calculations, exciton binding energy obtained using the Wannier-Mott model, calculation of single phonon angular frequency and polaron mobility parameters for rare-earth chalcogenide perovskites ABX3 (A = Y, La; B = Sc, Y; and X = S, Se)</title>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">See Supplemental Material (SM) at [URL will be inserted by publisher] for details of distortion parameters, decom- position energy, convex hull, phonon dispersion curves, mechanical properties, electronic DOS, effect of spin- orbit coupling on bandgap, orbital projected band struc- tures, effective masses of charge carriers, convergence of G0W0 and BSE calculations, exciton binding energy ob- tained using the Wannier-Mott model, calculation of sin- gle phonon angular frequency and polaron mobility pa- rameters for rare-earth chalcogenide perovskites ABX3 (A = Y, La; B = Sc, Y; and X = S, Se).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b42">
+	<analytic>
+		<title level="a" type="main">sumo: Command-line tools for plotting and analysis of periodic ab initio calculations</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">M</forename><surname>Ganose</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Jackson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">O</forename><surname>Scanlon</surname></persName>
+		</author>
+		<idno type="DOI">10.21105/joss.00717</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Open Source Softw</title>
+		<imprint>
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page">717</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A. M. Ganose, A. J. Jackson, and D. O. Scanlon, sumo: Command-line tools for plotting and analysis of peri- odic ab initio calculations, J. Open Source Softw. 3, 717 (2018).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b43">
+	<analytic>
+		<title level="a" type="main">VASPKIT: A user-friendly interface facilitating highthroughput computing and analysis using VASP code</title>
+		<author>
+			<persName><forename type="first">V</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J.-C</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Tang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W.-T</forename><surname>Geng</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.cpc.2021.108033</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Phys. Commun</title>
+		<imprint>
+			<biblScope unit="volume">267</biblScope>
+			<biblScope unit="page">108033</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">V. Wang, N. Xu, J.-C. Liu, G. Tang, and W.-T. Geng, VASPKIT: A user-friendly interface facilitating high- throughput computing and analysis using VASP code, Comput. Phys. Commun. 267, 108033 (2021).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Unlocking the optoelectronic potential of AGeX3 (A = Ca, Sr, Ba; X = S, Se): A sustainable alternative in chalcogenide perovskites</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chakravorty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Johari</surname></persName>
+		</author>
+		<idno type="DOI">10.1063/5.0298915</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Chem. Phys</title>
+		<imprint>
+			<biblScope unit="volume">163</biblScope>
+			<biblScope unit="page">234708</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">A. Chakravorty, S. Adhikari, and P. Johari, Unlocking the optoelectronic potential of AGeX3 (A = Ca, Sr, Ba; X = S, Se): A sustainable alternative in chalcogenide perovskites, J. Chem. Phys. 163, 234708 (2025).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Necessary and sufficient elastic stability conditions in various crystal systems</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Mouhat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F.-X</forename><surname>Coudert</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.90.224104</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">90</biblScope>
+			<biblScope unit="page">224104</biblScope>
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">F. Mouhat and F.-X. Coudert, Necessary and sufficient elastic stability conditions in various crystal systems, Phys. Rev. B 90, 224104 (2014).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Crystal structures and elastic properties of superhard IrN2 and IrN3 from first principles</title>
+		<author>
+			<persName><forename type="first">Z.-J</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><surname>-J. Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>-P. Xiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-F</forename><surname>Hao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X.-J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Meng</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.76.054115</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="page">54115</biblScope>
+			<date type="published" when="2007">2007</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Z.-j. Wu, E.-j. Zhao, H.-p. Xiang, X.-f. Hao, X.-j. Liu, and J. Meng, Crystal structures and elastic properties of superhard IrN2 and IrN3 from first principles, Phys. Rev. B 76, 054115 (2007).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b47">
+	<analytic>
+		<title level="a" type="main">The Elastic Behaviour of a Crystalline Aggregate</title>
+		<author>
+			<persName><forename type="first">R</forename><surname>Hill</surname></persName>
+		</author>
+		<idno type="DOI">10.1088/0370-1298/65/5/307</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Proc. Phys. Soc. A</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page">349</biblScope>
+			<date type="published" when="1952">1952</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">R. Hill, The Elastic Behaviour of a Crystalline Aggregate, Proc. Phys. Soc. A 65, 349 (1952).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b48">
+	<analytic>
+		<title level="a" type="main">XCII. Relations between the elastic moduli and the plastic properties of polycrystalline pure metals, London</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Pugh</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/14786440808520496</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Edinburgh Dublin Philos. Mag. J. Sci</title>
+		<imprint>
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page">823</biblScope>
+			<date type="published" when="1954">1954</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Pugh, XCII. Relations between the elastic moduli and the plastic properties of polycrystalline pure met- als, London, Edinburgh Dublin Philos. Mag. J. Sci. 45, 823 (1954).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b49">
+	<analytic>
+		<title level="a" type="main">A high dielectric constant nonfullerene acceptor for efficient bulk-heterojunction organic solar cells</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xie</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">J M</forename><surname>Colberts</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">A J</forename><surname>Janssen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cao</surname></persName>
+		</author>
+		<idno type="DOI">10.1039/C7TA10136H</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Mater. Chem. A</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">395</biblScope>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">X. Liu, B. Xie, C. Duan, Z. Wang, B. Fan, K. Zhang, B. Lin, F. J. M. Colberts, W. Ma, R. A. J. Janssen, F. Huang, and Y. Cao, A high dielectric constant non- fullerene acceptor for efficient bulk-heterojunction or- ganic solar cells, J. Mater. Chem. A 6, 395 (2018).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Theoretical insights into monovalent-metal-cation transmutation effects on leadfree halide double perovskites for optoelectronic applications</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Johari</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevMaterials.7.075401</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Mater</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page">75401</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Adhikari and P. Johari, Theoretical insights into monovalent-metal-cation transmutation effects on lead- free halide double perovskites for optoelectronic applica- tions, Phys. Rev. Mater. 7, 075401 (2023).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Capturing optoelectronic properties of Cs2AgSbBr 6-x Clx (x = 0 -6) double perovskites using many-body perturbation theory</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Johari</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.110.014101</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">110</biblScope>
+			<biblScope unit="page">14101</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Adhikari and P. Johari, Capturing optoelectronic properties of Cs2AgSbBr 6-x Clx (x = 0 -6) double perovskites using many-body perturbation theory, Phys. Rev. B 110, 014101 (2024).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b52">
+	<analytic>
+		<title level="a" type="main">Role of Polar Phonons in the Photo Excited State of Metal Halide Perovskites</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Bokdam</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Sander</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Stroppa</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Picozzi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">D</forename><surname>Sarma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Franchini</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Kresse</surname></persName>
+		</author>
+		<idno type="DOI">10.1038/srep28618</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Sci. Rep</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="page">28618</biblScope>
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">M. Bokdam, T. Sander, A. Stroppa, S. Picozzi, D. D. Sarma, C. Franchini, and G. Kresse, Role of Polar Phonons in the Photo Excited State of Metal Halide Per- ovskites, Sci. Rep. 6, 28618 (2016).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Phonon Screening of Excitons in Semiconductors: Halide Perovskites and Beyond</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">R</forename><surname>Filip</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Haber</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">B</forename><surname>Neaton</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevLett.127.067401</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. Lett</title>
+		<imprint>
+			<biblScope unit="volume">127</biblScope>
+			<biblScope unit="page">67401</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">M. R. Filip, J. B. Haber, and J. B. Neaton, Phonon Screening of Excitons in Semiconductors: Halide Per- ovskites and Beyond, Phys. Rev. Lett. 127, 067401 (2021).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Harnessing Linear and Nonlinear Optical Responses in Ferroelectric LaMoN3 for Enhanced Photovoltaic Efficiency</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">S</forename><surname>Padelkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">J</forename><surname>Jasieniak</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">N</forename><surname>Simonov</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Alam</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.chemmater.6c00120</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Chem. Mater</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="page">6271</biblScope>
+			<date type="published" when="2026">2026</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Adhikari, S. S. Padelkar, J. J. Jasieniak, A. N. Si- monov, and A. Alam, Harnessing Linear and Nonlinear Optical Responses in Ferroelectric LaMoN3 for Enhanced Photovoltaic Efficiency, Chem. Mater. 38, 6271 (2026).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Unveiling the impact of trivalent metal cation transmutation on Cs2AgM(III)Cl 6 double perovskites using many-body perturbation theory</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Johari</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/vld9-2knx</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">112</biblScope>
+			<biblScope unit="page">195208</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Adhikari and P. Johari, Unveiling the impact of triva- lent metal cation transmutation on Cs2AgM(III)Cl 6 dou- ble perovskites using many-body perturbation theory, Phys. Rev. B 112, 195208 (2025).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Optical and polaronic properties of vacancy-ordered double perovskites: A first-principles investigation</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Chakravorty</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Johari</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/yy3w-vmj1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">113</biblScope>
+			<biblScope unit="page">45204</biblScope>
+			<date type="published" when="2026">2026</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Adhikari, A. Chakravorty, and P. Johari, Optical and polaronic properties of vacancy-ordered double per- ovskites: A first-principles investigation, Phys. Rev. B 113, 045204 (2026).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Calculating polaron mobility in halide perovskites</title>
+		<author>
+			<persName><forename type="first">J</forename><forename type="middle">M</forename><surname>Frost</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRevB.96.195202</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev. B</title>
+		<imprint>
+			<biblScope unit="volume">96</biblScope>
+			<biblScope unit="page">195202</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">J. M. Frost, Calculating polaron mobility in halide per- ovskites, Phys. Rev. B 96, 195202 (2017).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Charge-Carrier Mobilities in Metal Halide Perovskites: Fundamental Mechanisms and Limits</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>Herz</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acsenergylett.7b00276</idno>
+	</analytic>
+	<monogr>
+		<title level="j">ACS Energy Lett</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page">1539</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">L. M. Herz, Charge-Carrier Mobilities in Metal Halide Perovskites: Fundamental Mechanisms and Limits, ACS Energy Lett. 2, 1539 (2017).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Probing Optoelectronic Properties of Stable Vacancy-Ordered Double Perovskites: Insights from Many-Body Perturbation Theory</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Adhikari</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Johari</surname></persName>
+		</author>
+		<idno type="DOI">10.1002/adts.202400921</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Adv. Theory Simul</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="page">2400921</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">S. Adhikari and P. Johari, Probing Optoelectronic Prop- erties of Stable Vacancy-Ordered Double Perovskites: In- sights from Many-Body Perturbation Theory, Adv. The- ory Simul. 8, 2400921 (2025).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Electron-phonon interactions from first principles</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Giustino</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/RevModPhys.89.015003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Rev. Mod. Phys</title>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page">15003</biblScope>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">F. Giustino, Electron-phonon interactions from first prin- ciples, Rev. Mod. Phys. 89, 015003 (2017).</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Slow Electrons in a Polar Crystal</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">P</forename><surname>Feynman</surname></persName>
+		</author>
+		<idno type="DOI">10.1103/PhysRev.97.660</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Phys. Rev</title>
+		<imprint>
+			<biblScope unit="volume">97</biblScope>
+			<biblScope unit="page">660</biblScope>
+			<date type="published" when="1955">1955</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">R. P. Feynman, Slow Electrons in a Polar Crystal, Phys. Rev. 97, 660 (1955).</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

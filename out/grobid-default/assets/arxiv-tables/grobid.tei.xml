@@ -1,0 +1,1284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Beyond Text: LLM-Based Dimensional Emotion Evaluation in Multimodal Dialogue</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2026-09-30">30 Sep 2026</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct status="extracted">
+					<analytic>
+						<author>
+							<persName><forename type="first">Yutong</forename><surname>Hu</surname></persName>
+							<email>yutong.hu@emory.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Emory University</orgName>
+								<address>
+									<settlement>Atlanta</settlement>
+									<region>GA</region>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Jinho</forename><surname>Choi</surname></persName>
+							<email>jinho.choi@emory.edu</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Emory University</orgName>
+								<address>
+									<settlement>Atlanta</settlement>
+									<region>GA</region>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Beyond Text: LLM-Based Dimensional Emotion Evaluation in Multimodal Dialogue</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2026-09-30">30 Sep 2026</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">A7D3E0A1831994F133EDBA55C5D5D181</idno>
+					<idno type="arXiv">arXiv:2609.39072v1[cs.CL]</idno>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.9.1" ident="GROBID" when="2026-10-02T16:46+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">0.9.1</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=0, consolidateHeader=0, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[], flavor=null, debugLabelingCollector=disabled</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Emotion recognition in conversation has been widely studied, but applying Large Language Models (LLMs) to continuous dimensional emotion evaluation in multimodal dialogue remains largely unexplored.</p><p>We propose an LLM-based framework that performs discrete emotion recognition and Valence-Arousal-Dominance (VAD) dimensional evaluation on IEMOCAP, incorporating acoustic cues as natural language descriptions following the SpeechCueLLM approach. We evaluate six models spanning the LLaMA, GPT, and Qwen families under zero-shot prompting, fewshot prompting, and LoRA fine-tuning. LoRA fine-tuned LLaMA models substantially outperform prompt-engineered GPT models on both tasks despite GPT's larger scale, a gap we attribute to domain adaptation rather than model capacity. Our best model achieves a Valence CCC of 0.7822, a new state-of-the-art on IEMOCAP. Ablation studies confirm that textual audio descriptions meaningfully improve smaller models (+3.5-3.6 weighted F1) while contributing little for the largest model, suggesting audio cues are most valuable when linguistic capacity is limited. The performance asymmetry across VAD dimensions closely mirrors the annotator agreement hierarchy in IEMO-CAP's own annotations.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Emotion recognition in conversation (ERC) has gained attention for the past two decades. Unlike isolated utterance-level analysis, ERC requires the contextual understanding of utterances across multiple conversational turns with dynamic emotions <ref type="bibr">(Wu et al., 2025a)</ref>. This conversational dependency makes the problem substantially more challenging and more consequential for real-world applications such as mental health support and human-computer interaction.</p><p>There are two common ways for emotion representation. The first way is a discrete emotion label, which assigns a single categorical label(e.g. happiness, frustration, etc.) to an utterance. The second one is continuous dimensional emotions, which quantify emotional experience along continuous scales. And among the continuous dimensions, the Valence-Arousal-Dominance (VAD) system <ref type="bibr" target="#b26">(Russell and Mehrabian, 1977)</ref> is the most widely adopted, measuring how positive, activated, and dominant a person feels. While discrete ERC has received the bulk of the attention <ref type="bibr" target="#b18">(Lei et al., 2023;</ref><ref type="bibr">Wu et al., 2025b)</ref>, dimensional evaluation has grown more recently, driven by the demand for richer emotional characterization.</p><p>Because emotions are not conveyed only by words alone, the incorporation of multimodal information is critical for both tasks: tone, pitch, rhythm, and speaking rate all carry affective signals that text transcriptions discard. The involvement of multimodality is therefore essential not only for the accuracy but also for the diverse potential downstream applications, such as emotion-conditioned speech generation.</p><p>Currently, for multimodal ERC on VAD systems, Large Language Models (LLM) are barely used in this regime; instead, most dimensional work on multimodal dataset still relies on Deep Learning(DL) models, including LSTM and CNN-1D (Atmaja and Akagi, 2021; <ref type="bibr" target="#b21">Messaoudi et al., 2024)</ref>, or pre-trained models such as HuBERT or De-BERTa, limiting the contextual reasoning capacity to exploit <ref type="bibr" target="#b28">(Srinivasan et al., 2022;</ref><ref type="bibr" target="#b15">Ispas et al., 2023)</ref>. To address this gap, we make the following contributions:</p><p>• We propose the first systematic LLM-based framework for continuous VAD dimensional emotion evaluation in multimodal dialogue, extending the SpeechCueLLM approach of incorporating acoustic cues as natural language descriptions from discrete ER to the dimensional setting.</p><p>• We conduct a comprehensive comparison across six models spanning the LLaMA, GPT, and Qwen families under prompt engineering and LoRA fine-tuning, showing that parameter-efficient fine-tuning substantially outperforms prompting-based approaches for both discrete and dimensional emotion tasks, despite the larger scale of the prompted models.</p><p>• Through error analysis and ablation studies, we identify the sources of the performance gap between fine-tuned and prompted models, the contribution of acoustic descriptions to performance, and the effect of past VAD context on prediction quality.</p><p>2 Background and Related Work</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Discrete Emotion Recognition in Dialogue</head><p>Early DL approaches to Emotion Recognition (ER) employed CNNs for end-to-end speech representations <ref type="bibr" target="#b30">(Trigeorgis et al., 2016)</ref>, LSTMs for sequential dialogue modeling <ref type="bibr" target="#b23">(Poria et al., 2017)</ref>, and graph-based architectures <ref type="bibr" target="#b13">(Ghosal et al., 2019)</ref>. Di-alogueRNN <ref type="bibr" target="#b20">(Majumder et al., 2019)</ref>, which models speaker state, emotion state, and global context via an attentive RNN, remains one of the most influential baselines for ERC on IEMOCAP and MELD. More recently, InstructERC <ref type="bibr" target="#b18">(Lei et al., 2023)</ref> reformulates ERC as an instruction-following task using multi-task retrieval-augmented prompting. SpeechCueLLM <ref type="bibr">(Wu et al., 2025b)</ref> extends this LLM-based approach to the multimodal setting by incorporating vocal information as natural language descriptions of acoustic features. This work directly adopted that framework for acoustic information incorporation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Dimensional Emotion Evaluation</head><p>The Valence-Arousal-Dominance (VAD) framework <ref type="bibr" target="#b26">(Russell and Mehrabian, 1977)</ref> provides a richer characterization of emotional state than discrete labels, capturing the positive-negative, activation-deactivation, and power axes respectively. Multimodal approaches combining audio and text for VAD prediction on IEMOCAP, using architectures such as LSTM/CNN-1D (Atmaja and Akagi, 2021; <ref type="bibr" target="#b3">Awatef et al., 2025)</ref>, have advanced performance substantially. However, LLMs remain largely absent from this regime; the contextual reasoning capacity that drives gains in discrete ERC has not been systematically evaluated for continuous VAD prediction in multimodal dialogue, which is the gap this work addresses.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Available Multimodal Models for Audio and Text Data</head><p>Models capable of jointly processing audio and text fall into two broad categories: audio-language foundation models (e.g., Wav2Vec 2.0 <ref type="bibr" target="#b4">(Baevski et al., 2020)</ref>, CLAP <ref type="bibr" target="#b11">(Elizalde et al., 2022)</ref>, and SpeechT5 <ref type="bibr" target="#b1">(Ao et al., 2022)</ref>), which learn generalpurpose audio representations; end-to-end conversational multimodal LLMs (e.g., Qwen3-Omni, GPT-5.1, and Gemini 3 Pro), which map speech directly into semantic representations within unified dialogue frameworks. This work does not adopt the latter due to their substantial computational requirements and uncertain impact on specialized ER tasks, leaving their exploration to future work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Framework Overview</head><p>This work proposes an LLM-based framework for performing discrete ER and continuous VAD dimensional evaluation on utterances in multimodal dialogues. While those two tasks share the same input construction strategy, they are treated as independent tasks, each with its own prompt formulation, and in the case of the LoRA fine-tuning, its own separately trained model instance adapted to the corresponding annotation type. The framework takes three sources of information as input: the conversation history, the target utterance, and the audio feature descriptions. A discrete emotion label will be output for the discrete ER, while a set of VAD scores (the representation the emotional state along Valence, Arousal, and Dominance dimensions) will be output for the continuous emotion evaluation. Figure <ref type="figure">1</ref> and the algorithm 1 illustrate the overall pipeline. Given a target utterance from IEMOCAP, the framework retrieves the preceding structured conversation (up to 12 utterances in this study) to provide dialogue context. Simultaneously, acoustic features are extracted from the audio recording of the target utterance and converted to natural language descriptions following SpeechCueLLM approach <ref type="bibr">(Wu et al., 2025b)</ref>. Based on the required task and passed structured text prompts with all required inputs, the models will output either the discrete emotion category selected from a predefined label set (happy, sad, neutral, angry, excited, Figure <ref type="figure">1</ref>: Overall Pipeline and frustrated) or numerical integer VAD scores on a 1-5 scale. The framework is designed to allow direct comparison across models of different scales and training paradigms. In this work, we evaluate the framework mainly under two strategies: prompt engineering (zero-shot and few-shot) and LoRA fine-tuning.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Audio Feature Extraction and Textual Description</head><p>A central design choice of this framework is to incorporate acoustic information in natural language descriptions rather than raw audio features or learned audio embeddings. This approach, adopted from SpeechCueLLM <ref type="bibr">(Wu et al., 2025b)</ref>, enables LLMs to access audio information that is included in the input without requiring architectural modification to handle the multimodal input directly. For each utterance in this dataset, three acoustic features are extracted from the raw audio recording: the perceived volume, pitch, and speaking rate. For each of the features, both the central tendency and the degree of variation within the utterances are computed, yielding six descriptive values in total for each utterance.</p><p>To convert these acoustic measurements into natural language descriptions, a quantile-based scheme is utilized to assign one of the categorical labels to acoustic feature values and variation measurements: very low, low, moderate, high, or very high. This produces a concise and interpretable de-scription of each utterance's acoustic information as in Figure <ref type="figure" target="#fig_1">5</ref>.</p><p>This textual audio description provide models with non-lexical cues that are not recoverable from the transcribed text alone. And the contribution of the audio description to model performance is evaluated through an ablation study comparing models with or without them, the results of which are discussed in Section 11.1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Fine-Tuning Strategy (LoRA)</head><p>While LLMs possess strong general language understanding capabilities, adaption to the target domain and annotation conventions is often required for their effective application to specialized tasks. Full fine-tuning of LLMs is computationally expensive given the scale of the modern models, as it requires updating all model parameters simultaneously. To address this, we adopt Low-Rank Adaptation(LoRA), a parameter-efficient fine-tuning method that introduces a small number of trainable parameters while keeping the original model weights frozen <ref type="bibr" target="#b14">(Hu et al., 2021)</ref>.</p><p>The IEMOCAP dataset, while the most appropriate available resource for this task, provides a limited number of training samples compared to the scale of the datasets those LLMs were originally trained on. LoRA's constrained parameterization reduces the risk of overfitting under the data-limited situation.</p><p>4 Experiment Setup</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Dataset</head><p>This study requires the dataset to satisfy: (I) multimodal, containing at least audio and text modalities; (II) conversational; (III) annotated with both discrete and continuous emotion. While textual emotion datasets with discrete labels are relatively common, datasets meeting all three criteria are rare. After reviewing 19 emotion datasets in total (see Table <ref type="table" target="#tab_3">8</ref> in Appendix B), we chose IEMOCAP <ref type="bibr" target="#b6">(Busso et al., 2008)</ref>, one of the most widely used datasets for multimodal emotion research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.1">IEMOCAP Dataset</head><p>The Interactive Emotional Dyadic Motion Capture (IEMOCAP) <ref type="bibr" target="#b6">(Busso et al., 2008)</ref> dataset is a multimodal corpus designed for the study of expressive human communication in dyadic interaction. The dataset consists of 151 dyadic dialogues performed by 10 actors arranged in five sessions, each pairing one male and one female actor. The recordings include both scripted scenarios and improvised interactions elicited through emotional prompts, yielding a total of 10,086 utterances with an average of approximately 66 utterances per dialogue.</p><p>The dataset captures four modalities for each utterance: audio recordings, video recordings, text transcriptions, and motion capture data tracking facial and hand movements. The total duration of all audio recordings is approximately 12 hours. In this work, we only utilized the audio recordings and text transcriptions, as these modalities are most directly relevant to the proposed framework and align with the SpeechCueLLM approach adopted for audio feature extraction.</p><p>Each utterance in IEMOCAP is annotated by multiple evaluators with a discrete emotion category. The final label is determined by majority voting across annotators. The original label set covers nine categories: anger, sadness, frustration, happiness, excitement, neutral state, surprise, fear, and other. In addition to categorical labels, annotators provided VAD ratings on a scale of 1 to 5, where higher values indicate more positive valence, higher arousal, and greater dominance respectively. The aggregated annotator VAD scores were used as the ground truth for each utterance in this work.</p><p>For the discrete ER task, we followed common practice in the literature <ref type="bibr">(Wu et al., 2025b;</ref><ref type="bibr" target="#b18">Lei et al., 2023)</ref>, excluding low-frequency categories Surprise, Fear, and Others from the label set and arriving at six discrete emotion categories and a total of 7,433 utterances.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1.2">Data Splitting</head><p>To evaluate model generalization across speakers, we adopted a Leave-One-Subject-Out (LOSO) splitting strategy. Specifically, the fifth session of IEMOCAP was held out as the test set, as it contains unseen speakers not present in the training data, ensuring the model is evaluated on its ability to generalize to new speakers. The remaining four sessions were used for training and validation, split at a 90/10 ratio respectively. This splitting strategy is consistent with prior work on IEMOCAP.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Models</head><p>We evaluated the proposed framework across six language models spanning three families (the Qwen model was only used for discrete ER evaluation), enabling comparison between open-source and closed-source systems as well as across different parameter scales.</p><p>Within the open-source models, we selected three models from the LLaMA series: LLaMA-2-7B, LLaMA-3.1-8B, and LLaMA-3.3-70B. LLaMA-2-7B and LLaMA-3.1-8B represent smaller, more computationally accessible configurations, while LLaMA-3.3-70B represents a largescale model. To evaluate more comprehensively, we also included the Qwen3.5-35B-A3B model for the discrete ER task. All three LLaMA models were evaluated under zero-shot prompting, fewshot prompting, and LoRA fine-tuning conditions for discrete ER, and only LoRA fine-tuning for VAD evaluation.</p><p>For closed-source comparison, we included two OpenAI models: GPT-4o-mini and GPT-5-mini. GPT models are evaluated under zero-shot and fewshot prompting conditions only.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Implementation Details</head><p>For LoRA fine-tuning, we used the AdamW optimizer with a learning rate of 0.0003. The LoRA rank is set to r = 16 with the scaling parameter α set equal to r, following standard practice. All models are trained for 15 epochs.</p><p>For the LLaMA-3.3-70B model, training was conducted using DeepSpeed to handle the memory requirement of the 70-billion-parameters configurations across two GPUs. Smaller models were trained on a single GPU configuration.</p><p>For prompt engineering conditions, zero-shot prompts follow the templates described in Appendix C Few-shot prompts prepend a fixed set of annotated examples to the same template.</p><p>5 Evaluation Metrics</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Discrete ER</head><p>The discrete emotion recognition task was evaluated using the weighted F1 score, defined as:</p><formula xml:id="formula_0">F 1 = 2 × Precision × Recall Precision + Recall (1) Weighted F1 = N i=1 w i × F1 i (2)</formula><p>where w i is the proportion of samples belonging to class i and F1 i is the F1 score for that class.</p><p>The weighted F1 score is chosen over macro F1 because it accounts for class imbalance in the IEMO-CAP dataset, where emotion categories are not uniformly distributed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">VAD Evaluation</head><p>The VAD evaluation task was assessed using the Concordance Correlation Coefficient (CCC), which jointly captures both the correlation and the agreement between predicted and ground truth values by penalizing mean offset in addition to variance differences:</p><formula xml:id="formula_1">CCC = 2rσ x σ y σ 2 x + σ 2 y + (µ x -µ y ) 2<label>(3)</label></formula><p>where r is the Pearson correlation, σ x and σ y are the standard deviations, and µ x and µ y are the means of the predicted and ground truth distributions respectively. CCC ranges from -1 to 1, where 1 indicates perfect agreement.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Emotion Recognition Results</head><p>Table <ref type="table" target="#tab_0">1</ref> reports weighted F1 scores for discrete ER across all six models and training/prompting conditions, including comparison with SpeechCueLLM <ref type="bibr">(Wu et al., 2025b)</ref> baseline. The most prominent finding is the LoRA finetuned open-source models consistently outperform the prompt-engineered ones. With all three LoRA fine-tuned LLaMA models achieving scores between 71.8 and 73.2 along with the fine-tuned Qwen3.5 model of 68.493, there is a large gap between prompt engineering and LoRA fine-tuning for open-source models used here. Among prompt engineering conditions, LLaMA-3.3-70B zero-shot (60.299) performs comparably to GPT-4o-mini fewshot (56.8), suggesting that scale partially compensates for the absence of task-specific adaptation. Fine-tuned models uniformly surpass all prompting-based approaches, including GPT-5mini few-shot (59.6).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">VAD Evaluation Results</head><p>Table 2 reports VAD evaluation performance for prompt-engineered GPT models and LoRA finetuned LLaMA models. Due to the huge gap between the performance of LLaMA models with LoRA fine-tuning and with the prompt engineering, we only applied LoRA fine-tuning for LLaMA models within the experiment for VAD evaluation.</p><p>Among GPT models, GPT-5-mini outperforms GPT-4o-mini across most conditions. The most pronounced difference appears on the Dominance dimension, where GPT-5-mini zero-shot achieves a CCC of 0.299 versus 0.146 for GPT-4o-mini zero-shot. Valence is the best-predicted dimension across all prompt engineering conditions (CCC 0.60-0.67), while Arousal and Dominance remain substantially lower (CCC 0.13-0.39).</p><p>LoRA fine-tuned LLaMA models substantially outperform all prompt-engineered approaches. On Valence, LLaMA-3.3-70B achieves a CCC of 0.7822, leading the best GPT-5-mini prompting result of 0.6697 by around 0.11. LLaMA-2-7B and LLaMA-3.1-8B also achieve strong Valence CCC values of 0.7672 and 0.7433 respectively, demonstrating that the gain is not primarily attributable to model scale. On Arousal and Dominance, LoRA fine-tuned models also outperform GPT prompting (CCC values from 0.44 to 0.48 vs. from 0.34 to 0.39 for Arousal and around 0.44 vs. from 0.12 to 0.30 for Dominance), though absolute values remain substantially lower than Valence.</p><p>Table <ref type="table">3</ref> compares our best model against prior works on VAD evaluation on IEMOCAP; our approach achieves state-of-the-art performance on the Valence dimension, surpassing all baselines by a substantial margin, while Arousal and Dominance remain competitive but below the best reported results.</p><p>Among those previous works, the one by Awatef et al. <ref type="bibr" target="#b3">(Awatef et al., 2025)</ref>, even though it has a lower Valence CCC, outperforms our model on both Arousal (0.736 vs. 0.465) and Dominance LLaMA-2-7B LLaMA-3.1-8B LLaMA-3.3-70B Qwen3.5-35B-A3B GPT 4o mini GPT 5 mini SpeechCueLLM <ref type="bibr">(Wu et al., 2025b</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8">Error Analysis for Discrete ER</head><p>While the substantial performance gap between LoRA fine-tuned LLaMA models and promptengineered GPT models is somewhat unexpected given the latter's considerably larger scale, a closer examination of per-emotion F1 scores and confusion patterns helps explain this discrepancy. Tables <ref type="table">4</ref> and <ref type="table" target="#tab_1">5</ref> present the per-emotion F1 scores and key bidirectional confusion rates respectively. Based on Table <ref type="table">4</ref>, all models (despite LLaMA-2-7B and LLaMA-3.1-8B with few-shot) have the best performance for Sad emotion. The promptengineered GPT models are outperformed by finetuned LLaMA models under every emotion category. For GPT models, Happy and Angry are the two discrete emotions where they have the lowest F1 scores. Few-shot prompting generally slightly improved GPT models' performance over zero-shot prompting. GPT-4o-mini gets similar scores to GPT-5-mini for Frustrated and Sad, slightly outperforms it in Happy, and underperforms for Neutral, Angry, and Excited. Table <ref type="table" target="#tab_1">5</ref> implies the potential reason for GPT models not meeting our expectations. GPT models have high confusion rates on angry and frustrated. The confusion rates of 46.5-75.3 for GPT models on misinterpreting anger as frustration show they are less sensitive to aggressiveness. One interesting difference between GPT-4o-mini and GPT-5-mini models is that GPT-5-mini tends to overestimate the energy of positive emotions (confusion rate of 29.2-30.6 on Happy→Excite vs. 18.4-22.1 for Excite→Happy), while GPT-4o-mini, in contrast, is more conservative about the positive levels (confusion rate of 7.6-12.5 on Happy→Excite vs. 22.7-29.8 for Excite→Happy). That explains why LoRA fine-tuned LLaMA models outperform GPT models here.</p><p>The poor performance of LLaMA-2-7B and LLaMA-3.1-8B models with prompt engineering can also be explained now. They tend to collapse most emotions into a single label, as presented by the extremely high ratio of excitement instances misclassified as happiness and the low confusion rate over other emotion label pairs.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="9">VAD Evaluation Performance Analysis</head><p>A consistent hierarchy emerges across all model families and training conditions: Valence is predicted substantially better than Arousal, which is predicted at roughly the same level as Dominance. This pattern holds both for GPT prompt-engineered models (Valence CCC 0.60-0.67 vs. Arousal CCC 0.34-0.39) and for LoRA fine-tuned LLaMA models (Valence CCC 0.74-0.78 vs. Arousal CCC 0.44-0.48). The gap is particularly striking given that all three dimensions share the same scale, annotation protocols, and model architecture.</p><p>This performance hierarchy directly mirrors the annotator agreement hierarchy reported in Table <ref type="table" target="#tab_2">6</ref>.</p><p>Valence has the highest inter-annotator agreement (Krippendorff's α = 0.680), while Dominance has the lowest (α = 0.271) and Arousal is intermediate (α = 0.304). When annotators themselves disagree substantially, the annotation ground truth is inherently noisy, imposing a natural ceiling on achiev-Because emotions are subjective, annotators are likely to have different answers for the same target sentence. We conducted an inter-agreement measurement with Krippendorff's α and Fleiss' κ to test the reliability of data. Table <ref type="table" target="#tab_2">6</ref> reports the test results for each annotation type in IEMOCAP.</p><p>Discrete emotion labels achieve only fair agreement (α = 0.279 and κ = 0.273), reflecting inherent ambiguity in emotion assignment. Valence shows substantially higher agreement (α = 0.680). Arousal shows intermediate agreement (α = 0.304 and κ = 0.085), comparable to discrete labels. Dominance shows near-floor alpha and also near-zero Kappa (α = 0.271 and κ = 0.014), suggesting that while annotators show some ordinal agreement on dominance, they diverge substantially on absolute scores. These reliability statistics contextualize the model performance results for VAD evaluation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="11">Ablation Studies</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="11.1">The Impact of Acoustic Feature Descriptions</head><p>Natural language audio description is part of the input to LLMs. We also conducted experiments to reveal the contribution of audio feature description to final performance by removing audio feature descriptions in discrete ER performance for LoRA fine-tuned LLaMA models. Table <ref type="table">7</ref> reports this impact driven by the removal. Removing audio descriptions reduces weighted F1 by 3.5 for LLaMA-2-7B (73.2 vs. 69.7) and 3.6 for LLaMA-3.1-8B (71.8 vs. 68.2), while having negligible effect on LLaMA-3.3-70B (72.1 vs. 72.1). This suggests that audio information provides useful signal for smaller models but that the larger model can partially recover prosodic context from linguistic patterns.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="11.2">The Impact of Past VAD Context</head><p>Another interesting question here is whether LLMs provided with the VAD scores for utterances in conversation history will improve their performance. Here the VAD scores for previous utterances are the outputs predicted by models themselves rather than the ground truth VAD values.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="11.2.1">GPT Models with Prompting</head><p>Table 10 reports VAD evaluation performance for GPT models when past VAD scores are provided in the context window (12 and 3 utterances respectively). Adding past VAD context yields modest improvements for GPT-5-mini on Valence (CCC of 0.663 to 0.689 with window =12) but has minimal or negative effects on Arousal and Dominance. The window size makes little difference overall.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="11.2.2">LoRA Fine-tuned LLaMA Models</head><p>Table <ref type="table" target="#tab_6">11</ref> reports the effect of past VAD context conditioning on LoRA fine-tuned LLaMA models. Unlike the GPT results, providing past VAD context generally degrades performance for fine-tuned models. For LLaMA-3.3-70B, including estimated past VAD with a 12-utterance window reduces Valence CCC from 0.7822 to 0.5368.</p><p>Importantly, this degradation does not imply that past VAD information is inherently uninformative. An oracle experiment in which ground-truth VAD  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="12">Conclusion</head><p>This thesis investigated the application of Large Language Models to two independent tasks in multimodal dialogue: discrete emotion recognition (ER) and dimensional emotion evaluation along the VAD continuum. Both tasks were applied to IEMOCAP using a shared input construction strategy, which combines conversation history, target utterance, and textual audio feature descriptions following the SpeechCueLLM approach.</p><p>Our results yield four principal findings. First, LoRA fine-tuning dramatically outperforms prompt engineering for both tasks. Fine-tuned LLaMA models achieve weighted F1 scores of</p><p>LLaMA-2-7B LLaMA-3.1-8B LLaMA-3.3-70B LoRA 73.196 71.818 72.122 LoRA without audio description 69.672 68.23 72.108</p><p>Table 7: The Impact of Audio Description on Discrete ER Performance of LLaMA Models(Weighted F1 score) Figure 3: The Impact of Past VAD on LoRA Fine-tuned LLaMA Models in Emotion Dimensional Evaluation 71.8-73.2 for discrete ER, compared to 54.7-59.6 for the best GPT prompting conditions. For VAD evaluation, fine-tuned LLaMA-3.3-70B achieves a Valence CCC of 0.7822, establishing a new stateof-the-art on the IEMOCAP dataset and outperforming the best prompt-engineered GPT result by approximately 0.11. These gains indicate that domain adaptation through parameter-efficient finetuning is more impactful than general instructionfollowing capacity for specialized emotion tasks.</p><p>Second, audio feature descriptions contribute meaningfully to performance, especially for smaller models. In the task of discrete ERC, removing audio descriptions from LoRA fine-tuned models reduces weighted F1 by 3.5-3.6 for LLaMA-2-7B and LLaMA-3.1-8B, with negligible effect on LLaMA-3.3-70B. This suggests that larger models can partially recover prosodic context from linguistic patterns, but audio information remains a cost-effective signal for smaller architectures.</p><p>Third, performance asymmetry across VAD is explained by annotator agreement. The high CCC score on Valence along the much lower scores for Arousal and Dominance mirrors their interannotator agreement scores hierarchy, directly linking annotation noise to model performance ceilings.</p><p>Fourth, providing explicit past VAD values estimated by models as context helps promptengineered models marginally but degrades performance for LoRA fine-tuned models. This degradation is attributed to error accumulation instead of the incorporation of past VAD scores itself.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="13">Limitation</head><p>Limitations of this work include the restriction to a single dataset (IEMOCAP), which lacks solid reliability due to its low inter-annotator agreement on the annotation of discrete emotion labels, Arousal, and Dominance. While IEMOCAP was the only available dataset satisfying all requirements after reviewing 19 candidates, the noisy data set a ceiling on the models' performance; future work should prioritize the development of additional multimodal dialogue datasets with continuous dimensional annotations. Moreover, rather than directly using a multimodal large model, we turned the raw audio recordings into textual audio feature descriptions and fed them into LLMs. Although features like volume, pitch, and speed are kept, some acoustic information is inevitably lost in this process. This might be another underlying reason for models gaining much better results in Valence than in Arousal and Dominance, for the latter two might be more acoustic information dependent.</p><p>In the future, we intend to use multimodal large models to directly process the raw audio recordings so that the acoustic information can be preserved more completely. Moreover, realizing the shortage of available data sources, we aim to establish more reliable multimodal dialogue emotion datasets. Furthermore, we hope to extend this study to text-tospeech generation with emotional control.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A Methodology Pipeline Algorithm, Details, and Examples</head><p>Figure <ref type="figure" target="#fig_0">4</ref> gives an example of how the proposed pipeline will work with emotion data, and the Algorithm 1 includes more details of the pipeline. Furthermore, Fig <ref type="figure" target="#fig_1">5</ref> visualizes the entire process of converting audio information from IEMOCAP dataset to textual audio feature description.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B Multimodal Emotion Dataset</head><p>Current multimodal emotion datasets vary significantly in their modality coverage, text types and annotation content for intensity-focused research.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B.1 Dataset Coverage by Modality</head><p>Text-only datasets like GoEmotions (58k Reddit comments, 28 emotions) and DailyDialog (13k dialogues) provide broad emotional coverage but lack multimodal context. Pure audio-visual datasets such as MEAD (40 hours) and RAVDESS (7,462 Input: Target utterance u t , audio recording a t , conversation history H = {(s i , u i )} t-1 i=t-W Output: Emotion label ŷ ∈ E or VAD scores (v, â, d) ∈ [1, 5] 3 // Step 1: Audio Feature Extraction for each feature f ∈ {volume, pitch, speaking rate} do µ f , σ f ← EXTRACTSTATS(a t , f ); ℓ f ← QUANTIZE(µ f , {q 0.25 , q 0.50 , q 0.75 }); ℓ σ f ← QUANTIZE(σ f , {q 0.25 , q 0.50 , q 0.75 }); end d audio ← TOTEXT({ℓ f , ℓ σ f } f ) ; // e.g., "moderate volume with high variation" // Step 2: Prompt Construction c history ← FORMAT(H) ; // prefix each turn with speaker ID p ← ASSEMBLEPROMPT(c history , u t , d audio , τ ) ; // τ : task-specific template // Step 3: Independent Task Inference if task = DISCRETEER then ŷ ← LLM ER (p), ŷ ∈ E = {happy, sad, neutral, angry, excited, frustrated}; else (v, â, d) ← LLM VAD (p), v, â, d ∈ {1, 2, 3, 4, 5}; end // Step 4: (LoRA only) Model is separately fine-tuned per task if mode = LORA then LLM ER ← LORAFINETUNE(LLM base , D ER , r=16, α=16); LLM VAD ← LORAFINETUNE(LLM base , D VAD , r=16, α=16); end Algorithm 1: Multimodal LLM-based Emotion Evaluation clips) include emotion intensity levels but consist primarily of acted performances. Comprehensive multimodal datasets like IEMOCAP (12 hours audiovisual data) and CMU-MOSEI (23.5k utterances) combine text, audio, and visual modalities with both categorical and dimensional annotations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B.2 Emotion Continuous Dimensional Annotations</head><p>Few datasets explicitly model emotion on continuous dimensions, which is crucial for quantitative evaluation. IEMOCAP provides VAD system ratings (valence, arousal, dominance), while MEAD categorizes intensity as neutral, weak, medium, and strong. MEISD offers explicit intensity levels (1-3) across eight emotion categories. However, most datasets including MELD, EmotionLines, and GoEmotions provide only categorical emotion labels without dimensional emotion measures.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B.3 Conversational Versus Non-Conversational Context</head><p>Datasets vary in their contextual structure. Conversational datasets like MELD, IEMOCAP, and  T: Text, A: Audio, V: Vision; VAD: Valence-Arousal-Dominance MEISD preserve turn-taking dynamics and contextual emotion flow. Non-conversational datasets such as CMU-MOSEI (YouTube monologues) and actor-based datasets (MEAD, RAVDESS, CREMA-D) focus on isolated emotional expressions without interactive context.</p><p>The predominance of categorical over continuous dimensional annotations limits research in emotion quantitative evaluation. For multimodal emotion dimensional evaluation research, IEMO-CAP and MEISD represent the most suitable resources. However, due to the unavailability of MEISD dataset, our final and only available choice is IEMOCAP dataset.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C Prompt Templates</head><p>Reasoning was required for prompts for both tasks to boost the performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C.1 Discrete ER Prompt</head><p>The zero-shot prompt for discrete ER follows this structure:</p><p>[System] You are an expert in emotional analysis for dialogues. Select one emotion label from {happy, sad, neutral, angry, excited, frustrated} and respond in strict JSON format.</p><p>[User] Conversation history: {{conversation_history}} Target utterance: {{target_utterance}} Audio features: {{audio_features}} Select the single emotion that best represents the dominant emotion of the target utterance. Respond in JSON: {"emotion_label": "...", "reasoning": "..."} Few-shot prompts prepend a fixed set of annotated examples (with input-output pairs) before the target utterance. The examples are selected to cover all six emotion categories and to represent cases where audio features are diagnostic.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C.2 VAD Evaluation Prompt</head><p>The zero-shot prompt for VAD evaluation follows the same structure, with the output format modified to return three integer scores:  <ref type="table" target="#tab_5">10</ref> and Table <ref type="table" target="#tab_6">11</ref> provide detailed results of the ablation study for the impact of past VAD values on VAD evaluation performance.  </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 4 :</head><label>4</label><figDesc>Figure 4: Example of The Proposed Pipeline</figDesc><graphic coords="12,70.87,492.12,218.26,213.41" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 5 :</head><label>5</label><figDesc>Figure 5: Example of the Audio Feature Description Generation</figDesc><graphic coords="13,138.90,113.93,317.47,262.64" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 6 :</head><label>6</label><figDesc>Figure 6: Example of IEMOCAP Dataset</figDesc><graphic coords="14,98.15,70.87,163.70,152.79" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>[</head><figDesc>System] You are an expert in dimensional emotion analysis. Rate the target utterance on Valence (V), Arousal (A), and Dominance (D), each on a scale of 1 to 5, where higher values indicate more positive, more activated, and more dominant respectively. Respond in strict JSON format.Results for the Impact of Past VAD Values on VAD Evaluation PerformanceTable</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><graphic coords="3,84.47,70.87,426.32,243.85" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><graphic coords="8,120.76,276.83,353.73,227.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0"><head>Table 1 :</head><label>1</label><figDesc>Discrete ER Performance of All Models (Weighted F1 score)</figDesc><table><row><cell>)</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1"><head>Table 5 :</head><label>5</label><figDesc>Key Bidirectional Confusion Rates (%)</figDesc><table><row><cell></cell><cell cols="2">Happy ↔ Excited</cell><cell cols="2">Angry ↔ Frustrated</cell><cell cols="2">Sad ↔ Frustrated</cell></row><row><cell>Model</cell><cell cols="6">Hap→Exc Exc→Hap Ang→Fru Fru→Ang Sad→Fru Fru→Sad</cell></row><row><cell>GPT-4o-mini ZS</cell><cell>7.6</cell><cell>29.8</cell><cell>75.3</cell><cell>3.1</cell><cell>22.0</cell><cell>3.4</cell></row><row><cell>GPT-4o-mini FS</cell><cell>12.5</cell><cell>22.7</cell><cell>65.9</cell><cell>6.3</cell><cell>15.1</cell><cell>6.0</cell></row><row><cell>GPT-5-mini ZS</cell><cell>30.6</cell><cell>18.4</cell><cell>60.0</cell><cell>6.3</cell><cell>18.8</cell><cell>4.5</cell></row><row><cell>GPT-5-mini FS</cell><cell>29.2</cell><cell>22.1</cell><cell>46.5</cell><cell>12.1</cell><cell>11.0</cell><cell>8.7</cell></row><row><cell>LLaMA-2-7B ZS</cell><cell>1.1</cell><cell>81.5</cell><cell>10.2</cell><cell>3.3</cell><cell>2.5</cell><cell>10.4</cell></row><row><cell>LLaMA-2-7B FS</cell><cell>5.1</cell><cell>86.7</cell><cell>18.4</cell><cell>5.1</cell><cell>6.5</cell><cell>5.7</cell></row><row><cell>LLaMA-3.1-8B ZS</cell><cell>1.4</cell><cell>67.2</cell><cell>9.4</cell><cell>1.0</cell><cell>1.8</cell><cell>12.6</cell></row><row><cell>LLaMA-3.1-8B FS</cell><cell>4.9</cell><cell>52.8</cell><cell>22.4</cell><cell>5.2</cell><cell>6.1</cell><cell>6.8</cell></row><row><cell>LLaMA-3.3-70B ZS</cell><cell>34.2</cell><cell>17.8</cell><cell>16.7</cell><cell>17.6</cell><cell>4.2</cell><cell>36.5</cell></row><row><cell>LLaMA-3.3-70B FS</cell><cell>18.7</cell><cell>17.0</cell><cell>56.8</cell><cell>5.8</cell><cell>15.6</cell><cell>5.5</cell></row><row><cell>FT LLaMA-2-7B</cell><cell>21.5</cell><cell>17.7</cell><cell>27.6</cell><cell>12.1</cell><cell>13.1</cell><cell>1.8</cell></row><row><cell>FT LLaMA-3.1-8B</cell><cell>11.8</cell><cell>20.7</cell><cell>37.1</cell><cell>10.0</cell><cell>9.4</cell><cell>3.9</cell></row><row><cell>FT LLaMA-3.3-70B</cell><cell>34.0</cell><cell>10.7</cell><cell>30.0</cell><cell>14.7</cell><cell>12.2</cell><cell>2.1</cell></row></table><note><p>ZS: zero-shot; FS: few-shot; FT: fine-tuned. Figure 2: The Impact of Past VAD on GPT Models in Emotion Dimensional Evaluation</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2"><head>Table 6 :</head><label>6</label><figDesc>Reliability Measurements of IEMOCAP</figDesc><table><row><cell>scores from prior utterances are provided as con-</cell></row><row><cell>text yields substantially higher performance than</cell></row><row><cell>experiments without past VAD scores, demonstrat-</cell></row><row><cell>ing that temporal VAD context carries meaningful</cell></row><row><cell>signal. The observed degradation in the estimated-</cell></row><row><cell>VAD condition is therefore better attributed to error</cell></row></table><note><p>accumulation: when model-predicted VAD values from earlier utterances are fed back as context, any prediction errors propagate forward and corrupt the conditioning signal for subsequent utterances.</p></note></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3"><head>Table 8 :</head><label>8</label><figDesc>Existing Emotion Datasets</figDesc><table><row><cell>Dataset</cell><cell cols="5">Modalities # Emotions Continuous Measurements Dimensional Metric Dialogue</cell></row><row><cell>IEMOCAP</cell><cell>T, A, V</cell><cell>9</cell><cell>✓</cell><cell>VAD</cell><cell>✓</cell></row><row><cell>MELD (Poria et al., 2019)</cell><cell>T, A, V</cell><cell>7</cell><cell>×</cell><cell>-</cell><cell>✓</cell></row><row><cell>EmotionLines (Chen et al., 2018)</cell><cell>T</cell><cell>6</cell><cell>×</cell><cell>-</cell><cell>✓</cell></row><row><cell>DailyDialog (Li et al., 2017)</cell><cell>T</cell><cell>7</cell><cell>×</cell><cell>-</cell><cell>✓</cell></row><row><cell>CMU-MOSEI (Bagher Zadeh et al., 2018)</cell><cell>T, A, V</cell><cell>6</cell><cell>✓</cell><cell>0-3 Likert scale</cell><cell>×</cell></row><row><cell>MEISD (Firdaus et al., 2020)</cell><cell>T, A, V</cell><cell>8</cell><cell>✓</cell><cell>1-3 Likert scale</cell><cell>✓</cell></row><row><cell>MSP-IMPROV (Busso et al., 2017)</cell><cell>T, A, V</cell><cell>4</cell><cell>×</cell><cell>-</cell><cell>✓</cell></row><row><cell>RAVDESS (Singh and Prasad, 2023)</cell><cell>T, A, V</cell><cell>6</cell><cell>✓</cell><cell>2 levels</cell><cell>×</cell></row><row><cell>CREMA-D (Cao et al., 2014)</cell><cell>T, A, V</cell><cell>6</cell><cell>✓</cell><cell>3 levels</cell><cell>×</cell></row><row><cell>MEAD (Wang et al., 2020)</cell><cell>A, V</cell><cell>7</cell><cell>✓</cell><cell>3 levels</cell><cell>✓</cell></row><row><cell>Aff-Wild2 (Kollias and Zafeiriou, 2019)</cell><cell>A, V</cell><cell>7</cell><cell>✓</cell><cell>VAD</cell><cell>×</cell></row><row><cell>GoEmotions (Demszky et al., 2020)</cell><cell>T</cell><cell>28</cell><cell>×</cell><cell>-</cell><cell>×</cell></row><row><cell>Empathetic Dialogues (Rashkin et al., 2019)</cell><cell>T</cell><cell>32</cell><cell>×</cell><cell>-</cell><cell>✓</cell></row><row><cell>DeepDialogue (Koudounas et al., 2025)</cell><cell>T</cell><cell>20</cell><cell>×</cell><cell>-</cell><cell>✓</cell></row><row><cell>EmotionTalk (Sun et al., 2025)</cell><cell>T, A, V</cell><cell>7</cell><cell>×</cell><cell>-</cell><cell>✓</cell></row><row><cell>ESD (Zhou et al., 2022)</cell><cell>T, A</cell><cell>5</cell><cell>×</cell><cell>-</cell><cell>×</cell></row><row><cell>Expresso (Nguyen et al., 2023)</cell><cell>T, A</cell><cell>19</cell><cell>×</cell><cell>-</cell><cell>✓</cell></row><row><cell>AvaMERG (Zhang et al., 2025)</cell><cell>T, A, V</cell><cell>7</cell><cell>×</cell><cell>-</cell><cell>×</cell></row><row><cell>Counselling Transcripts (noa)</cell><cell>T</cell><cell>11</cell><cell>×</cell><cell>-</cell><cell>✓</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4"><head>Table 9 :</head><label>9</label><figDesc>Summary Statistics of the IEMOCAP Dataset</figDesc><table><row><cell>Property</cell><cell>Value</cell></row><row><cell>Number of sessions</cell><cell>5 dyadic sessions</cell></row><row><cell>Total dialogues</cell><cell>151</cell></row><row><cell>Total utterances</cell><cell>10,086</cell></row><row><cell>Avg. utterances per dialogue</cell><cell>≈ 66</cell></row><row><cell>Total audio duration</cell><cell>≈ 12 hours</cell></row><row><cell>Available modalities</cell><cell>Audio, Video, Text, Motion Capture</cell></row><row><cell cols="2">Discrete emotion categories used 6 (happy, sad, neutral, angry, excited, frustrated)</cell></row><row><cell>Utterances after filtering</cell><cell>7,433</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5"><head>Table 10 :</head><label>10</label><figDesc>VAD Evaluation Performance Comparison Across OpenAI Models and Prompting Strategies with Past VAD Values</figDesc><table><row><cell></cell><cell></cell><cell cols="2">Context Window = 12</cell><cell></cell><cell></cell><cell cols="2">Context Window = 3</cell><cell></cell></row><row><cell></cell><cell cols="2">GPT-4o mini</cell><cell cols="2">GPT-5 mini</cell><cell cols="2">GPT-4o mini</cell><cell cols="2">GPT-5 mini</cell></row><row><cell cols="9">Dimension Zero-shot Few-shot Zero-shot Few-shot Zero-shot Few-shot Zero-shot Few-shot</cell></row><row><cell>Valence</cell><cell>0.5795</cell><cell>0.6193</cell><cell>0.6892</cell><cell>0.6861</cell><cell>0.6132</cell><cell>0.6329</cell><cell>0.6806</cell><cell>0.6857</cell></row><row><cell>Arousal</cell><cell>0.3787</cell><cell>0.3720</cell><cell>0.3959</cell><cell>0.3460</cell><cell>0.3481</cell><cell>0.3462</cell><cell>0.3710</cell><cell>0.3415</cell></row><row><cell>Dominance</cell><cell>0.1487</cell><cell>0.1504</cell><cell>0.3396</cell><cell>0.3424</cell><cell>0.1555</cell><cell>0.1340</cell><cell>0.3343</cell><cell>0.3333</cell></row><row><cell>Overall</cell><cell>0.3690</cell><cell>0.3806</cell><cell>0.4749</cell><cell>0.4582</cell><cell>0.3723</cell><cell>0.3710</cell><cell>0.4620</cell><cell>0.4535</cell></row></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6"><head>Table 11 :</head><label>11</label><figDesc>VAD Evaluation Performance Comparison Across LLaMA Models with LoRA Finetuning With Past VAD</figDesc><table><row><cell></cell><cell>Context Window = 12</cell><cell>Context Window = 3</cell></row><row><cell>Dimension</cell><cell cols="2">2-7B 3.1-8B 3.3-70B 2-7B 3.1-8B 3.3-70B</cell></row><row><cell>Valence</cell><cell cols="2">0.6647 0.7677 0.5368 0.6291 0.7160 0.4626</cell></row><row><cell>Arousal</cell><cell cols="2">0.3033 0.4411 0.3046 0.3412 0.3968 0.2034</cell></row><row><cell cols="3">Dominance 0.2662 0.4252 0.3585 0.3166 0.3719 0.2412</cell></row><row><cell>Overall</cell><cell cols="2">0.4114 0.5447 0.4000 0.5489 0.4949 0.3024</cell></row></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div><head>Acknowledgments</head><p>We thank <rs type="institution">SAIL Lab at USC</rs> for giving us permission to IEMOCAP dataset.</p></div>
+			</div>			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Modalities</head><p>Valence CCC Arousal CCC Dominance CCC Atmaja et al. <ref type="bibr" target="#b2">(Atmaja and Akagi, 2021)</ref> Audio, Text 0.553 0.579 0.456 Messaoudi et al. <ref type="bibr" target="#b21">(Messaoudi et al., 2024)</ref> Audio 0.236 0.571 0.408 Awatef et al. <ref type="bibr" target="#b3">(Awatef et al., 2025)</ref> Audio, Text 0.603 0.736 0.604 The Proposed</p><p>Audio, Text 0.782 0.465 0.441</p><p>The proposed here is LLaMA-3.3-70B with LoRA fine-tuning </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7"><head>Table 3 :</head><label>3</label><figDesc>Comparison with Prior Work on VAD Evaluation on IEMOCAP</figDesc><table><row><cell cols="6">Table 4: Per-emotion F1 score (%)</cell><cell></cell></row><row><cell>Model</cell><cell cols="6">Happy Sad Neutral Angry Excited Frustrated</cell></row><row><cell>GPT-4o-mini ZS</cell><cell>49</cell><cell>70</cell><cell>53</cell><cell>32</cell><cell>53</cell><cell>60</cell></row><row><cell>GPT-4o-mini FS</cell><cell>46</cell><cell>74</cell><cell>55</cell><cell>40</cell><cell>56</cell><cell>60</cell></row><row><cell>GPT-5-mini ZS</cell><cell>42</cell><cell>70</cell><cell>57</cell><cell>45</cell><cell>63</cell><cell>61</cell></row><row><cell>GPT-5-mini FS</cell><cell>43</cell><cell>70</cell><cell>60</cell><cell>53</cell><cell>61</cell><cell>61</cell></row><row><cell>LLaMA-2-7B ZS</cell><cell>28</cell><cell>2</cell><cell>4</cell><cell>3</cell><cell>5</cell><cell>8</cell></row><row><cell>LLaMA-2-7B FS</cell><cell>40</cell><cell>3</cell><cell>5</cell><cell>4</cell><cell>9</cell><cell>7</cell></row><row><cell>LLaMA-3.1-8B ZS</cell><cell>41</cell><cell>55</cell><cell>52</cell><cell>22</cell><cell>6</cell><cell>15</cell></row><row><cell>LLaMA-3.1-8B FS</cell><cell>44</cell><cell>42</cell><cell>54</cell><cell>38</cell><cell>24</cell><cell>37</cell></row><row><cell>LLaMA-3.3-70B ZS</cell><cell>50</cell><cell>78</cell><cell>31</cell><cell>70</cell><cell>67</cell><cell>40</cell></row><row><cell>LLaMA-3.3-70B FS</cell><cell>42</cell><cell>74</cell><cell>58</cell><cell>44</cell><cell>57</cell><cell>56</cell></row><row><cell>FT LLaMA-2-7B</cell><cell>63</cell><cell>83</cell><cell>75</cell><cell>69</cell><cell>72</cell><cell>72</cell></row><row><cell>FT LLaMA-3.1-8B</cell><cell>66</cell><cell>84</cell><cell>74</cell><cell>61</cell><cell>71</cell><cell>69</cell></row><row><cell>FT LLaMA-3.3-70B</cell><cell>61</cell><cell>80</cell><cell>73</cell><cell>65</cell><cell>78</cell><cell>69</cell></row></table><note><p>ZS: zero-shot; FS: few-shot; FT: fine-tuned. able model performance. The agreement hierarchy-Valence, Arousal, Dominance-is consistent with the VAD evaluation performance.</p></note></figure>
+			</div>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct status="extracted" xml:id="b0">
+	<monogr>
+		<title level="m" type="main">A Counseling Speech Dataset for Psychotherapy Research</title>
+		<author>
+			<persName><surname>Cuempathy</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+	<note type="raw_reference">CUEMPATHY: A Counseling Speech Dataset for Psy- chotherapy Research.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b1">
+	<monogr>
+		<title level="m" type="main">SpeechT5: Unified-Modal Encoder-Decoder Pre-Training for Spoken Language Processing</title>
+		<author>
+			<persName><forename type="first">Junyi</forename><surname>Ao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Long</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chengyi</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuo</forename><surname>Ren</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shujie</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tom</forename><surname>Ko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qing</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhihua</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yao</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinyu</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Furu</forename><surname>Wei</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2110.07205</idno>
+		<idno>ArXiv:2110.07205</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>eess</note>
+	<note type="raw_reference">Junyi Ao, Rui Wang, Long Zhou, Chengyi Wang, Shuo Ren, Yu Wu, Shujie Liu, Tom Ko, Qing Li, Yu Zhang, Zhihua Wei, Yao Qian, Jinyu Li, and Furu Wei. 2022. SpeechT5: Unified-Modal Encoder-Decoder Pre-Training for Spoken Language Processing. arXiv preprint. ArXiv:2110.07205 [eess].</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Twostage dimensional emotion recognition by fusing predictions of acoustic and text networks using SVM</title>
+		<author>
+			<persName><forename type="first">Bagus</forename><surname>Tris</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Atmaja</forename></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Masato</forename><surname>Akagi</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.specom.2020.11.003</idno>
+		<idno>ArXiv:2210.14495</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Speech Communication</title>
+		<imprint>
+			<biblScope unit="volume">126</biblScope>
+			<biblScope unit="page" from="9" to="21" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Bagus Tris Atmaja and Masato Akagi. 2021. Two- stage dimensional emotion recognition by fus- ing predictions of acoustic and text networks us- ing SVM. Speech Communication, 126:9-21. ArXiv:2210.14495</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Multimodal emotion recognition: integrating speech and text for improved valence, arousal, and dominance prediction</title>
+		<author>
+			<persName><forename type="first">Messaoudi</forename><surname>Awatef</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Boughrara</forename><surname>Hayet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lachiri</forename><surname>Zied</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s12243-025-01069-1</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annals of Telecommunications</title>
+		<imprint>
+			<biblScope unit="volume">80</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="401" to="415" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Messaoudi Awatef, Boughrara Hayet, and Lachiri Zied. 2025. Multimodal emotion recognition: integrating speech and text for improved valence, arousal, and dominance prediction. Annals of Telecommunica- tions, 80(5):401-415.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b4">
+	<monogr>
+		<title level="m" type="main">wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations</title>
+		<author>
+			<persName><forename type="first">Alexei</forename><surname>Baevski</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Henry</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abdelrahman</forename><surname>Mohamed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Auli</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2006.11477</idno>
+		<idno>ArXiv:2006.11477</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Alexei Baevski, Henry Zhou, Abdelrahman Mohamed, and Michael Auli. 2020. wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representa- tions. arXiv preprint. ArXiv:2006.11477 [cs.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Multimodal Language Analysis in the Wild: CMU-MOSEI Dataset and Interpretable Dynamic Fusion Graph</title>
+		<author>
+			<persName><forename type="first">Amirali</forename><surname>Bagher Zadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Paul</forename><forename type="middle">Pu</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soujanya</forename><surname>Poria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Cambria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Louis-Philippe</forename><surname>Morency</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/P18-1208</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics</title>
+		<meeting>the 56th Annual Meeting of the Association for Computational Linguistics<address><addrLine>Melbourne, Australia</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2018">2018</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="2236" to="2246" />
+		</imprint>
+	</monogr>
+	<note>Long Papers)</note>
+	<note type="raw_reference">AmirAli Bagher Zadeh, Paul Pu Liang, Soujanya Poria, Erik Cambria, and Louis-Philippe Morency. 2018. Multimodal Language Analysis in the Wild: CMU- MOSEI Dataset and Interpretable Dynamic Fusion Graph. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Vol- ume 1: Long Papers), pages 2236-2246, Melbourne, Australia. Association for Computational Linguistics.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b6">
+	<analytic>
+		<title level="a" type="main">IEMOCAP: interactive emotional dyadic motion capture database</title>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Busso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Murtaza</forename><surname>Bulut</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chi-Chun</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Abe</forename><surname>Kazemzadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><surname>Mower</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Samuel</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeannette</forename><forename type="middle">N</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sungbok</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shrikanth</forename><forename type="middle">S</forename><surname>Narayanan</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s10579-008-9076-6</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Language Resources and Evaluation</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="335" to="359" />
+			<date type="published" when="2008">2008</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Carlos Busso, Murtaza Bulut, Chi-Chun Lee, Abe Kazemzadeh, Emily Mower, Samuel Kim, Jean- nette N. Chang, Sungbok Lee, and Shrikanth S. Narayanan. 2008. IEMOCAP: interactive emotional dyadic motion capture database. Language Re- sources and Evaluation, 42(4):335-359.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">MSP-IMPROV: An Acted Corpus of Dyadic Interactions to Study Emotion Perception</title>
+		<author>
+			<persName><forename type="first">Carlos</forename><surname>Busso</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Srinivas</forename><surname>Parthasarathy</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alec</forename><surname>Burmania</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mohammed</forename><surname>Abdelwahab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Najmeh</forename><surname>Sadoughi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emily</forename><forename type="middle">Mower</forename><surname>Provost</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TAFFC.2016.2515617</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Affective Computing</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="67" to="80" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Carlos Busso, Srinivas Parthasarathy, Alec Burmania, Mohammed AbdelWahab, Najmeh Sadoughi, and Emily Mower Provost. 2017. MSP-IMPROV: An Acted Corpus of Dyadic Interactions to Study Emo- tion Perception. IEEE Transactions on Affective Computing, 8(1):67-80.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">CREMA-D: Crowd-Sourced Emotional Multimodal Actors Dataset</title>
+		<author>
+			<persName><forename type="first">Houwei</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">David</forename><forename type="middle">G</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><forename type="middle">K</forename><surname>Keutmann</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ruben</forename><forename type="middle">C</forename><surname>Gur</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ani</forename><surname>Nenkova</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ragini</forename><surname>Verma</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/TAFFC.2014.2336244</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Affective Computing</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="377" to="390" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Houwei Cao, David G. Cooper, Michael K. Keutmann, Ruben C. Gur, Ani Nenkova, and Ragini Verma. 2014. CREMA-D: Crowd-Sourced Emotional Multimodal Actors Dataset. IEEE Transactions on Affective Com- puting, 5(4):377-390.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Emotion-Lines: An Emotion Corpus of Multi-Party Conversations</title>
+		<author>
+			<persName><forename type="first">Sheng-Yeh</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chao-Chun</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chuan-Chun</forename><surname>Kuo</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ting-Hao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lun-Wei</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Ku</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1802.08379</idno>
+		<idno>ArXiv:1802.08379</idno>
+		<imprint>
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Sheng-Yeh Chen, Chao-Chun Hsu, Chuan-Chun Kuo, Ting-Hao, Huang, and Lun-Wei Ku. 2018. Emotion- Lines: An Emotion Corpus of Multi-Party Conversa- tions. arXiv preprint. ArXiv:1802.08379 [cs].</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b10">
+	<monogr>
+		<title level="m" type="main">GoEmotions: A Dataset of Fine-Grained Emotions</title>
+		<author>
+			<persName><forename type="first">Dorottya</forename><surname>Demszky</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Dana</forename><surname>Movshovitz-Attias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jeongwoo</forename><surname>Ko</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alan</forename><surname>Cowen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gaurav</forename><surname>Nemade</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sujith</forename><surname>Ravi</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2005.00547</idno>
+		<idno>ArXiv:2005.00547</idno>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Dorottya Demszky, Dana Movshovitz-Attias, Jeongwoo Ko, Alan Cowen, Gaurav Nemade, and Sujith Ravi. 2020. GoEmotions: A Dataset of Fine-Grained Emo- tions. arXiv preprint. ArXiv:2005.00547 [cs.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b11">
+	<monogr>
+		<title level="m" type="main">CLAP: Learning Audio Concepts From Natural Language Supervision</title>
+		<author>
+			<persName><forename type="first">Benjamin</forename><surname>Elizalde</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soham</forename><surname>Deshmukh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mahmoud</forename><forename type="middle">Al</forename><surname>Ismail</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Huaming</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2206.04769</idno>
+		<idno>ArXiv:2206.04769</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Benjamin Elizalde, Soham Deshmukh, Mahmoud Al Ismail, and Huaming Wang. 2022. CLAP: Learning Audio Concepts From Natural Language Supervision. arXiv preprint. ArXiv:2206.04769 [cs.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">MEISD: A Multimodal Multi-Label Emotion, Intensity and Sentiment Dialogue Dataset for Emotion Recognition and Sentiment Analysis in Conversations</title>
+		<author>
+			<persName><forename type="first">Mauajama</forename><surname>Firdaus</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hardik</forename><surname>Chauhan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Asif</forename><surname>Ekbal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pushpak</forename><surname>Bhattacharyya</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2020.coling-main.393</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 28th International Conference on Computational Linguistics</title>
+		<meeting>the 28th International Conference on Computational Linguistics<address><addrLine>Barcelona, Spain</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<biblScope unit="page" from="4441" to="4453" />
+		</imprint>
+	</monogr>
+	<note>International Committee on Computational Linguistics</note>
+	<note type="raw_reference">Mauajama Firdaus, Hardik Chauhan, Asif Ekbal, and Pushpak Bhattacharyya. 2020. MEISD: A Multi- modal Multi-Label Emotion, Intensity and Sentiment Dialogue Dataset for Emotion Recognition and Sen- timent Analysis in Conversations. In Proceedings of the 28th International Conference on Computational Linguistics, pages 4441-4453, Barcelona, Spain (On- line). International Committee on Computational Lin- guistics.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">DialogueGCN: A Graph Convolutional Neural Network for Emotion Recognition in Conversation</title>
+		<author>
+			<persName><forename type="first">Deepanway</forename><surname>Ghosal</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Navonil</forename><surname>Majumder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soujanya</forename><surname>Poria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Niyati</forename><surname>Chhaya</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Gelbukh</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/D19-1015</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)</title>
+		<meeting>the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)<address><addrLine>Hong Kong, China</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2019">2019</date>
+			<biblScope unit="page" from="154" to="164" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Deepanway Ghosal, Navonil Majumder, Soujanya Po- ria, Niyati Chhaya, and Alexander Gelbukh. 2019. DialogueGCN: A Graph Convolutional Neural Net- work for Emotion Recognition in Conversation. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pages 154-164, Hong Kong, China. Association for Computational Linguis- tics.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b14">
+	<monogr>
+		<title level="m" type="main">LoRA: Low-Rank Adaptation of Large Language Models</title>
+		<author>
+			<persName><forename type="first">Edward</forename><forename type="middle">J</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yelong</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Phillip</forename><surname>Wallis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zeyuan</forename><surname>Allen-Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yuanzhi</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shean</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lu</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Weizhu</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2106.09685</idno>
+		<idno>ArXiv:2106.09685</idno>
+		<imprint>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Edward J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, and Weizhu Chen. 2021. LoRA: Low-Rank Adapta- tion of Large Language Models. arXiv preprint. ArXiv:2106.09685 [cs].</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">A Multi-Task, Multi-Modal Approach for Predicting Categorical and Dimensional Emotions</title>
+		<author>
+			<persName><forename type="first">Alex-Rȃzvan</forename><surname>Ispas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Théo</forename><surname>Deschamps-Berger</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Laurence</forename><surname>Devillers</surname></persName>
+		</author>
+		<idno type="DOI">10.1145/3610661.3616190</idno>
+		<idno>ArXiv:2401.00536</idno>
+	</analytic>
+	<monogr>
+		<title level="m">International Cconference on Multimodal Interaction</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="311" to="317" />
+		</imprint>
+	</monogr>
+	<note>cs</note>
+	<note type="raw_reference">Alex-Rȃzvan Ispas, Théo Deschamps-Berger, and Laurence Devillers. 2023. A Multi-Task, Multi- Modal Approach for Predicting Categorical and Dimensional Emotions. In International Cconfer- ence on Multimodal Interaction, pages 311-317. ArXiv:2401.00536 [cs.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b16">
+	<monogr>
+		<title level="m" type="main">Aff-Wild2: Extending the Aff-Wild Database for Affect Recognition</title>
+		<author>
+			<persName><forename type="first">Dimitrios</forename><surname>Kollias</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefanos</forename><surname>Zafeiriou</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1811.07770</idno>
+		<idno>ArXiv:1811.07770</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note type="raw_reference">Dimitrios Kollias and Stefanos Zafeiriou. 2019. Aff- Wild2: Extending the Aff-Wild Database for Affect Recognition. arXiv preprint. ArXiv:1811.07770</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b17">
+	<monogr>
+		<title level="m" type="main">DeepDialogue: A Multi-Turn Emotionally-Rich Spoken Dialogue Dataset</title>
+		<author>
+			<persName><forename type="first">Alkis</forename><surname>Koudounas</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">La</forename><surname>Moreno</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Elena</forename><surname>Quatra</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Baralis</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2505.19978</idno>
+		<idno>ArXiv:2505.19978</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Alkis Koudounas, Moreno La Quatra, and Elena Baralis. 2025. DeepDialogue: A Multi-Turn Emotionally- Rich Spoken Dialogue Dataset. arXiv preprint. ArXiv:2505.19978 [cs].</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b18">
+	<monogr>
+		<title level="m" type="main">Instruc-tERC: Reforming Emotion Recognition in Conversation with Multi-task Retrieval-Augmented Large Language Models</title>
+		<author>
+			<persName><forename type="first">Shanglin</forename><surname>Lei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Guanting</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoping</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Keheng</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Runqi</forename><surname>Qiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Sirui</forename><surname>Wang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shanglin Lei, Guanting Dong, Xiaoping Wang, Keheng Wang, Runqi Qiao, and Sirui Wang. 2023. Instruc- tERC: Reforming Emotion Recognition in Conver- sation with Multi-task Retrieval-Augmented Large Language Models.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b19">
+	<monogr>
+		<title level="m" type="main">DailyDialog: A Manually Labelled Multi-turn Dialogue Dataset</title>
+		<author>
+			<persName><forename type="first">Yanran</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Su</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xiaoyu</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wenjie</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziqiang</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shuzi</forename><surname>Niu</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1710.03957</idno>
+		<idno>ArXiv:1710.03957</idno>
+		<imprint>
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Yanran Li, Hui Su, Xiaoyu Shen, Wenjie Li, Ziqiang Cao, and Shuzi Niu. 2017. DailyDialog: A Man- ually Labelled Multi-turn Dialogue Dataset. arXiv preprint. ArXiv:1710.03957 [cs.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b20">
+	<monogr>
+		<title level="m" type="main">DialogueRNN: An Attentive RNN for Emotion Detection in Conversations</title>
+		<author>
+			<persName><forename type="first">Navonil</forename><surname>Majumder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Soujanya</forename><surname>Poria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Devamanyu</forename><surname>Hazarika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rada</forename><surname>Mihalcea</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Alexander</forename><surname>Gelbukh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Cambria</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1811.00405</idno>
+		<idno>ArXiv:1811.00405</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Navonil Majumder, Soujanya Poria, Devamanyu Haz- arika, Rada Mihalcea, Alexander Gelbukh, and Erik Cambria. 2019. DialogueRNN: An Attentive RNN for Emotion Detection in Conversations. arXiv preprint. ArXiv:1811.00405 [cs.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Speech Emotion Recognition In Continuous Space Using IEMOCAP Database</title>
+		<author>
+			<persName><forename type="first">Awatef</forename><surname>Messaoudi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hayet</forename><surname>Boughrara</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zied</forename><surname>Lachiri</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ISIVC61350.2024.10577881</idno>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE 12th International Symposium on Signal, Image, Video and Communications (ISIVC)</title>
+		<imprint>
+			<date type="published" when="2024">2024. 2024</date>
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Awatef Messaoudi, Hayet Boughrara, and Zied Lachiri. 2024. Speech Emotion Recognition In Continu- ous Space Using IEMOCAP Database. In 2024 IEEE 12th International Symposium on Signal, Im- age, Video and Communications (ISIVC), pages 1-6.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b22">
+	<monogr>
+		<title level="m" type="main">EXPRESSO: A Benchmark and Analysis of Discrete Expressive Speech Resynthesis</title>
+		<author>
+			<persName><forename type="first">Anh</forename><surname>Tu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wei-Ning</forename><surname>Nguyen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Antony D'</forename><surname>Hsu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bowen</forename><surname>Avirro</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Itai</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Maryam</forename><surname>Gat</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Tal</forename><surname>Fazel-Zarani</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jade</forename><surname>Remez</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gabriel</forename><surname>Copet</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Michael</forename><surname>Synnaeve</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Felix</forename><surname>Hassid</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yossi</forename><surname>Kreuk</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Emmanuel</forename><surname>Adi</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Dupoux</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2308.05725</idno>
+		<idno>ArXiv:2308.05725</idno>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Tu Anh Nguyen, Wei-Ning Hsu, Antony D&apos;Avirro, Bowen Shi, Itai Gat, Maryam Fazel-Zarani, Tal Re- mez, Jade Copet, Gabriel Synnaeve, Michael Has- sid, Felix Kreuk, Yossi Adi, and Emmanuel Dupoux. 2023. EXPRESSO: A Benchmark and Analysis of Discrete Expressive Speech Resynthesis. arXiv preprint. ArXiv:2308.05725 [cs.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Context-Dependent Sentiment Analysis in User-Generated Videos</title>
+		<author>
+			<persName><forename type="first">Soujanya</forename><surname>Poria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Cambria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Devamanyu</forename><surname>Hazarika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Navonil</forename><surname>Majumder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Amir</forename><surname>Zadeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Louis-Philippe</forename><surname>Morency</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/P17-1081</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics</title>
+		<meeting>the 55th Annual Meeting of the Association for Computational Linguistics<address><addrLine>Vancouver, Canada</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2017">2017</date>
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="873" to="883" />
+		</imprint>
+	</monogr>
+	<note>Long Papers)</note>
+	<note type="raw_reference">Soujanya Poria, Erik Cambria, Devamanyu Hazarika, Navonil Majumder, Amir Zadeh, and Louis-Philippe Morency. 2017. Context-Dependent Sentiment Anal- ysis in User-Generated Videos. In Proceedings of the 55th Annual Meeting of the Association for Compu- tational Linguistics (Volume 1: Long Papers), pages 873-883, Vancouver, Canada. Association for Com- putational Linguistics.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b24">
+	<monogr>
+		<title level="m" type="main">MELD: A Multimodal Multi-Party Dataset for Emotion Recognition in Conversations</title>
+		<author>
+			<persName><forename type="first">Soujanya</forename><surname>Poria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Devamanyu</forename><surname>Hazarika</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Navonil</forename><surname>Majumder</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Gautam</forename><surname>Naik</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Cambria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rada</forename><surname>Mihalcea</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1810.02508</idno>
+		<idno>ArXiv:1810.02508</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Soujanya Poria, Devamanyu Hazarika, Navonil Ma- jumder, Gautam Naik, Erik Cambria, and Rada Mi- halcea. 2019. MELD: A Multimodal Multi-Party Dataset for Emotion Recognition in Conversations. arXiv preprint. ArXiv:1810.02508 [cs].</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b25">
+	<monogr>
+		<title level="m" type="main">Towards Empathetic Opendomain Conversation Models: a New Benchmark and Dataset</title>
+		<author>
+			<persName><forename type="first">Eric</forename><forename type="middle">Michael</forename><surname>Hannah Rashkin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Margaret</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y.-Lan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Boureau</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.1811.00207</idno>
+		<idno>ArXiv:1811.00207</idno>
+		<imprint>
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Hannah Rashkin, Eric Michael Smith, Margaret Li, and Y.-Lan Boureau. 2019. Towards Empathetic Open- domain Conversation Models: a New Benchmark and Dataset. arXiv preprint. ArXiv:1811.00207 [cs.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Evidence for a three-factor theory of emotions</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Albert</forename><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName><surname>Mehrabian</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/0092-6566(77)90037-X</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Research in Personality</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="273" to="294" />
+			<date type="published" when="1977">1977</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">James A Russell and Albert Mehrabian. 1977. Evidence for a three-factor theory of emotions. Journal of Research in Personality, 11(3):273-294.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Speech Emotion Recognition using Fully Convolutional Network and Augmented RAVDESS Dataset</title>
+		<author>
+			<persName><forename type="first">Vandana</forename><surname>Singh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Swati</forename><surname>Prasad</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICACTA58201.2023.10392486</idno>
+	</analytic>
+	<monogr>
+		<title level="m">2023 International Conference on Advanced Computing Technologies and Applications (ICACTA)</title>
+		<imprint>
+			<date type="published" when="2023">2023</date>
+			<biblScope unit="page" from="1" to="7" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Vandana Singh and Swati Prasad. 2023. Speech Emo- tion Recognition using Fully Convolutional Network and Augmented RAVDESS Dataset. In 2023 Inter- national Conference on Advanced Computing Tech- nologies and Applications (ICACTA), pages 1-7.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b28">
+	<monogr>
+		<title level="m" type="main">Representation learning through cross-modal conditional teacher-student training for speech emotion recognition</title>
+		<author>
+			<persName><forename type="first">Sundararajan</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhaocheng</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Katrin</forename><surname>Kirchhoff</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2112.00158</idno>
+		<idno>ArXiv:2112.00158</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>eess</note>
+	<note type="raw_reference">Sundararajan Srinivasan, Zhaocheng Huang, and Katrin Kirchhoff. 2022. Representation learning through cross-modal conditional teacher-student training for speech emotion recognition. arXiv preprint. ArXiv:2112.00158 [eess].</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b29">
+	<monogr>
+		<title level="m" type="main">EmotionTalk: An Interactive Chinese Multimodal Emotion Dataset With Rich Annotations</title>
+		<author>
+			<persName><forename type="first">Haoqin</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xuechen</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jinghua</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Shiwan</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiaming</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hui</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jiabei</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Aobo</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Xi</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yequan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yonghua</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yong</forename><surname>Qin</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2505.23018</idno>
+		<idno>ArXiv:2505.23018</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Haoqin Sun, Xuechen Wang, Jinghua Zhao, Shiwan Zhao, Jiaming Zhou, Hui Wang, Jiabei He, Aobo Kong, Xi Yang, Yequan Wang, Yonghua Lin, and Yong Qin. 2025. EmotionTalk: An Interactive Chi- nese Multimodal Emotion Dataset With Rich Anno- tations. arXiv preprint. ArXiv:2505.23018 [cs.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Adieu features? End-to-end speech emotion recognition using a deep convolutional recurrent network</title>
+		<author>
+			<persName><forename type="first">George</forename><surname>Trigeorgis</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Fabien</forename><surname>Ringeval</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Raymond</forename><surname>Brueckner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Marchi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Mihalis</forename><forename type="middle">A</forename><surname>Nicolaou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Björn</forename><surname>Schuller</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Stefanos</forename><surname>Zafeiriou</surname></persName>
+		</author>
+		<idno type="DOI">10.1109/ICASSP.2016.7472669</idno>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</title>
+		<imprint>
+			<date type="published" when="2016">2016. 2016</date>
+			<biblScope unit="page" from="5200" to="5204" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">George Trigeorgis, Fabien Ringeval, Raymond Brueck- ner, Erik Marchi, Mihalis A. Nicolaou, Björn Schuller, and Stefanos Zafeiriou. 2016. Adieu fea- tures? End-to-end speech emotion recognition using a deep convolutional recurrent network. In 2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pages 5200-5204.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">MEAD: A Large-Scale Audio-Visual Dataset for Emotional Talking-Face Generation</title>
+		<author>
+			<persName><forename type="first">Kaisiyuan</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Qianyi</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Linsen</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zhuoqian</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Wayne</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><surname>Qian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ran</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yu</forename><surname>Qiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Chen</forename><forename type="middle">Change</forename><surname>Loy</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/978-3-030-58589-1_42</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Computer Vision -ECCV 2020: 16th European Conference</title>
+		<meeting><address><addrLine>Glasgow, UK; Berlin, Heidelberg</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer-Verlag</publisher>
+			<date type="published" when="2020-08-23">2020. August 23-28, 2020</date>
+			<biblScope unit="page" from="700" to="717" />
+		</imprint>
+	</monogr>
+	<note>Proceedings, Part XXI</note>
+	<note type="raw_reference">Kaisiyuan Wang, Qianyi Wu, Linsen Song, Zhuoqian Yang, Wayne Wu, Chen Qian, Ran He, Yu Qiao, and Chen Change Loy. 2020. MEAD: A Large-Scale Audio-Visual Dataset for Emotional Talking-Face Generation. In Computer Vision -ECCV 2020: 16th European Conference, Glasgow, UK, August 23-28, 2020, Proceedings, Part XXI, pages 700-717, Berlin, Heidelberg. Springer-Verlag.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Multimodal Emotion Recognition in Conversations: A Survey of Methods, Trends, Challenges and Prospects</title>
+		<author>
+			<persName><forename type="first">Chengyan</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yiqiang</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yang</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Pengxu</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yun</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Ziwei</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Julia</forename><surname>Hirschberg</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Bolei</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2025.findings-emnlp.332</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics: EMNLP 2025</title>
+		<meeting><address><addrLine>Suzhou, China</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page" from="6257" to="6274" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">ChengYan Wu, Yiqiang Cai, Yang Liu, Pengxu Zhu, Yun Xue, Ziwei Gong, Julia Hirschberg, and Bolei Ma. 2025a. Multimodal Emotion Recognition in Conversations: A Survey of Methods, Trends, Chal- lenges and Prospects. In Findings of the Association for Computational Linguistics: EMNLP 2025, pages 6257-6274, Suzhou, China. Association for Compu- tational Linguistics.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Beyond Spurious Signals: Debiasing Multimodal Large Language Models via Counterfactual Inference and Adaptive Expert Routing</title>
+		<author>
+			<persName><forename type="first">Zichen</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hsiu-Yuan</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Yunfang</forename><surname>Wu</surname></persName>
+		</author>
+		<idno type="DOI">10.18653/v1/2025.findings-emnlp.205</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Findings of the Association for Computational Linguistics: EMNLP 2025</title>
+		<meeting><address><addrLine>Suzhou, China</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computational Linguistics</publisher>
+			<date type="published" when="2025">2025</date>
+			<biblScope unit="page" from="3805" to="3825" />
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zichen Wu, Hsiu-Yuan Huang, and Yunfang Wu. 2025b. Beyond Spurious Signals: Debiasing Multimodal Large Language Models via Counterfactual Inference and Adaptive Expert Routing. In Findings of the Association for Computational Linguistics: EMNLP 2025, pages 3805-3825, Suzhou, China. Association for Computational Linguistics.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b34">
+	<monogr>
+		<title level="m" type="main">Towards Multimodal Empathetic Response Generation: A Rich Text-Speech-Vision Avatar-based Benchmark</title>
+		<author>
+			<persName><forename type="first">Han</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Zixiang</forename><surname>Meng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Meng</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hong</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Lizi</forename><surname>Liao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Erik</forename><surname>Cambria</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Hao</forename><surname>Fei</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2502.04976</idno>
+		<idno>ArXiv:2502.04976</idno>
+		<imprint>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Han Zhang, Zixiang Meng, Meng Luo, Hong Han, Lizi Liao, Erik Cambria, and Hao Fei. 2025. Towards Multimodal Empathetic Response Generation: A Rich Text-Speech-Vision Avatar-based Benchmark. arXiv preprint. ArXiv:2502.04976 [cs.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b35">
+	<monogr>
+		<title level="m" type="main">Emotional Voice Conversion: Theory, Databases and ESD</title>
+		<author>
+			<persName><forename type="first">Kun</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Berrak</forename><surname>Sisman</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Rui</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Haizhou</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.48550/arXiv.2105.14762</idno>
+		<idno>ArXiv:2105.14762</idno>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="report_type">arXiv preprint</note>
+	<note>cs</note>
+	<note type="raw_reference">Kun Zhou, Berrak Sisman, Rui Liu, and Haizhou Li. 2022. Emotional Voice Conversion: The- ory, Databases and ESD. arXiv preprint. ArXiv:2105.14762 [cs].</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

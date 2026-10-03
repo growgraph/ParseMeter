@@ -1,0 +1,5 @@
+[project]
+name = "arm-paddle"
+version = "0.0.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["paddleocr[doc-parser]==3.7.0", "paddlex[genai-client]==3.7.2", "paddlepaddle==3.2.2"]

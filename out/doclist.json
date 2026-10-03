@@ -1,0 +1,1298 @@
+[
+ {
+  "set": "docs",
+  "id": "natcomm-2020",
+  "path": "corpus/papers/natcomm-2020.pdf",
+  "pages": 7,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "docs",
+  "id": "apple-10k-2025",
+  "path": "corpus/reports/apple-10k-2025.pdf",
+  "pages": 80,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "docs",
+  "id": "apple-10q-2026q3",
+  "path": "corpus/reports/apple-10q-2026q3.pdf",
+  "pages": 32,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "docs",
+  "id": "sfix-10k-2026",
+  "path": "corpus/reports/sfix-10k-2026.pdf",
+  "pages": 110,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "docs",
+  "id": "arxiv-math-tables",
+  "path": "corpus/papers/arxiv-math-tables.pdf",
+  "pages": 13,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "docs",
+  "id": "arxiv-math-heavy",
+  "path": "corpus/papers/arxiv-math-heavy.pdf",
+  "pages": 19,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "docs",
+  "id": "arxiv-tables",
+  "path": "corpus/papers/arxiv-tables.pdf",
+  "pages": 15,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "docs",
+  "id": "journal-tables-footnotes",
+  "path": "corpus/papers/journal-tables-footnotes.pdf",
+  "pages": 20,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "docs",
+  "id": "gov-report-footnotes",
+  "path": "corpus/reports/gov-report-footnotes.pdf",
+  "pages": 18,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "docs",
+  "id": "naca-rm-e7b11c",
+  "path": "corpus/scanned/naca-rm-e7b11c.pdf",
+  "pages": 15,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "docs",
+  "id": "nbs-rp1",
+  "path": "corpus/scanned/nbs-rp1.pdf",
+  "pages": 14,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "docs",
+  "id": "usgs-b580j",
+  "path": "corpus/scanned/usgs-b580j.pdf",
+  "pages": 14,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.04041_pg20",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.04041_pg20.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.04147_pg3",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.04147_pg3.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.04604_pg3",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.04604_pg3.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.05360_pg2",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.05360_pg2.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.05469_pg12",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.05469_pg12.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.05614_pg12",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.05614_pg12.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.06086_pg17",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.06086_pg17.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.06102_pg16",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.06102_pg16.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.06153_pg2",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.06153_pg2.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.06293_pg24",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.06293_pg24.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.06464_pg8",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.06464_pg8.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.06662_pg5",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.06662_pg5.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.06723_pg3",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.06723_pg3.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.06856_pg9",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.06856_pg9.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.06939_pg20",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.06939_pg20.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.07072_pg1",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.07072_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.07105_pg18",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.07105_pg18.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.07543_pg42",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.07543_pg42.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.07624_pg4",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.07624_pg4.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.07897_pg25",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.07897_pg25.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.08176_pg20",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.08176_pg20.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.08360_pg10",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.08360_pg10.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.08475_pg18",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.08475_pg18.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.08488_pg2",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.08488_pg2.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "arxiv_math/2503.09182_pg4",
+  "path": "data/olmocr/bench_data/pdfs/arxiv_math/2503.09182_pg4.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/08404c3b520de340f0b0ed583d2083324c5cbfda_page_10_processed",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/08404c3b520de340f0b0ed583d2083324c5cbfda_page_10_processed.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/09bfc0f3b0a1d78625939af4e846019469044116_page_3_processed",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/09bfc0f3b0a1d78625939af4e846019469044116_page_3_processed.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/0f727ae22d10919282c22063a6cade3e1fe0b3d2_page_1",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/0f727ae22d10919282c22063a6cade3e1fe0b3d2_page_1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/13e2b289913a826c31baba3241693902d335530a_page_32_processed",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/13e2b289913a826c31baba3241693902d335530a_page_32_processed.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/1aca7bce09fe814ed17642b0a277ff500d57aac5_page_2",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/1aca7bce09fe814ed17642b0a277ff500d57aac5_page_2.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/3734d658b4732ac1f431dbb954537586c7da00b0_page_1",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/3734d658b4732ac1f431dbb954537586c7da00b0_page_1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/385c01ed177acfac97735d31b168e8f795cac3e3_page_9",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/385c01ed177acfac97735d31b168e8f795cac3e3_page_9.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/4b6eb432bc6c5d780bd95418be74a5f98ad00feb_page_3",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/4b6eb432bc6c5d780bd95418be74a5f98ad00feb_page_3.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/65bcb3969d0566759e3c06271a89377a111d5ca2_page_2",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/65bcb3969d0566759e3c06271a89377a111d5ca2_page_2.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/6ddb7cec52f3e008f35a0d3c0c6f20a68a91b419_page_13",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/6ddb7cec52f3e008f35a0d3c0c6f20a68a91b419_page_13.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/8063d40c50199f37405b48fbc93af2386abe6d09_page_1",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/8063d40c50199f37405b48fbc93af2386abe6d09_page_1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/8fda461ea4594faaf9fb56c0205b39a3db804152_page_11",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/8fda461ea4594faaf9fb56c0205b39a3db804152_page_11.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/958d5687f44a6c99cf15cbc802731abf937303fd_page_6",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/958d5687f44a6c99cf15cbc802731abf937303fd_page_6.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/a2704890a3a4ced534778be695db36d8c203331b_page_4",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/a2704890a3a4ced534778be695db36d8c203331b_page_4.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/a85bbe2096daf937d0858cfa0663834ca822a824_page_11",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/a85bbe2096daf937d0858cfa0663834ca822a824_page_11.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/b4c3c4ac3d6f7b52a993cec7ca8b3ad43cecabad_page_3",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/b4c3c4ac3d6f7b52a993cec7ca8b3ad43cecabad_page_3.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/b51e32be347127e7c2a15baf2be0d3d56a05de1c_page_1",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/b51e32be347127e7c2a15baf2be0d3d56a05de1c_page_1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/c2f9c3c5401162e5f8396dfab110c1d20e9697ec_page_2",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/c2f9c3c5401162e5f8396dfab110c1d20e9697ec_page_2.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/d9e9df46c4580bbf353bb120bd310e737d1da5e0_page_13",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/d9e9df46c4580bbf353bb120bd310e737d1da5e0_page_13.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/dc85182643bd0e5312833dc235e3f9423cb3a9c8_page_37",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/dc85182643bd0e5312833dc235e3f9423cb3a9c8_page_37.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/e1877d4ffc65bd66a9e5b9a5d2608362ad458c86_page_7",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/e1877d4ffc65bd66a9e5b9a5d2608362ad458c86_page_7.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/eac8e314c175b009ea2074f1bbef6922ca9d736b_page_1",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/eac8e314c175b009ea2074f1bbef6922ca9d736b_page_1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/ee8471bc3c47112296cb3d168b4ea4910020da72_page_40",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/ee8471bc3c47112296cb3d168b4ea4910020da72_page_40.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/ee9d425ceb208aed7d1e2220145e315487706d09_page_1",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/ee9d425ceb208aed7d1e2220145e315487706d09_page_1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "headers_footers/f8a7ce21fc8ad066ed42ad6a91ccc99af25aa8a7_page_5",
+  "path": "data/olmocr/bench_data/pdfs/headers_footers/f8a7ce21fc8ad066ed42ad6a91ccc99af25aa8a7_page_5.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/0083fb2109e58be50aec2eca07fcbfe1230b_page_5_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/0083fb2109e58be50aec2eca07fcbfe1230b_page_5_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/00d8a44d3066bbc4bd8df149d0dafb96f423_page_1_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/00d8a44d3066bbc4bd8df149d0dafb96f423_page_1_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_8_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/00f6c2eea6b51fb1bf637b5f8a850588d7e2_page_8_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/01566a951fd40f8c1a4b8190cc3d0f93c393_page_1_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/01566a951fd40f8c1a4b8190cc3d0f93c393_page_1_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/0208fbb5d6b646f972f4702428ad2cede5c5_page_8_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/0208fbb5d6b646f972f4702428ad2cede5c5_page_8_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/027880a87e3c2ad4cf8c05f477597c0c6da7_page_3_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/027880a87e3c2ad4cf8c05f477597c0c6da7_page_3_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/027880a87e3c2ad4cf8c05f477597c0c6da7_page_7_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/027880a87e3c2ad4cf8c05f477597c0c6da7_page_7_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/027c390510b2fd3364f5a382f2bc304af018_page_4_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/027c390510b2fd3364f5a382f2bc304af018_page_4_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/028649690bbc67fe3ba040b4b2bf6c37f487_page_22_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/028649690bbc67fe3ba040b4b2bf6c37f487_page_22_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/028649690bbc67fe3ba040b4b2bf6c37f487_page_9_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/028649690bbc67fe3ba040b4b2bf6c37f487_page_9_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/02943986dff2d4a84b7c2dd81abfc51fceea_page_21_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/02943986dff2d4a84b7c2dd81abfc51fceea_page_21_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/05aa71fa77e07bccb443ef4fd28dde3ecfd6_page_12_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/05aa71fa77e07bccb443ef4fd28dde3ecfd6_page_12_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/05aa71fa77e07bccb443ef4fd28dde3ecfd6_page_4_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/05aa71fa77e07bccb443ef4fd28dde3ecfd6_page_4_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/05eac72b90295dbb76786d1fe5e2fe0db27d_page_6_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/05eac72b90295dbb76786d1fe5e2fe0db27d_page_6_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/0621a0090414e4681e90a4e1ea543acca910_page_31_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/0621a0090414e4681e90a4e1ea543acca910_page_31_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/0621a0090414e4681e90a4e1ea543acca910_page_4_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/0621a0090414e4681e90a4e1ea543acca910_page_4_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/06ba2a90e81d76b586e6b884bf67133012a9_page_8_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/06ba2a90e81d76b586e6b884bf67133012a9_page_8_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/07c14b471fd33c56b988cc7a58dae211d16f_page_13_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/07c14b471fd33c56b988cc7a58dae211d16f_page_13_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/07c14b471fd33c56b988cc7a58dae211d16f_page_14_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/07c14b471fd33c56b988cc7a58dae211d16f_page_14_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/07f4d706dd1736e247163f0128702c65bdd8_page_2_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/07f4d706dd1736e247163f0128702c65bdd8_page_2_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/0925342e1efabb7957efa34203f65d3cbc4d_page_4_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/0925342e1efabb7957efa34203f65d3cbc4d_page_4_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/09f801e3a2ec90ef456d34ad571a46f36fce_page_40_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/09f801e3a2ec90ef456d34ad571a46f36fce_page_40_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/09f90a8fad0997f7cf454cbcbe79cab3bc0f_page_1_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/09f90a8fad0997f7cf454cbcbe79cab3bc0f_page_1_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/0dd31f954c25db440baccc3245daf51b4b55_page_2_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/0dd31f954c25db440baccc3245daf51b4b55_page_2_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "multi_column/0e5f0c3447c4f1335b330d58b5e14d6f15b1_page_8_pg1",
+  "path": "data/olmocr/bench_data/pdfs/multi_column/0e5f0c3447c4f1335b330d58b5e14d6f15b1_page_8_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/1c42d782fce429d7796cbac6fc7956e06ec7_pg41_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/1c42d782fce429d7796cbac6fc7956e06ec7_pg41_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/29c8f321b95e44ceb975a7ecec7e5b5ceff7_pg22_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/29c8f321b95e44ceb975a7ecec7e5b5ceff7_pg22_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/2e5fbee1a02ad5dde299c81b1c11c16ad8c9_pg5",
+  "path": "data/olmocr/bench_data/pdfs/tables/2e5fbee1a02ad5dde299c81b1c11c16ad8c9_pg5.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/426498e3ff09ea806b6ec1c32a693344ebdc_pg2",
+  "path": "data/olmocr/bench_data/pdfs/tables/426498e3ff09ea806b6ec1c32a693344ebdc_pg2.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/45c04e29eeb3a63f2691a00169dfb963e7cc_pg15",
+  "path": "data/olmocr/bench_data/pdfs/tables/45c04e29eeb3a63f2691a00169dfb963e7cc_pg15.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/53d3f304da5d1943dd4f650937f7cdbfda90_pg3",
+  "path": "data/olmocr/bench_data/pdfs/tables/53d3f304da5d1943dd4f650937f7cdbfda90_pg3.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/66aa22ac70dd3480f89737d77b79bc31ec46_pg6",
+  "path": "data/olmocr/bench_data/pdfs/tables/66aa22ac70dd3480f89737d77b79bc31ec46_pg6.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/6fedb9c8ab79b8b95b99d522f1be76ba034e_pg5_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/6fedb9c8ab79b8b95b99d522f1be76ba034e_pg5_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/7d3aedd0e1d18d0e6d96bcaafea3215bd835_pg8_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/7d3aedd0e1d18d0e6d96bcaafea3215bd835_pg8_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/7e850300cc7a63925214ffea6856992511f5_pg7_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/7e850300cc7a63925214ffea6856992511f5_pg7_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/807aabb12d3361030e61eb4480d1158dde36_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/807aabb12d3361030e61eb4480d1158dde36_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/981f5f245a1c3dcbafc67603d942144df82e_pg7",
+  "path": "data/olmocr/bench_data/pdfs/tables/981f5f245a1c3dcbafc67603d942144df82e_pg7.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/9921f236dc953b145dc2ff6bd7670c422212_pg349",
+  "path": "data/olmocr/bench_data/pdfs/tables/9921f236dc953b145dc2ff6bd7670c422212_pg349.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/999ed7715c9aa3ecbc581ef816cb92add4ef_pg54",
+  "path": "data/olmocr/bench_data/pdfs/tables/999ed7715c9aa3ecbc581ef816cb92add4ef_pg54.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/9e6a5b213e4fd5906842ebe6b0c5538e9e7b_pg12",
+  "path": "data/olmocr/bench_data/pdfs/tables/9e6a5b213e4fd5906842ebe6b0c5538e9e7b_pg12.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/a6820dddf8e2940cd9bd8d9590253728e3a7_pg15_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/a6820dddf8e2940cd9bd8d9590253728e3a7_pg15_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/a779784b6a7552404135b376ed1fbf517ea1_pg4_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/a779784b6a7552404135b376ed1fbf517ea1_pg4_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/b2a4c508f7839c1fbd2bb29a0d56c46bc00e_pg13_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/b2a4c508f7839c1fbd2bb29a0d56c46bc00e_pg13_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/b74ef859a1584b4900e3d9daca7f536100e9_pg4_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/b74ef859a1584b4900e3d9daca7f536100e9_pg4_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/ba0f816b5cf4d3dfbe94a841b6058019bc4a_pg13",
+  "path": "data/olmocr/bench_data/pdfs/tables/ba0f816b5cf4d3dfbe94a841b6058019bc4a_pg13.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/c00cffd4b2a62036f80c4110f5ce722c4c34_pg5",
+  "path": "data/olmocr/bench_data/pdfs/tables/c00cffd4b2a62036f80c4110f5ce722c4c34_pg5.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/e045099b52c831ea779333dc06b129c2c0b5_pg4",
+  "path": "data/olmocr/bench_data/pdfs/tables/e045099b52c831ea779333dc06b129c2c0b5_pg4.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/e247cacc054302c938c36a4357f861b56ce7_pg2_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/e247cacc054302c938c36a4357f861b56ce7_pg2_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/e3b1c4a529f268686b0f03accb2b91604ef3_pg10",
+  "path": "data/olmocr/bench_data/pdfs/tables/e3b1c4a529f268686b0f03accb2b91604ef3_pg10.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "tables/f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_pg1",
+  "path": "data/olmocr/bench_data/pdfs/tables/f45a188e83dbc36a2ba5b3af050f596b2f49_pg8_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/11_pg145_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/11_pg145_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/11_pg146_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/11_pg146_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/11_pg36_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/11_pg36_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/11_pg418_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/11_pg418_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/11_pg421_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/11_pg421_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/12_pg174_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/12_pg174_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/13_pg162_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/13_pg162_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/13_pg475_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/13_pg475_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/13_pg531_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/13_pg531_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/13_pg67_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/13_pg67_pg1.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/13_pg811_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/13_pg811_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/13_pg857_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/13_pg857_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/14b_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/14b_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/14c_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/14c_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/14d_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/14d_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/14e_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/14e_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/17_pg24_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/17_pg24_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/17_pg2_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/17_pg2_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/17_pg34_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/17_pg34_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/17_pg86_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/17_pg86_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/20_pg40_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/20_pg40_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/20_pg42_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/20_pg42_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/20_pg46_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/20_pg46_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/20_pg49_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/20_pg49_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "long_tiny_text/20_pg58_pg1",
+  "path": "data/olmocr/bench_data/pdfs/long_tiny_text/20_pg58_pg1.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "digital"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/1_pg10",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/1_pg10.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/1_pg131",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/1_pg131.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/1_pg19",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/1_pg19.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/1_pg40",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/1_pg40.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/1_pg72",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/1_pg72.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/2_pg189",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/2_pg189.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/2_pg238",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/2_pg238.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/2_pg39",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/2_pg39.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/2_pg65",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/2_pg65.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/3_pg101",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/3_pg101.pdf",
+  "pages": 1,
+  "core": true,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/3_pg148",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/3_pg148.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/3_pg199",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/3_pg199.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/3_pg204",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/3_pg204.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/3_pg251",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/3_pg251.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/3_pg270",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/3_pg270.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/3_pg634",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/3_pg634.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/4_pg186",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/4_pg186.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/4_pg281",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/4_pg281.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/4_pg355",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/4_pg355.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/4_pg396",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/4_pg396.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/4_pg48",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/4_pg48.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/4_pg512",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/4_pg512.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/4_pg98",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/4_pg98.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan_ocr"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/5_pg281",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/5_pg281.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ },
+ {
+  "set": "olmocr",
+  "id": "old_scans_math/5_pg558",
+  "path": "data/olmocr/bench_data/pdfs/old_scans_math/5_pg558.pdf",
+  "pages": 1,
+  "core": false,
+  "regime": "scan"
+ }
+]

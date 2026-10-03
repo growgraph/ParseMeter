@@ -1,0 +1,2001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xml:space="preserve" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://raw.githubusercontent.com/kermitt2/grobid/master/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Valorization of waste pharmaceutical residues via pyrolysis: Simultaneous production of biochar for Cd 2+ removal and high-quality bio-oil/syngas</title>
+				<funder ref="#_JgsxJF4">
+					<orgName type="full">Shaanxi Provincial Key R&amp;D Program</orgName>
+				</funder>
+				<funder ref="#_eYM5KUy">
+					<orgName type="full">of Xianyang</orgName>
+				</funder>
+				<funder ref="#_m3ASY8r">
+					<orgName type="full">Shaanxi Provincial Innovation Capacity Support Program</orgName>
+				</funder>
+				<funder ref="#_xctkyFc">
+					<orgName type="full">Science and Technology Program of Shaanxi Academy of Sciences</orgName>
+				</funder>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability  status="unknown">
+					<licence/>
+				</availability>
+				<date type="published" when="2026-03-27">March 27, 2026</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct status="extracted">
+					<analytic>
+						<author>
+							<persName><forename type="first">Zhizhen</forename><surname>Feng</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Bio-Agriculture Institute of Shaanxi</orgName>
+								<orgName type="laboratory">Shaanxi Key Laboratory of Qinling Ecological Security</orgName>
+								<orgName type="institution">Shaanxi Academy of Sciences</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Shaanxi Key Laboratory of Plant Nematology</orgName>
+								<orgName type="institution">Xi&apos;an</orgName>
+								<address>
+									<settlement>Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Enzyme Engineering Research Center</orgName>
+								<orgName type="institution">Shaanxi Province</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Bo</forename><surname>Fu</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Bio-Agriculture Institute of Shaanxi</orgName>
+								<orgName type="laboratory">Shaanxi Key Laboratory of Qinling Ecological Security</orgName>
+								<orgName type="institution">Shaanxi Academy of Sciences</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Shaanxi Key Laboratory of Plant Nematology</orgName>
+								<orgName type="institution">Xi&apos;an</orgName>
+								<address>
+									<settlement>Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Enzyme Engineering Research Center</orgName>
+								<orgName type="institution">Shaanxi Province</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Shanshan</forename><surname>Han</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Bio-Agriculture Institute of Shaanxi</orgName>
+								<orgName type="laboratory">Shaanxi Key Laboratory of Qinling Ecological Security</orgName>
+								<orgName type="institution">Shaanxi Academy of Sciences</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Shaanxi Key Laboratory of Plant Nematology</orgName>
+								<orgName type="institution">Xi&apos;an</orgName>
+								<address>
+									<settlement>Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Enzyme Engineering Research Center</orgName>
+								<orgName type="institution">Shaanxi Province</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Hong</forename><surname>Yan</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Bio-Agriculture Institute of Shaanxi</orgName>
+								<orgName type="laboratory">Shaanxi Key Laboratory of Qinling Ecological Security</orgName>
+								<orgName type="institution">Shaanxi Academy of Sciences</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Shaanxi Key Laboratory of Plant Nematology</orgName>
+								<orgName type="institution">Xi&apos;an</orgName>
+								<address>
+									<settlement>Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Enzyme Engineering Research Center</orgName>
+								<orgName type="institution">Shaanxi Province</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Puyang</forename><surname>Feng</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Bio-Agriculture Institute of Shaanxi</orgName>
+								<orgName type="laboratory">Shaanxi Key Laboratory of Qinling Ecological Security</orgName>
+								<orgName type="institution">Shaanxi Academy of Sciences</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Shaanxi Key Laboratory of Plant Nematology</orgName>
+								<orgName type="institution">Xi&apos;an</orgName>
+								<address>
+									<settlement>Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Enzyme Engineering Research Center</orgName>
+								<orgName type="institution">Shaanxi Province</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Wenxiao</forename><surname>Li</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Bio-Agriculture Institute of Shaanxi</orgName>
+								<orgName type="laboratory">Shaanxi Key Laboratory of Qinling Ecological Security</orgName>
+								<orgName type="institution">Shaanxi Academy of Sciences</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Shaanxi Key Laboratory of Plant Nematology</orgName>
+								<orgName type="institution">Xi&apos;an</orgName>
+								<address>
+									<settlement>Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Enzyme Engineering Research Center</orgName>
+								<orgName type="institution">Shaanxi Province</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff0">
+								<orgName type="institution" key="instit1">Universiti Teknologi Petronas</orgName>
+								<orgName type="institution" key="instit2">Universiti Teknologi PETRONAS</orgName>
+								<address>
+									<country key="MY">MALAYSIA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tao</forename><surname>Qin</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Bio-Agriculture Institute of Shaanxi</orgName>
+								<orgName type="laboratory">Shaanxi Key Laboratory of Qinling Ecological Security</orgName>
+								<orgName type="institution">Shaanxi Academy of Sciences</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Shaanxi Key Laboratory of Plant Nematology</orgName>
+								<orgName type="institution">Xi&apos;an</orgName>
+								<address>
+									<settlement>Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Enzyme Engineering Research Center</orgName>
+								<orgName type="institution">Shaanxi Province</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Tongtong</forename><surname>Wang</surname></persName>
+							<affiliation key="aff4">
+								<orgName type="department">Institute of Interdisciplinary and Innovation Research</orgName>
+								<orgName type="institution">Xi&apos;an University of Architecture and Technology</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Xinjie</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff5">
+								<orgName type="department">School of Chemical and Environment Science</orgName>
+								<orgName type="institution">Shaanxi University of Technology</orgName>
+								<address>
+									<settlement>Hanzhong</settlement>
+									<region>Shaanxi</region>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName><forename type="first">Junchao</forename><surname>Jia</surname></persName>
+							<idno type="ORCID">0000-0003-3456-0252</idno>
+							<affiliation key="aff1">
+								<orgName type="department">Bio-Agriculture Institute of Shaanxi</orgName>
+								<orgName type="laboratory">Shaanxi Key Laboratory of Qinling Ecological Security</orgName>
+								<orgName type="institution">Shaanxi Academy of Sciences</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff2">
+								<orgName type="department">Shaanxi Key Laboratory of Plant Nematology</orgName>
+								<orgName type="institution">Xi&apos;an</orgName>
+								<address>
+									<settlement>Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff3">
+								<orgName type="department">Enzyme Engineering Research Center</orgName>
+								<orgName type="institution">Shaanxi Province</orgName>
+								<address>
+									<settlement>Xi&apos;an Shaanxi</settlement>
+									<country key="CN">P.R. China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Valorization of waste pharmaceutical residues via pyrolysis: Simultaneous production of biochar for Cd 2+ removal and high-quality bio-oil/syngas</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="2026-03-27">March 27, 2026</date>
+						</imprint>
+					</monogr>
+					<idno type="MD5">85ED27804A845D2338601158DF813B39</idno>
+					<idno type="DOI">10.1371/journal.pone.0346024</idno>
+					<note type="submission">Received: October 27, 2025 Accepted: March 15, 2026</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="0.9.1" ident="GROBID" when="2026-10-02T16:46+0000">
+					<desc>GROBID - A machine learning software for extracting information from scholarly documents</desc>
+					<label type="revision">0.9.1</label>
+					<label type="parameters">startPage=-1, endPage=-1, consolidateCitations=0, consolidateHeader=0, consolidateFunders=0, includeRawAffiliations=false, includeRawCitations=true, includeRawCopyrights=false, generateTeiIds=false, generateTeiCoordinates=[], flavor=null, debugLabelingCollector=disabled</label>
+					<ref target="https://github.com/kermitt2/grobid"/>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>For the efficient utilization of pharmaceutical waste resources, tuber biochar (TB) and herbal biochar (HB) were prepared via oxygen-limited slow pyrolysis at 500 °C for 3 h, using residues from tuber-type Xinsuning capsule and herbal-type Changyanning pill as the raw materials, respectively. The biochars were characterized by FESEM, promising strategy for the comprehensive and high-value utilization of waste pharmaceutical residues, simultaneously producing effective adsorbents for heavy metal remediation and valuable bio-energy products.</p><p>which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>BET, XRD and FTIR, and the feedstock physico-chemical properties were measured by common agricultural chemical analysis methods. The results revealed that both biochars possessed a high percentage of elemental O, a honeycomb-like porous structure, and surfaces enriched with functional groups such as hydroxyl, carboxyl, and carbonyl. HB exhibited a larger specific surface area and pore volume than TB, making it a more recommended carbon material. The chemical compositions of the pyrolysis by-products were systematically analyzed. The bio-oils were rich in ketones, alkanes, alcohols, olefins, fatty acids, phenols, and heterocyclic compounds, identifying them as potential sources of liquid fuels and chemical feedstocks. The most abundant components in bio-oils from tuber and herbal biomass were "Ethanol, 2,2-diethoxy-" (7.25%) and "Phosphonic acid, (p-hydroxyphenyl)-" (10.52%), respectively. The syngas has a low hydrogen content, is mainly pyrolysis off-gas and therefore has a limited application potential. Furthermore, the environmental application for Cd²⁺ removal was critically evaluated. Adsorption isotherms demonstrated high adsorption capacities, well-described by the Freundlich model (R² ≥ 0.99), indicating multilayer adsorption. The maximum adsorption capacities for TB and HB were 188.89 and 186.67 mg•g⁻¹, respectively. Kinetic studies revealed that the adsorption process followed the Elovich model (R² ≥ 0.98), suggesting heterogeneous diffusion, with HB achieving a higher equilibrium capacity (85.67 mg•g⁻¹) than TB (73.70 mg•g⁻¹). In conclusion, pyrolysis, particularly using herbal biomass, presents a</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>China is a large country of traditional Chinese medicine (TCM), and in recent years, the TCM industry has been developing rapidly, especially with Tu Youyou winning the Nobel Prize in Medicine for extracting artemisinin, TCM has been increasingly recognized in the world <ref type="bibr" target="#b0">[1]</ref>. Currently, the planting area of Chinese herbs in China has reached more than 2.4 million hectares, and the annual output of herbs is about 70 million tons <ref type="bibr" target="#b1">[2]</ref>. However, a large amount of waste pharmaceutical residue is subsequently generated during the processing of waste pharmaceutical tablets and the production of waste pharmaceutical decoction <ref type="bibr" target="#b2">[3]</ref>. While the Chinese medicine industry is booming, the problem of waste pharmaceutical residue disposal is becoming increasingly serious. According to incomplete statistics, there are more than 1,500 Chinese medicine enterprises in China, and the annual emission of waste pharmaceutical residue can be as high as 60-70 million tons <ref type="bibr" target="#b3">[4]</ref>. waste pharmaceutical residues are generally wet materials that have the characteristics of high organic matter, high moisture and perishable, strong odor, and so on <ref type="bibr" target="#b4">[5]</ref>. At present, the treatment of waste pharmaceutical residue mainly adopts incineration, landfill and piling, and these traditional treatment methods not only cause a huge waste of resources, but also cause potential environmental pollution, such as soil, air, and water pollution, which finally endangers human health and impedes the green and sustainable development of the Chinese medicine resource industry <ref type="bibr" target="#b5">[6]</ref>. With the strengthening of China's environmental governance, how to carry out the harmless treatment and resource utilization of waste pharmaceutical residue has become an important issue facing the Chinese medicine industry. Therefore, there is an urgent need to find effective high-value utilization methods for waste pharmaceutical residue.</p><p>The waste pharmaceutical residues contain a large number of crude fibers, starch, crude fat, protein, amino acids, and trace elements <ref type="bibr" target="#b6">[7]</ref>. The bioconversion technology and thermochemical conversion technology are used to transform waste pharmaceutical residues into resource substances with high utilization value, so as to increase the added value of products and fully exploit the resource potential of Chinese medicine wastes <ref type="bibr" target="#b7">[8]</ref>. At present, the resource utilization of waste pharmaceutical residue mainly involves planting, breeding, environment, energy, and many other fields. With the rapid development of the economy, environmental and energy issues are becoming more and more serious. As a kind of renewable organic solid waste, waste pharmaceutical residue, unlike fossil fuel, can be regarded as a carbon-neutral fuel with no net increase of carbon dioxide during use, which is expected to partially replace traditional fossil energy and alleviate the energy crisis <ref type="bibr" target="#b6">[7]</ref>. "Carbon peak" and "Carbon neutrality" has become China's strategic goal, in the "Double carbon" background, the traditional Chinese medicine industry is ushering in a new wave of "Low carbon" trends, and the high-value utilization of waste pharmaceutical residue has become a breakthrough for implementing a low-carbon economy in the Chinese medicine industry.</p><p>Numerous studies revealed that waste pharmaceutical residue can be converted into energy, energy carriers, and value-added chemicals through bioconversion (e.g., anaerobic digestion) and thermochemical conversion (e.g., direct combustion, pyrolytic carbonization, high-temperature liquefaction, and pyrolysis for gas production, <ref type="bibr" target="#b8">[9]</ref><ref type="bibr" target="#b9">[10]</ref><ref type="bibr" target="#b10">[11]</ref><ref type="bibr" target="#b11">[12]</ref><ref type="bibr" target="#b12">[13]</ref><ref type="bibr" target="#b13">[14]</ref><ref type="bibr" target="#b14">[15]</ref>). (In this paper, "pyrolysis" is defined as oxygen-limited thermal decomposition, while "pyrolysis for gas production" refers to the process of producing H₂/CO-rich syngas via partial oxidation, steam reforming, or CO₂ reforming.) Shang et al. <ref type="bibr" target="#b10">[11]</ref>, Cheng et al. <ref type="bibr" target="#b11">[12]</ref>, and Lian et al. <ref type="bibr" target="#b12">[13]</ref> used the pyrolytic carbonization technique to prepare waste pharmaceutical residue into biochar. Shang et al. <ref type="bibr" target="#b10">[11]</ref> prepared biochar carriers from medicinal dregs of Scutellaria baicalensis Georgi and synthesized a nanoscale zero-valent iron particle composite for the adsorption of hexavalent chromium from wastewater. Cheng et al. <ref type="bibr" target="#b11">[12]</ref> prepared biochar using medicinal dregs of Melicope pteleifolia at different temperatures to study its effect on the removal of tetracycline from aqueous solution. Lian et al. <ref type="bibr" target="#b12">[13]</ref> used medicinal dregs Salvia miltiorrhiza Bunge to prepare biochar at different temperatures to study its adsorption capacity for the antibiotic sulfamethoxazole. Jiang et al. <ref type="bibr" target="#b13">[14]</ref> and Zhang et al. <ref type="bibr" target="#b14">[15]</ref> prepared medicine herb residue into bio-oil using high-temperature liquefaction technology. Jiang et al. <ref type="bibr" target="#b13">[14]</ref> prepared liquid bio-oil by reducing the oxygen content in the process of rapid heating of medicine herb residue, which increased the added value of medicine herb residue. Zhang et al. <ref type="bibr" target="#b14">[15]</ref> used ZSM-5 molecular sieves as catalysts to catalyze the rapid pyrolysis of medicine herb residue for the preparation of biofuel through microwave-induced methods. Ding et al. <ref type="bibr" target="#b15">[16]</ref>, Li et al. <ref type="bibr" target="#b16">[17]</ref>, and Chen <ref type="bibr" target="#b17">[18]</ref> prepared medicine herb residue into biogas using pyrolysis for gas production. Ding et al. (2018) used CaO as a catalyst for the preparation of gas by pyrolysis for gas production of medicine herb residue, to study the catalytic property changes of the catalyst during the pyrolysis for gas production process as well as to investigate the mechanism of pyrolysis for gas production using thermodynamic simulation. Li et al. <ref type="bibr" target="#b16">[17]</ref> carried out a pyrolysis for gas production experiment of medicine herb residue in a fixed-bed system using paper sludge rich in various metal oxides as an additive. The results showed that the medicine herb residue was catalyzed by paper sludge during pyrolysis, which led to an increase in gas production and a decrease in tar production. Chen et al. <ref type="bibr" target="#b17">[18]</ref> carried out high temperature co-gasification experiment with medicine herb residue by adding printing and dyeing sludge. The results showed that the co-gasification of these two wastes could produce synergistic effects. The combined gasification performance of co-gasification was 33.9% and 33.2% higher than that of single pyrolysis of dye sludge under N 2 and CO 2 atmospheres, respectively. Compared with bioconversion (e.g., anaerobic digestion) and direct combustion, oxygen-limited pyrolysis offers advantages for pharmaceutical residues: it can simultaneously produce a stable solid carbonaceous adsorbent (biochar) and liquid products (bio-oil) that contain value-added chemicals, while reducing direct emissions associated with combustion <ref type="bibr" target="#b18">[19]</ref>. For wet, high-organic residues typical of Chinese medicinal residues, pyrolysis at controlled temperatures allows recovery of both carbon materials and bioenergy precursors, making it a suitable route for high-value utilization <ref type="bibr" target="#b19">[20]</ref>.</p><p>Biomass pyrolysis is a high temperature anaerobic process with a temperature range of 300 ~ 1000℃ <ref type="bibr" target="#b20">[21]</ref>. Typically, biochar, bio-oil, and syngas were produced by pyrolysis of medicine herb residue <ref type="bibr" target="#b21">[22]</ref>. Biochar could be processed into adsorbent, activated carbon, etc., and used in wastewater treatment, chemical industry, and smelting. Bio-oil could be converted into green chemicals. syngas could be directly converted into liquid fuel oil for power generation, supplying electricity to residents and enterprises <ref type="bibr" target="#b22">[23]</ref>. Recent studies have highlighted that biochars' adsorption performance for heavy metals is controlled by multiple factors including surface functional groups (-OH, -COOH), specific surface area, pore size distribution, and the presence of mineral phases that facilitate ion exchange or precipitation <ref type="bibr" target="#b23">[24]</ref><ref type="bibr" target="#b24">[25]</ref><ref type="bibr" target="#b25">[26]</ref>. In particular, studies by El-Nemr et al. <ref type="bibr" target="#b23">[24,</ref><ref type="bibr" target="#b24">25]</ref> and Mohamed et al. <ref type="bibr" target="#b25">[26]</ref> demonstrate improved Cd 2+ removal with biochars having abundant oxygen-containing groups and mesoporous structure. In this study, two types of biochar were prepared from medicine herb residues as raw material by setting up two treatments, tuber-type Xinsuning capsule (tuber) and herbal-type Changyanning pill (herb), using oxygen-limited pyrolysis in a nitrogen atmosphere. The basic physicochemical properties and microstructures of two biochars were characterized using advanced techniques such as field emission scanning electron microscopy (FESEM), surface elemental analysis, BET surface area and pore size analysis (BET), X-ray diffraction (XRD), and Fourier transform infrared (FTIR). In addition, the chemical compositions of the pyrolysis by-products, bio-oil, and syngas, were systematically analyzed, and different biomass pyrolysis products were compared. Also, the adsorption performance of Cd²⁺ by both biochar types, including isothermal adsorption and adsorption kinetics, will be thoroughly investigated. It is expected to provide a theoretical and practical basis for the effective utilization of medicine herb residue resources and the development of eco-friendly biochar products and valuable by-products.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials and methods</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Materials</head><p>Feedstock source. All solvents and chemicals are analytically pure and purchased from China National Pharmaceutical Group Chemical Reagent Co. Ultrapure water will be used throughout the experiments. The raw materials (medicine herb residue) were collected from the medicine factory of Shaanxi Momeide Pharmaceutical Co., LTD., Xianyang, Shaanxi Province, China. Waste drug residues are wet residues generated during the production process of the pharmaceutical plant, which are crushed and sieved after natural air drying, without chemical pretreatment. The two kinds of Chinese medicine residues were the herbal-type Changyanning pill (herb) and tuber-type Xinsuning capsule (tuber) in which the main components of the Changyanning pill were Euphorbia maculata Willd., Hedyotis chrysotricha (Palib.) Merr., Litsea rubescensLeeomtet, Elsholtzia Ciliata (Thunb.) Hyland. and Aceracede leaves. The main ingredients of the Xinsuning capsule were Coptis chinensis Franch., Pinellia ternata (Thunb.) Smilax glabra Roxb., Citrus aurantium L., Dichroa febrifuga Lour., Nelumbo nucifera Gaertn., Sophora flavescens Alt., Artemisia carvifolia, Panax ginseng C. A. Mey, Ophiopogon japonicus (Linn. f.) Ker-Gawl. and Glycyrrhiza uralensis Fisch.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Feedstock characterization.</head><p>The samples of Chinese medicine residues were naturally air-dried, ground, and passed through sieves of different pore sizes. The basic physicochemical properties were measured. According to the determination method of Lu et al. <ref type="bibr" target="#b26">[27]</ref>, organic carbon and organic matter were determined by the potassium dichromate volumetric method; pH value was determined by the potentiometric method; total nitrogen was determined by the Kjeldahl nitrogen determination method; total phosphorus was determined by the alkali fusion-molybdenum antimony antispectrophotometric method; total potassium was determined by the alkali fusion-flame photometric method; crude protein was determined by the Kjeldahl nitrogen determination method; cellulose and hemicellulose were determined by the Van Soest method.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Preparation of biochar, bio-oil, and syngas via pyrolysis</head><p>Twenty grams of dried waste pharmaceutical residues were weighed and placed into a box-type high-temperature furnace with nitrogen protection, where pyrolysis was performed throughout the entire process. In this study, low-temperature slow pyrolysis was employed with a multi-stage program heating protocol: the heating rate was maintained at 5°C•min ⁻ ¹, the pyrolysis temperature was set at 500°C with a 3 h isothermal holding period, and the system was allowed to cool naturally to room temperature after the completion of the reaction. The solid obtained was ground through an 18-mesh sieve, and two treatments of waste pharmaceutical residues from tubers and herbs were set up, i.e., tuber pharmaceutical residues biochar (TB) and herb pharmaceutical residues biochar (HB) were obtained. Subsequently, TB and HB were crushed into small pieces of approximately 2 cm by a pulveriser (Zhejiang Fengli Pulverization Equipment Co., Ltd., Shaoxing, China). The ultrasonic activation process was carried out in the KQ-300ES constant temperature numerical control ultrasonic machine (Kunshan Ultrasonic Instrument Co., Ltd., Kunshan, China). During the ultrasonic process, a sufficient amount of biochar was first weighed into a beaker, and 200 ml of deionized water was added for dispersion. Then, the common basic setting for ultrasonic time was 30 min, the frequency was 40 kHz, and the power was 300 W. Finally, all solutions were filtered through a 0.45 um filter membrane to recover biochar, then dried at 105 °C for more than 8 hours.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Characterisation</head><p>Biochar. According to Zhang et al. <ref type="bibr" target="#b27">[28]</ref>, the surface morphology of the biochar samples was analyszd in a Sigma HD scanning electron microscope (Carl Zeiss AG, Oberkochen, Germany) at a 2.0 kV, which was loaded with an X-MAXEDS spectroscopic detection system (Oxford Instruments, Oxford, UK). The BET Specific surface area (S BET ) and pore size analysis were determined using N 2 as the adsorbate at 77 K and relative pressure of 0.05-0.20, for which an ASAP2460 plus analyzer (Micromeritics Instruments Co., Norcross, USA) was used. The mineral species of the biochar samples were identified using a D-MAX 2500 X-ray powder diffractometer (Rigaku Co., Ltd., Wilmington, USA). The measurements were performed at a 0.02 scan step size, 2 deg•min -1 scan speed, 0.15 receiving slit width, 30-40 kV, and 30-40 mA. The infrared spectra were measured with KBr pellet methods using a Vertex70 FTIR spectrometer (Bruker Co., Ltd., Billerica, USA) for 16 scans over a range of 400 ~ 4000 cm -1 with a resolution of 2 cm -1 .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Bio-oil and syngas.</head><p>The gas chromatography-tandem mass spectrometer (GC-MS, Agilent 7890A/7000B GC-QQQ, Santa Clara, USA) was used to analyze the components of bio-oil and syngas. GC-MS analysis conditions: HP-5 (30 m × 0. 25 mm × 0. 25 m) column; the temperature of vaporization chamber is 260 °C; High purity helium as carrier gas, and flow rate 1.0 mL•min -1 . For shunt injection, the shunt ratio is 25:1; The column temperature is programmed: the initial temperature is 50 °C and kept for 5 min, the temperature is raised to 100 °C at 2 °C•min -1 , and then the temperature is raised to 180 °C at 1 °C•min -1 ; and finally the temperature was raised to 260 °C at 1 °C•min -1 and kept for 5 minutes. MS electron energy 70 eV, filament current 80 A, ion source temperature 230 °C.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Adsorption tests</head><p>A standard Cd solution of known concentration was prepared with analytically pure Cd(NO 3 ) 2 •4H 2 O. Add 50 mL of cadmium nitrate solution of known concentration and 0.05 g of biochar sample to each test tube respectively, and shake at room temperature (25 °C) at 150 r•min -1 . After oscillation, samples were taken for solid-liquid separation. The concentration of Cd 2+ in the filtrate will be determined by Thermo Scientific ICE 3300 atomic absorption spectrophotometer. The initial concentrations of Cd 2+ pollutants were set at 1, 5, 10, 30, 50, 100, 150, and 250 mg•L ⁻ ¹. The adsorption equilibrium time was uniformly set at 24 h. For the adsorption kinetics at an initial concentration of 100 mg•L ⁻ ¹, samples were collected at intervals of 5, 10, 30, 60, 120, 180, 300, 480, 720, 900, 1440, and 2160 min to determine equilibrium concentrations and adsorption capacities. Relevant calculation methods can be referenced in <ref type="bibr" target="#b22">[23]</ref>. To better investigate the characteristics of the adsorption, four isotherms models (Langmuir, Freundlich, Temkin, and Dubinin-Radushkevich) and four adsorption kinetic models (Pseudo-first-order, Pseudo-second-order, Elovich, and Intraparticle diffusion) were used in this work <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b27">28]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data analysis</head><p>In this work, data statistics were calculated using Excel 2016 Pro (Microsoft, Redmond, USA) and SPSS 26.0 (IBM Corporation, Armonk, USA). One-way ANOVA was conducted to compare the means of the measured values at P &lt; 0.05 for each treatment. The XRD was analyzed by MDI Jade v6.5 (Materials data Inc., Livermore, USA) to identify the crystal data. Identification of FTIR spectroscopy could be identified using the spectral database (<ref type="url" target="https://rruff.info/">https://rruff.info/</ref>) or the "Spectral Tools" website (<ref type="url" target="http://www.science-and-fun.de/tools/">http://www.science-and-fun.de/tools/</ref>). OriginPro 2019b (OriginLab, USA) was used to calculate the optical properties of prepared materials and make plots.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Results and discussions</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Characterization</head><p>Basic properties. The basic physico-chemical properties of the two kinds of Chinese medicine residues are shown in Table <ref type="table">1</ref>. Overall, the basic physicochemical properties of tuber biomass and herbaceous biomass are very similar, which is attributed to the fact that they are both derived from Chinese medicinal raw materials. Specifically, the organic carbon and organic matter contents of tuber biomass were significantly lower than those of herbal biomass. This may imply that herbaceous biomass has a significantly higher C elemental content after carbonization than tuberous biomass and may have superior properties as a carbon material than those prepared from tuberous biomass. Both tuber and herbaceous biomass are acidic, which is closely related to the organic acids contained in them <ref type="bibr" target="#b17">[18]</ref>. The total nitrogen, total phosphorus, and total potassium contents of tuber and herbaceous biomass were very similar, and the total nitrogen content was significantly higher than the total phosphorus and total potassium, implying an abundance of cellulose and hemicellulose <ref type="bibr" target="#b22">[23]</ref>. The crude protein and hemicellulose content of tuberous biomass is higher than that of herbaceous biomass, and its cellulose content is lower than that of herbaceous biomass. This will affect the carbonization process and consequently lead to differences in the properties of the prepared carbon materials.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>FESEM and surface elemental analysis.</head><p>The FESEM (Scanning electron microscope) images of the prepared materials are displayed in Fig <ref type="figure" target="#fig_0">1</ref>. From Fig <ref type="figure" target="#fig_0">1</ref>(a),(c), it could be seen that TB and HB have obvious honeycomb polyhedral structures, and uneven surfaces, abundant porous structures with particles, resulting in a squamous texture and chaotic arrangement. Fig <ref type="figure" target="#fig_0">1(b)</ref>,<ref type="figure">(d</ref>) show the biochar magnified 6,000 times, with flakes of tubular structure and broken particles of different sizes and shapes distributed on the surface. Additionally, a sponge-like tube wall could be observed, and the enriched pores are very important as they provide the specific surface area and the active sites. In general, the micromorphology of TB and HB is similar, which is attributed to their raw materials being essentially the same. However, a careful comparison still reveals that HB has thicker spongy and capillary fibers with greater surface roughness than TB, which may lead to greater pore volume and shape a more developed microporous structure <ref type="bibr" target="#b28">[29]</ref>.</p><p>The EDS spectra of the prepared materials are shown in Fig <ref type="figure" target="#fig_1">2</ref>. It may be observed that both TB and HB surfaces contain the elements C, N, O, P, S, and K. Since they are carbon materials, the content of C element is obviously more than half, followed by O and N elements. Also, TB and HB contained some heterogeneous elements, which were related to the enriched elements of biomass in the pharmaceutical residue <ref type="bibr" target="#b29">[30,</ref><ref type="bibr" target="#b30">31]</ref>. In addition, O/C has been used to determine the aromatic structure and cation exchange capacity (CEC) of the polymers, and a larger value of this ratio implies a higher aromaticity and a larger CEC <ref type="bibr" target="#b22">[23]</ref>. It is observed that HB has a higher O elemental content and a relatively lower C elemental content, which may imply that HB has a stronger surface polarity than TB, with a greater abundance of oxygen-containing functional groups such as hydroxyl, carboxyl and carbonyl groups. N/C may reflect the degree of decomposition of biomass during pyrolysis, and it can be found that the N/C value of TB is greater and the pyrolysis process is more intense <ref type="bibr" target="#b27">[28]</ref>, due to the intensification of dehydrogenation and deoxygenation reactions during pyrolysis, which is related to the fact that the feedstock of TB contains more lignin and cellulose (Table <ref type="table">1</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>XRD analysis.</head><p>The XRD patterns (Fig <ref type="figure" target="#fig_2">3</ref>) revealed that the principal diffraction peaks at low 2θ angles were sharp and symmetric, indicating the presence of mineral crystals. Overall, Fig <ref type="figure" target="#fig_2">3</ref> shows that TB and HB have similar XRD patterns, however, the peak patterns of HB are more pronounced than those of TB, and the mineral is more crystallized. Although there is a lot of noise signal interference in the XRD of the prepared materials in this work, it is roughly seen that there are two characteristic peaks at 24.4°, 26.4° and 29.4°, which were found to indicate the presence of impurities (may be CaCO 3 , KCl or SiO 2 ) and graphitic carbon (JCPDS No.41-1487) respectively after searching for Jade 6.5 PDF cards. The</p><p>Table 1. Basic physico-chemical properties of the raw materials. Materials Organic carbon Organic matter pH Total nitrogen Total phosphorus Total potassium Crude protein Cellul-ose Hemicellul-ose % g/kg 1:10 % % % % % % Tubers biomass 39.4 679.256 5.42 1.43 0.201 0.227 8.957 21.8 43.1 Herbal biomass 42.6 734.424 5.74 1.40 0.176 0.229 8.757 29.2 35.8 <ref type="url" target="https://doi.org/10.1371/journal.pone.0346024.t001">https://doi.org/10.1371/journal.pone.0346024.t001</ref> </p><p>impurities are mainly cellulose and lignin pyrolysis process and release a large amount of ash, which contains some Ca, K, and other elements <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b27">28]</ref>. The presence of mineral phases such as CaCO 3 , KCl or SiO 2 modulates Cd 2+ adsorption in different ways <ref type="bibr" target="#b31">[32]</ref>. Specifically, alkaline oxides such as CaCO 3 can raise the local pH, providing basic sites and favoring Cd(OH)₂ precipitation and/or inner-sphere surface complexation, which often enhances Cd² ⁺ removal <ref type="bibr" target="#b32">[33]</ref>. Soluble salts like KCl increase ionic strength and introduce competing cations (K⁺) and complexing anions (Cl⁻), which can reduce Cd² ⁺ adsorption <ref type="bibr" target="#b33">[34]</ref>. Inert phases like SiO 2 -rich domains function mainly as a relatively inert matrix that dilutes the density of active adsorption sites. Accordingly, pre-washing (to remove soluble salts), acid/base treatments, or post-activation (e.g., HCl washing, EDTA extraction, chemical activation) are recommended to mitigate these inhibitory effects and further improve adsorption performance in future applications. Besides the (002) crystal plane of graphitic carbon, the (100) and (101) crystal planes are also observed, and the typical graphitized carbon diffraction peaks prove that TB and HB possess the fundamental properties of carbon materials. Moreover, this correlates with higher pyrolysis temperatures and degree of graphitization. It has also been suggested that graphitic carbon is an important basis for the ability of biochar to be used as a catalyst or adsorbent, which plays a significant role in environmental applications <ref type="bibr" target="#b34">[35]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>FTIR analysis.</head><p>The FTIR spectra of the prepared materials are presented in Fig <ref type="figure" target="#fig_3">4</ref>. It can be clearly seen that TB and HB have about 6 identical peak positions, which are located near 500-900, 1030, 1395, 1612, 2920, and 3426 cm -1 . Searching the spectrum data table <ref type="bibr" target="#b35">[36]</ref>, it was found that biochar has -OH vibration absorption peak (3426 cm -1 ), and the C-H in alkanes were mainly vibration absorption peaks of methyl and methylene groups (2920 cm -1 ), the aromatic acids -COOH groups (1612 cm -1 ), fatty C-H and -C = O groups (1395 cm -1 ), C-C or C = C resonance peaks (1030 cm -1 ), and the pyridine and heterocyclic functional groups of aromatic compounds (500-900 cm -1 ). It shows that TB and HB have rich functional groups on their surface. Qualitatively, the position and curve shape of each peak were generally similar, indicating that the functional group types of TB and HB were basically the same. However, there is some variation in the concentration of these functional groups. Specifically, TB has a higher concentration of -OH (3426 cm -1 ) and heterocyclic functional groups of aromatic compounds (near 500-900 cm -1 ) than HB, and a lower concentration of aromatic acids -  COOH groups (near 1612 cm -1 ) and C-C or C = C groups (1030 cm -1 ) than HB. However, this does not infer the contents of functional groups on the surface of TB and HB which need to be further explored.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Specific surface area and pore size analysis.</head><p>The specific surface area and pore properties of the prepared materials are shown in Table <ref type="table">2</ref>. The adsorption-desorption isotherm of the prepared materials is shown in Fig <ref type="figure" target="#fig_4">5</ref>. According to the definition of the International Union of Pure and Applied Chemistry (IUPAC) <ref type="bibr" target="#b36">[37]</ref>, the pore structure of TB and HB is mesoporous with average pore sizes ranging from 2 to 50 nm in this study. As could be seen from Fig <ref type="figure" target="#fig_4">5a</ref>, the isothermal adsorption-desorption curve of TB is not closed, which may be due to its low pore size and very small specific surface area, as confirmed by the data in Table <ref type="table">2</ref>. Fig <ref type="figure" target="#fig_4">5b</ref> shows that the isothermal adsorption-desorption curve of HB is basically IV(a) and there is a back hysteresis loop <ref type="bibr" target="#b37">[38,</ref><ref type="bibr" target="#b38">39]</ref>. Quantitatively, the BET specific surface area of HB (1.867 m 2 •g -1 ) and total pore volume (0.003496 cm 3 •g -1 ) were markedly higher than those of TB (0.416 m 2 •g -1 and 0.000051 cm 3 •g -1 , respectively), as shown in Table <ref type="table">2</ref> and Fig <ref type="figure" target="#fig_4">5</ref>, consistent with the more developed porous morphology observed in FESEM images. However, the specific surface area of HB is still small relative to other biochar prepared from biomass <ref type="bibr" target="#b30">[31]</ref>, which is highly related to its mixture of raw materials. To enhance the potential of HB for environmental applications, it should be further activated and treated.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Bio-oil analysis</head><p>The main components of bio-oil produced by the pyrolysis process of tubers and herbal biomass are shown in Tables <ref type="table">3</ref>,<ref type="table">4</ref>, respectively, and the total ion flow plots of PYGC-MS correspond to Fig <ref type="figure" target="#fig_5">6(a)</ref>,<ref type="figure">(c</ref>). In general, the chromatographic peak positions and chemical compositions of the bio-oils produced from tubers and herbal biomass were very similar in characteristics. After reviewing relevant information and searching in standard mass spectral libraries <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b39">[40]</ref><ref type="bibr" target="#b40">[41]</ref><ref type="bibr" target="#b41">[42]</ref><ref type="bibr" target="#b42">[43]</ref>, it can be found that a total of 120 chromatographic peaks were identified in bio-oils produced from tubers biomass and 105 peaks were identified in bio-oils produced from herbal biomass. This means that the bio-oil produced during the high-temperature Table 2. The surface characteristics of TB and HB. Surface feature Test item Unit Type Remarks TB HB Surface area Single point surface area m 2 •g -1 0.168 1.177 Relative pressure (P/P 0 )=0.185; Where P is the adsorption pressure and P 0 is the saturated vapor pressure of the adsorbate BET Surface Area 0.416 1.867 Data fetching range 0.055 ~ 0.201 Langmuir Surface Area 3.619 8.232 Monolayer adsorption model calculation BJH Adsorption cumulative surface area 0.113 1.102 The aperture range is 2 ~ 55 t-Plot Micropore Area 0.988 0.788 The aperture range is 2 ~ 55 Pore volume Single point adsorption total pore volume cm 3 •g -1 0.000051 0.003496 When P/P 0 = 0.95, the total pore volume smaller than the critical pore diameter 55 BJH Adsorption cumulative volume 0.001947 0.011342 The aperture range is 2 ~ 55 t-Plot micropore volume 0.000270 0.000301 The aperture range is 2 ~ 55 Pore size Adsorption average pore diameter nm 2.487 7.490 Calculated from 4V/A, where the A corresponds to the adsorption BET specific surface area, adsorption cumulative pore internal surface area, desorption cumulative pore internal surface area, respectively; V is the gas adsorption volume Desorption average pore diameter 4.914 8.980 BJH Adsorption average pore width 49.146 41.173 <ref type="url" target="https://doi.org/10.1371/journal.pone.0346024.t002">https://doi.org/10.1371/journal.pone.0346024.t002</ref>  pyrolysis of pharmaceutical residues biomass may consist of more than 100 chemical substances. According to the classification of the main organic compounds in Tables <ref type="table">3</ref>,<ref type="table">4</ref>, it could be found that some aliphatic compounds have relatively high content, including ketones, alkanes, alcohols, olefins, aldehydes, fatty acids, and so on. This is followed by aromatic compounds, including phenol, p-phenol, and their derivatives, etc. In addition, there are a variety of heterocyclic compounds that are also important components of bio-oils, mainly involving pyridine, furan, pyrrole, and thiophene. In general, the content of aliphatic compounds in bio-oils is higher than that of aromatic compounds, with a ratio of about 2.8:1. Based on the data in Table <ref type="table">3</ref>, it could be found that the highest concentration of bio-oil produced by the tubers was "Ethanol, 2,2-diethoxy-", with a percentage of about 7.25%, which could be used as a fuel. This was followed by Phenol with a percentage of about 6.38%. In addition, the higher concentrations were Butanoic acid and Propanoic acid. α-dglucopyranose and Xanthine have also been found, which can be used as high-value chemicals, which are valuable for pharmaceutical research. Bio-oils also contain a variety of ketones, benzenes, and heterocyclic compounds that could be used as important chemical raw materials, such as intermediates in the synthesis of drugs, dyes or fragrances <ref type="bibr" target="#b43">[44]</ref>. Furthermore, it has also been suggested that if the bio-oil contains more than 20% of gasoline and diesel when the content of alkanes, especially C6-C15 hydrocarbons, is high, it means that the bio-oil extracted from biomass may be used as a potential biodiesel <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b44">45]</ref>.</p><p>According to the data in Table <ref type="table">4</ref>, the highest concentration of bio-oil produced by the herbal was "Phosphonic acid, (p-hydroxyphenyl)-" with about 10.52%, which can be used as a raw material for compound fertilizer. This was followed by "Phenol, 3-methyl-" and "Ethanol, 2,2-diethoxy-" with 3.03% and 2.53% respectively. This is similar to the composition of bio-oil produced from tubers biomass. Moreover, bio-oils produced from both tubers and herbal biomass contain significant amounts of ketones and heterocyclic compounds, with a total content of more than 19%, which could be used as important chemical feedstocks. Comparison of Tables 3,4 reveals that the bio-oil produced from tubers biomass is more</p><p>Table 3. The main components of bio-oil analyzed by PYGC-MS from tubers. Peak number Library/ID CAS No. Chemical formula Ret. time (min) Peak area (%) 1 Ethanol, 2,2-diethoxy-000621-63-6 C 6 H 14 O 3 4.483 7.25 2 Phenol 000108-95-2 C 6 H 6 O 5.334 6.38 3 Butanoic acid, 2-methylphenyl ester 014617-99-6 C 11 H 14 O 2 6.735 5.61 4 Propanoic acid, 2-hydroxy-, ethyl ester, (L)-000687-47-8 C 5 H 10 O 3 3.051 3.49 5 2-Cyclopenten-1-one 000930-30-3 C 5 H 6 O 3.283 3.33 6 1,2-Cyclopentanedione, 3-methyl-000765-70-8 C 6 H 8 O 2 5.956 3.02 7 2-Furaldehyde diethyl acetal 013529-27-6 C 9 H 14 O 3 6.711 2.58 8 Furan, 2,5-diethoxytetrahydro-003320-90-9 C 8 H 16 O 3 5.769 2.39 9 Pentanoic acid, 4-oxo-, ethyl ester 000539-88-8 C 7 H 12 O 3 6.476 2.24 10 Phenol, 3-methyl-000108-39-4 C 7 H 8 O 6.412 2.07 11 2-Cyclopenten-1-one, 3-methyl-002758-18-1 C 6 H 8 O 5.031 2.00 12 2-Pentanone, 5,5-diethoxy-014499-41-3 C 9 H 18 O 3 8.000 1.94 13 1,4:3,6-Dianhydro-α-d-glucopyranose -a C 6 H 8 O 4 9.204 1.48 14 Heptane, 1,1-diethoxy-000688-82-4 C 11 H 24 O 2 12.343 1.39 15 2-Furancarboxaldehyde, 5-methyl-000620-02-0 C 6 H 6 O 2 5.010 1.39 16 2-Cyclopenten-1-one, 2,3-dimethyl-001121-05-7 C 7 H 10 O 6.133 1.37 17 4-Isopropyl-5,5-dimethyl-5H-furan-2-one 060845-38-7 C 9 H 14 O 2 8.228 1.34 18 2-Azaquinuclidone-3 -C 6 H 10 N 2 O 8.065 1.14 19 2-Cyclopenten-1-one, 2-methyl-001120-73-6 C 6 H 8 O 4.198 1.09 20 2(5H)-Furanone 000497-23-4 C 4 H 4 O 2 4.364 1.01 21 Xanthine, 1,3-dipropyl-8-[4-[β-[(benzyloxy carbonylamino)acetylamino] 102255-67-4 C 31 H 37 N 7 O 7 6.412 2.07 a This means the default CAS data. <ref type="url" target="https://doi.org/10.1371/journal.pone.0346024.t003">https://doi.org/10.1371/journal.pone.0346024.t003</ref> </p><p>Table 4. The main components of bio-oil analyzed by PYGC-MS from herbal. Peak number Library/ID CAS No. Chemical formula Ret. time (min) Peak area (%) 1 Phosphonic acid, (p-hydroxyphenyl)-033795-18-5 C 6 H 7 O 4 P 5.351 10.52 2 Phenol, 3-methyl-000108-39-4 C 7 H 8 O 6.738 3.03 3 Ethanol, 2,2-diethoxy-000621-63-6 C 6 H 14 O 3 4.528 2.53 4 Phenol, 4-ethyl-000123-07-9 C 8 H 10 O 8.282 1.73 5 trans-2-Methyl-4-hexen-3-ol 096346-76-8 C 7 H 14 O 6.769 1.34 6 4-Dehydroxy-N-(4,5-methylenedioxy-2-nitrobenzylidene) tyramine -a C 16 H 14 N 2 O 4 3.983 1.26 7 Furan, 2,5-diethoxytetrahydro-003320-90-9 C 8 H 16 O 3 5.789 1.21 8 Phenol, 3-methyl-000108-39-4 C 7 H 8 O 6.432 0.95 9 3,3-Diethoxy-1-propanol, propyl ether -C 10 H 22 O 3 7.102 0.93 10 Phenol, 3-chloro-000108-43-0 C 6 H 5 ClO 9.061 0.76 11 Pentanoic acid, 4-oxo-, ethyl ester 000539-88-8 C 7 H 12 O 3 6.504 0.75 12 2-Cyclopenten-1-one, 3-methyl-002758-18-1 C 6 H 8 O 5.096 0.71 13 2-Pentanone, 5,5-diethoxy-014499-41-3 C 9 H 18 O 3 8.021 0.67 14 p-Cresol 000106-44-5 C 7 H 8 O 6.738 3.03 a This means the default CAS data. <ref type="url" target="https://doi.org/10.1371/journal.pone.0346024.t004">https://doi.org/10.1371/journal.pone.0346024.t004</ref>  chemically complex and less pure. Whereas the concentration of "Phosphonic acid, (p-hydroxyphenyl)-" in bio-oil produced from herbal biomass is significantly higher. If the possibility of practical utilization is taken into account, the bio-oil produced from herbal biomass is more advantageous.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Syngas analysis</head><p>The main components of syngas produced by the pyrolysis process of tubers and herbal biomass are shown in Tables <ref type="table">5</ref>,<ref type="table">6</ref>, respectively, and the total ion flow plots of PYGC-MS correspond to Figs <ref type="figure" target="#fig_5">6(b)</ref>,<ref type="figure">(d</ref>). Based on the results of Figs <ref type="figure" target="#fig_5">6(b)</ref>,<ref type="figure">(d</ref>), it was also observed that the syngas generated from the pyrolysis process of tubers and herbaceous biomass had basically similar chromatographic peak positions and chemical compositions, which were attributed to their similar feedstocks. According to the above bio-oil analysis results, it could be found that a total of 189 chromatographic peaks were identified in the syngas produced from tubers and herbal biomass, which also contained a wide range of aliphatic compounds, aromatic compounds, and heterocyclic compounds, with the highest percentage of aliphatic compounds, including alkanes, amino derivatives, alcohols, and derivatives. From Table <ref type="table">5</ref>, it can be observed that the highest concentration of syngas produced from tuberous biomass is Carbon dioxide with a percentage of about 8.38%, which is attributed to the products of biomass combustion or derivatives of carbon monoxide. It was followed by "Carbamic acid, monoammonium salt," "Hydrazinecarboxamide," "β-D-glucopyranose, 1,6-anhydro-," "4-Pyridinol," "3,4-Altrosan," and "D-Allose," with 7.40%, 6.05%, 4.99%, 4.82%, 4.42%, and 3.38%, respectively. From Table <ref type="table">6</ref>, it could be observed that the highest concentration of syngas produced from herbaceous biomass was D-Allose with about 8.46%, followed by "Carbamic acid, monoammonium salt," "3-Pyridinol," and "Carbon dioxide" with 8.38%, 4.82%, and 4.34%, respectively. As a result, the</p><p>Table 5. The main components of syngas analyzed by PYGC-MS from tubers. Peak number Library/ID CAS No. Chemical formula Ret. time (min) Peak area (%) 1 Carbon dioxide 000124-38-9 CO 2 0.959 8.38 2 Carbamic acid, monoammonium salt 001111-78-0 CH 6 N 2 O 2 1.132 7.40 3 Hydrazinecarboxamide 000057-56-7 CH 5 N 3 O 1.282 6.05 4 β-D-Glucopyranose, 1,6-anhydro-000498-07-7 C 6 H 10 O 5 18.818 4.99 5 4-Pyridinol 000626-64-2 C 5 H 5 NO 9.492 4.82 6 3,4-Altrosan -a C 6 H 10 O 5 18.856 4.42 7 D-Allose 002595-97-3 C 6 H 12 O 6 16.431 3.38 8 Propanamide, N-methyl-2-amino-070875-70-6 C 4 H 10 N 2 O 1.439 2.13 9 1-(2-Aminopropoxy)-2-methoxyethane 1038338-13-4 C 6 H 15 NO 2 1.541 1.89 10 Ethyne, fluoro-02713-09-9 C 2 HF 1.187 1.83 11 Propanamide, N-methyl-2-amino-070875-70-6 C 4 H 10 N 2 O 1.496 1.48 12 2-Butene-1,4-diol, (Z)-006117-80-2 C 4 H 8 O 2 15.539 1.18 13 2-Propanamine 000075-31-0 C 3 H 9 N 1.364 1.09 14 Hydrazinecarboxamide 000057-56-7 CH 5 N 3 O 1.262 1.08 15 Ribitol 000488-81-3 C 5 H 12 O 5 16.131 1.04 16 2,5-Furandione, 3-dodecyl-059426-46-9 C 16 H 26 O 3 30.936 1.03 17 Phenol, 2,6-bis(1,1-dimethylethyl)-000128-39-2 C 14 H 22 O 30.654 0.95 18 17-Pentatriacontene 006971-40-0 C 35 H 70 31.222 0.83 19 Phloroglucitol 002041-15-8 C 6 H 12 O 3 14.679 0.80 20 3-(4-(tert-Butyl)phenyl)-2-methylpropan-1-ol 056107-04-1 C 14 H 22 O 30.511 0.75 a This means the default CAS data. <ref type="url" target="https://doi.org/10.1371/journal.pone.0346024.t005">https://doi.org/10.1371/journal.pone.0346024.t005</ref> </p><p>syngas from the two biomasses contain essentially no reducing hydrogen content <ref type="bibr" target="#b45">[46]</ref>, but instead more exhaust from pyrolysis, which has a limited number of chemicals available, mostly amino derivatives and alcohol derivatives, in low concentrations. Comparing the data in Tables <ref type="table">5</ref>,<ref type="table">6</ref>, the concentration of exhaust gases, such as CO 2 , in syngas produced from herbaceous biomass is lower than in syngas produced from tuberous biomass, and the availability of herbaceous biomass is relatively more promising <ref type="bibr" target="#b46">[47]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussions</head><p>Pyrolysis mechanisms. Typically, biomass is composed of complex polymeric organic polymers such as cellulose, hemicellulose, and lignin, and biomass pyrolysis is a combination process of these three main components. According to Aykac et al. <ref type="bibr" target="#b41">[42]</ref>, it can be found that the biomass contains 35-43% of holocellulose, of which a-cellulose accounts for 21-29%. Unfortunately, there are limited studies and referenceable literature on the pyrolysis mechanism, and based on the results of Fakayode et al. <ref type="bibr" target="#b47">[48]</ref> and Wang et al. <ref type="bibr" target="#b22">[23]</ref>, we assumed that the possible pyrolysis processes of the biomass consist of three stages. In the first stage, the water in the biomass is evaporated at 105℃. With the increase in temperature into the second stage, at this time holocellulose began to pyrolyze, mainly in the hemicellulose at 200-295 ℃ softening and cellulose at 240-375℃ decomposition, the products generated mainly for the volatile matters and a few biochar. The volatile matter consists of condensable and non-condensable gases, with the condensable gas condensing rapidly to obtain bio-oil and the non-condensable gas being syngas <ref type="bibr" target="#b27">[28]</ref>. The volatile matter is mostly acidic, and some acidic or oxygenated functional groups are lost at this stage. In addition, the biochar walls become thinner, the diameter of the fibers decreases, and the surface shows a small amount of porosity, which is associated with a rapid accumulation and sustained release of syngas. In the third stage at 280-500℃, lignin decomposition produces mainly biochar and</p><p>Table 6. The main components of syngas analyzed by PYGC-MS from herbal. Peak number Library/ID CAS No. Chemical formula Ret. time (min) Peak area (%) 1 D-Allose 002595-97-3 C 6 H 12 O 6 18.856 8.46 2 Carbamic acid, monoammonium salt 001111-78-0 CH 6 N 2 O 2 1.024 8.38 3 3-Pyridinol 000109-00-2 C 5 H 5 NO 9.492 4.82 4 Carbon dioxide 124-38-9 CO 2 1.132 4.34 5 1,6-Anhydro-β-d-talopyranose -a C 6 H 10 O 5 16.431 2.36 6 Carbamic acid, monoammonium salt 001111-78-0 CH 6 N 2 O 2 0.959 2.15 7 Ethyne, fluoro-002713-09-9 C 2 HF 1.439 2.13 8 3,5-Decadien-7-yne, 6-t-butyl-2,2,9,9-tetramethyl--C 18 H 30 30.627 1.35 9 Amberonne (isomer 1) -C 16 H 26 O 30.599 1.19 10 β-D-Glucopyranoside, methyl 3,6-anhydro-003056-46-0 C 7 H 12 O 5 15.539 1.18 11 3-O-Methyl-d-glucose -C 7 H 14 O 6 16.131 1.04 12 3,4-Altrosan -C 6 H 10 O 5 18.835 1.02 13 Hydroquinone 000123-31-9 C 6 H 6 O 2 14.512 0.95 14 1-Penten-3-one, 1-(2,6,6-trimethyl-1-cyclohexen-1-yl)-000127-43-5 C 14 H 22 O 32.899 0.66 15 tert-Hexadecanethiol 025360-09-2 C 16 H 34 S 30.817 0.51 16 α-D-Glucopyranose, 4-O-β-D-galactopyranosyl-014641-93-1 C 12 H 22 O 11 17.036 0.43 17 Phenol, 2,6-bis(1,1-dimethylethyl)-000128-39-2 C 14 H 22 O 32.922 0.43 18 1,3-Cyclopentanediol, trans-016326-98-0 C 5 H 10 O 2 15.114 0.42 19 3-Pyridinol, 2-methyl-001121-25-1 C 6 H 7 NO 9.934 0.42 20 3-Methyldodecanoic acid 013490-36-3 C 13 H 26 O 2 19.253 0.36 a This means the default CAS data. <ref type="url" target="https://doi.org/10.1371/journal.pone.0346024.t006">https://doi.org/10.1371/journal.pone.0346024.t006</ref> </p><p>some volatile matters. The pore structure of biochar tended to become more complex and homogeneous with the rapid aggregation and precipitation of volatile fractions and the increasing number of gas products, and the simple pore structure became dense and diverse, forming a large number of mesopores around and inside the larger pores. The alkaline functional groups and aromaticity of biochar were enhanced at this stage <ref type="bibr" target="#b48">[49]</ref>. The continuous increase of volatile matter and syngas has made the pore structure of biochar more complicated and uniform. It is reflected in the simple pore structure becoming dense and diverse, and a large number of mesopores are formed around and inside the larger pores. Moreover, the alkaline functional groups and the aromaticity of biochar are enhanced at this stage. In addition, the compositions of the bio-oil obtained by Zhang et al. <ref type="bibr" target="#b27">[28]</ref> during the hydrothermal process had many similarities with the compositions analyzed by GC-MS in this work, especially the presence of high quality chemicals dimethoxyphenol (syringol) and 2-methoxyphenol (guaiacol) in both. However, the compositions of the bio-oil from pyrolysis are more complex and contain more organic compounds than that from hydrothermal carbonization. Finally, we observed a change in syngas color from light to dark to lighter during pyrolysis, and the bio-oil and syngas production also showed an increase first and then decrease with increasing pyrolysis temperature.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Properties analysis of different biomass pyrolysis products.</head><p>In this work, the bio-oil produced from the pyrolysis of both tubers and herbal biomass contained a high concentration of aliphatic compounds, which could be used as a potential biodiesel, attributed to its high level of hydrocarbons. Bio-oils also contain a certain quantity of high-value chemicals, such as guaiacol (phenol, 2-methoxy-) and α-D-glucose (1,4:3,6-dihydro-α-D-glucopyranose), which are aromatic or heterocyclic compounds that can be utilized as important chemical raw materials. Guaiacol (The bio-oil related content from tubers and herbals was 2.07% and 3.03%, respectively) is an important fine chemical intermediate, widely used in the synthesis of drugs, spices, and dyes. α-D-glucopyranose (relative content 1.48%) is rarely synthesized considering its cost and is mainly used in medical liver function tests or pharmaceuticals. The presence of α-D-glucopyranose in bio-oil is an interesting discovery to explore. Thus, bio-oil is a valuable product obtained from pyrolyzed biomass, usually in the form of a dark brown organic liquid mixture. A comparison of some relevant literature reports <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b49">50]</ref> reveals that in woody biomass, all bio-oils produced from pyrolysis contain guaiacol and α-D-glucose. Wang et al. <ref type="bibr" target="#b22">[23]</ref> reported the chemical composition of bio-oil produced from Caragana korshinskii as an agroforestry waste, and he concluded that biomass bio-oil has the advantages of a wide range of feedstock sources, abundant and renewable reserves, high energy density, and ease of transportation and storage. Li et al. <ref type="bibr" target="#b40">[41]</ref> and Khuenkaeo et al. <ref type="bibr" target="#b48">[49]</ref> also considered bio-oil as a potential source of liquid fuels and chemical feedstocks. Biomass pyrolysis is an important technological approach to solve the fossil energy problem in the future, and many scholars have reached a consensus on this point <ref type="bibr" target="#b49">[50]</ref>. Of course, to better utilize these bio-oils there is a need to continue the research related to hydrocracking or catalytic cracking in order to enhance the purity of biodiesel <ref type="bibr" target="#b42">[43,</ref><ref type="bibr" target="#b44">45]</ref>.</p><p>Bio-oil also contains a variety of ketones, benzenes, and heterocyclic compounds, which act as important chemical raw materials, such as Xanthine, which can be used as intermediates for the synthesis of drugs, dyes, and fragrances, and are very valuable for pharmaceutical research. However, the syngas from pyrolysis of tubers or herbal biomass is essentially devoid of carbon monoxide and hydrogen, and most of its available chemicals are amino and alcohol derivatives, which means that applications are of little value and that the rate of pyrolysis needs to be varied with a view to producing more solids and liquids and less off-gas from pyrolysis of pharmaceutical residues. After comparison, it was found that herbaceous biomass has a higher availability value, which is related to the higher content of cellulose and hemicellulose in its chemical composition, and may also be closely related to the greater susceptibility to pyrolysis processes <ref type="bibr" target="#b22">[23,</ref><ref type="bibr" target="#b46">47]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Environmental applications</head><p>Isothermal adsorption analysis. As shown in the isothermal adsorption curve of Cd 2+ by the prepared materials in Fig <ref type="figure" target="#fig_6">7</ref>, both TB and HB exhibit a gradual increase in Cd² ⁺ adsorption capacity with rising equilibrium concentrations, reaching saturation in the high-concentration range and demonstrating typical monolayer adsorption characteristics.</p><p>When the initial concentration increased from 1 mg•L -1 to 250 mg•L -1 , the equilibrium adsorption capacity of TB rose from 0.96 mg•g -1 to 139.79 mg•g -1 , while that of HB increased from 0.99 mg•g -1 to 140.33 mg•g -1 . This indicates that both biochar types retain substantial Cd 2+ loading capacity under high-concentration conditions. The adsorption capacities of both materials showed minimal differences in the low-concentration range (1-10 mg•L -1 ), while exhibiting nearly identical adsorption capacities in the medium-to-high concentration range (50-250 mg•L -1 ). HB demonstrated slightly higher adsorption capacity in the low-concentration range, likely attributed to its larger specific surface area and more developed pore structure, consistent with the previous characterization results. Overall, the Cd 2+ adsorption behavior of both biochar types aligns with typical adsorbent characteristics, demonstrating potential for further application in heavy metal remediation of water bodies.</p><p>To further investigate the adsorption mechanism, this study employed four models-Langmuir, Freundlich, Temkin, and Dubinin-Radushkevich-to fit the adsorption data. As shown in Table <ref type="table">7</ref>, the Freundlich model fitted coefficients (R²) for both biochar types exceeded 0.99, indicating that their Cd 2+ adsorption better aligns with a multi-layer heterogeneous adsorption process. The Langmuir model also demonstrated good fitting performance (R² &gt; 0.97), yielding calculated maximum adsorption capacities of 188.89 mg•g -1 (TB) and 186.67 mg•g -1 (HB), further validating their high adsorption capacities. The Temkin and D-R models showed relatively poor fitting results, suggesting potential energy heterogeneity in the adsorption process, though physical adsorption and surface complexation remained the dominant mechanisms overall <ref type="bibr" target="#b50">[51]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Adsorption kinetic analysis.</head><p>Fig <ref type="figure" target="#fig_7">8</ref> displays the adsorption kinetic curves of TB and HB for Cd 2+ . It can be observed that both biochar types exhibit rapid adsorption followed by equilibrium for Cd 2+ . Within the first 300 min, the adsorption Table 7. Parameters for the isotherm adsorption model of Cd 2+ by TB and HB. Materials Langmuir Freundlich Temkim D-R model a Q m /mg•g -1 R 2 K F n R 2 A B R 2 Q 0 /mmol•g -1 E/kJ•mol -1 R 2 TB-Cd 2+ 0.04 188.89 0.97 20.01 2.10 0.99 20.18 15.39 0.82 122.15 0.22 0.88 HB-Cd 2+ 0.05 186.67 0.99 18.30 1.97 0.99 29.96 13.33 0.64 125.63 0.22 0.90 <ref type="url" target="https://doi.org/10.1371/journal.pone.0346024.t007">https://doi.org/10.1371/journal.pone.0346024.t007</ref> </p><p>rate was relatively fast, with HB consistently showing higher adsorption capacity than TB, indicating superior initial adsorption performance. As time progressed, adsorption gradually reached equilibrium. At 2160 min, the adsorption capacities of TB and HB were 73.70 mg•g -1 and 85.67 mg•g -1 , respectively, further confirming HB's superiority over TB in both adsorption capacity and rate. Moreover, HB exhibited slightly higher overall adsorption amounts than TB at all time points, suggesting that HB possesses faster or more effective adsorption sites/more favorable surface properties for Cd 2+ , resulting in superior equilibrium adsorption amounts and rates compared to TB. This kinetic behavior provides important guidance for designing contact time and treatment efficiency in practical wastewater treatment processes <ref type="bibr" target="#b22">[23]</ref>.</p><p>As shown in Table <ref type="table">8</ref>, the Elovich model provides the best fit for both biochars (R² ≥ 0.98), indicating that the adsorption of Cd 2+ on the biochar surface is a non-uniform diffusion process involving multiple active sites. The R² values of the pseudo-second-order kinetic model are also relatively high (≥0.92), suggesting that chemical adsorption plays a significant role in the process. In contrast, the pseudo-first-order model and the intra-particle diffusion model have poorer fitting effects, indicating that the adsorption process is not only controlled by diffusion but also influenced by surface reactions and pore structures, further confirming the characteristics of biochar as a composite adsorbent. Overall, the kinetic fitting results suggest that the adsorption process is a multi-mechanism composite control, with rapid surface adsorption/chemical adsorption at the initial stage, followed by limitations imposed by surface heterogeneity and intra-particle diffusion. Table 8. Parameters of the adsorption kinetic model of Cd 2+ by TB and HB. Materials Pseudo-first-order Pseudo-second-order Elovich model Intraparticle diffusion Q e /mg•g -1 k 1 R 2 Q e /mg•g -1 k 2 R 2 a b R 2 k i C R 2 TB-Cd 2+ 66.76 0.37 0.89 63.22 0.003 0.95 86.45 0.19 0.99 0.98 41.54 0.45 HB-Cd 2+ 77.26 0.32 0.84 80.79 0.002 0.92 98.00 0.12 0.98 1.25 45.46 0.52 <ref type="url" target="https://doi.org/10.1371/journal.pone.0346024.t008">https://doi.org/10.1371/journal.pone.0346024.t008</ref> </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conclusions</head><p>This study successfully demonstrated a sustainable strategy for the comprehensive utilization of waste pharmaceutical residues via oxygen-limited pyrolysis at 500 °C. Two types of biochar, TB and HB, were prepared and thoroughly characterized. The results confirmed that both biochars are mesoporous carbon materials enriched with oxygen-containing functional groups (e.g., hydroxyl, carboxyl, carbonyl) and graphitic carbon crystals, which are beneficial for environmental applications. Notably, HB, derived from herbal biomass, exhibited superior characteristics, including a larger specific surface area and pore volume, making it a more recommended carbon material. The parallel production of bio-oil and syngas was systematically evaluated. The bio-oils were rich in valuable chemicals, such as ketones, alkanes, alcohols, and heterocyclic compounds, identifying them as promising sources for liquid biofuels and chemical feedstocks. The highest abundance components were "Ethanol, 2,2-diethoxy-" (7.25%) in tuber-based and "Phosphonic acid, (p-hydroxyphenyl)-" (10.52%) in herbal-based bio-oil. While the syngas contained various organic compounds, its application potential was limited. Crucially, the environmental application of the biochars was validated through Cd² ⁺ adsorption experiments. Both TB and HB showed high adsorption capacities, with the process best described by the Freundlich isotherm (R² ≥ 0.99) and the Elovich kinetic model (R² ≥ 0.98), indicating multilayer adsorption on heterogeneous surfaces. HB consistently outperformed TB, achieving a higher equilibrium adsorption capacity (85.67 mg•g ⁻ ¹) and faster kinetics, which is attributed to its more developed porous structure. Therefore, pyrolysis, particularly utilizing herbal biomass from pharmaceutical residues, presents an efficient "waste-to-wealth" approach, simultaneously generating an effective adsorbent for heavy metal remediation and high-quality bio-energy products. Future research should focus on several promising avenues to bridge the gap between laboratory findings and practical implementation. Firstly, exploring various chemical or physical activation methods to further enhance the specific surface area and pore structure of the biochars could significantly boost their adsorption performance for a broader spectrum of pollutants, including other heavy metals and organic contaminants. Secondly, the catalytic upgrading of the crude bio-oil should be investigated to improve its quality and energy density, for instance, through catalytic pyrolysis or hydrodeoxygenation processes. Thirdly, techno-economic analysis and life cycle assessment are essential to evaluate the economic viability and environmental footprint of the entire pyrolysis valorization process at a pilot or industrial scale. Finally, testing the adsorption efficiency of these biochars in real industrial wastewater matrices, which contain complex compositions and competing ions, will be a critical step toward validating their practical application potential and understanding their behavior in realistic scenarios.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig 1 .</head><label>1</label><figDesc>Fig 1. FESEM images of the prepared materials. (a) TB, 1000x magnification; (b) TB, 6000x magnification; (c) HB, 1000x magnification; (d) HB, 6000x magnification. https://doi.org/10.1371/journal.pone.0346024.g001</figDesc><graphic coords="7,36.00,97.33,540.00,394.80" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig 2 .</head><label>2</label><figDesc>Fig 2. EDS surface elemental analysis of the prepared materials. (a) TB; (b) HB. https://doi.org/10.1371/journal.pone.0346024.g002</figDesc><graphic coords="8,36.00,97.33,540.00,132.96" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig 3 .</head><label>3</label><figDesc>Fig 3. XRD patterns of the prepared materials. https://doi.org/10.1371/journal.pone.0346024.g003</figDesc><graphic coords="8,36.00,283.10,360.00,207.24" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig 4 .</head><label>4</label><figDesc>Fig 4. FTIR spectra of the prepared materials. https://doi.org/10.1371/journal.pone.0346024.g004</figDesc><graphic coords="9,36.00,97.33,360.00,257.04" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig 5 .</head><label>5</label><figDesc>Fig 5. Adsorption-desorption isotherm of TB (a) and HB (b). https://doi.org/10.1371/journal.pone.0346024.g005</figDesc><graphic coords="10,36.00,416.16,504.00,191.52" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig 6 .</head><label>6</label><figDesc>Fig 6. Total Ion Chromatography. (a) Bio-oil from tubers, (b) Syngas from tubers, (c) Bio-oil from herbal, and (d) Syngas from herbal. https://doi.org/10.1371/journal.pone.0346024.g006</figDesc><graphic coords="12,36.00,392.02,540.00,282.00" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig 7 .</head><label>7</label><figDesc>Fig 7. Isotherm adsorption curves of Cd2+ by TB and HB. (a) for TB, (b) for HB. https://doi.org/10.1371/journal.pone.0346024.g007</figDesc><graphic coords="16,36.00,97.33,504.00,187.44" type="bitmap" /></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Fig 8 .</head><label>8</label><figDesc>Fig 8. Kinetic curves for the adsorption of Cd 2+ by TB and HB. (a) for TB, (b) for HB. https://doi.org/10.1371/journal.pone.0346024.g008</figDesc><graphic coords="17,36.00,97.33,504.00,201.36" type="bitmap" /></figure>
+			<note xmlns="http://www.tei-c.org/ns/1.0" place="foot" xml:id="foot_0"><p>PLOS One | https://doi.org/10.1371/journal.pone.0346024March 27, 2026   </p></note>
+		</body>
+		<back>
+
+			<div type="funding">
+<div><p>This research was supported by the <rs type="funder">Science and Technology Program of Shaanxi Academy of Sciences</rs> (Grant No.: <rs type="grantNumber">2024k-02</rs>), the <rs type="programName">Science and Technology Program</rs> <rs type="funder">of Xianyang</rs> (Grant No.: <rs type="grantNumber">L2022-QCYZX-NY-006</rs>), the <rs type="funder">Shaanxi Provincial Key R&amp;D Program</rs> (Grant No.: <rs type="grantNumber">2023-ZDLNY-54</rs>), and the <rs type="funder">Shaanxi Provincial Innovation Capacity Support Program</rs> (Grant No.: <rs type="grantNumber">2023-CX-PT-12</rs>).</p></div>
+			</div>
+			<listOrg type="funding">
+				<org type="funding" xml:id="_xctkyFc">
+					<idno type="grant-number">2024k-02</idno>
+					<orgName type="program" subtype="full">Science and Technology Program</orgName>
+				</org>
+				<org type="funding" xml:id="_eYM5KUy">
+					<idno type="grant-number">L2022-QCYZX-NY-006</idno>
+				</org>
+				<org type="funding" xml:id="_JgsxJF4">
+					<idno type="grant-number">2023-ZDLNY-54</idno>
+				</org>
+				<org type="funding" xml:id="_m3ASY8r">
+					<idno type="grant-number">2023-CX-PT-12</idno>
+				</org>
+			</listOrg>
+
+			<div type="availability">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>All relevant data are within the manuscript.</p></div>
+			</div>
+
+
+			<div type="conflict">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>The authors have declared that no competing interests exist.</p></div>
+			</div>
+
+
+			<div type="contribution">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Author contributions</head><p>Conceptualization: Tongtong Wang, Junchao Jia.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Data curation:</head><p>Puyang Feng, Wenxiao Li, Tao Qin, Tongtong Wang, Xinjie Zhang.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Formal analysis: Zhizhen Feng.</head><p>Funding acquisition: Zhizhen Feng, Bo Fu, Shanshan Han, Tao Qin.</p><p>Investigation: Puyang Feng, Wenxiao Li, Tao Qin, Xinjie Zhang, Junchao Jia.</p><p>Methodology: Bo Fu, Shanshan Han.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Project administration: Junchao Jia.</head><p>Resources: Zhizhen Feng, Hong Yan, Junchao Jia. Supervision: Zhizhen Feng, Bo Fu, Junchao Jia.</p><p>Validation: Hong Yan, Tongtong Wang.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Writing -original draft: Zhizhen Feng.</head><p>Writing -review &amp; editing: Bo Fu, Shanshan Han.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct status="extracted" xml:id="b0">
+	<analytic>
+		<title level="a" type="main">A Brief History of Qinghaosu</title>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">J</forename><surname>White</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><forename type="middle">T</forename><surname>Hien</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">H</forename><surname>Nosten</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.pt.2015.10.010</idno>
+		<ptr target="https://doi.org/10.1016/j.pt.2015.10.010PMID:26776328" />
+	</analytic>
+	<monogr>
+		<title level="j">Trends Parasitol</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="607" to="610" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">White NJ, Hien TT, Nosten FH. A Brief History of Qinghaosu. Trends Parasitol. 2015;31(12):607-10. https://doi.org/10.1016/j.pt.2015.10.010 PMID: 26776328</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Experimental study on herb residue gasification in an air-blown circulating fluidized bed gasifier</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Rao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ind Eng Chem Res</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">34</biblScope>
+			<biblScope unit="page" from="13264" to="13273" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guo F, Dong Y, Zhang T, Dong L, Guo C, Rao Z. Experimental study on herb residue gasification in an air-blown circulating fluidized bed gasifier. Ind Eng Chem Res. 2014;53(34):13264-73.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Green conversion of Ganoderma lucidum residues to electrode materials for supercapacitors</title>
+		<author>
+			<persName><forename type="first">M</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhong</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s42114-021-00271-8</idno>
+		<ptr target="https://doi.org/10.1007/s42114-021-00271-8" />
+	</analytic>
+	<monogr>
+		<title level="j">Adv Compos Hybrid Mater</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="1270" to="1280" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu M, Huang Y, Chen R, Huang Q, Yang Y, Zhong L, et al. Green conversion of Ganoderma lucidum residues to electrode materials for superca- pacitors. Adv Compos Hybrid Mater. 2021;4(4):1270-80. https://doi.org/10.1007/s42114-021-00271-8</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Current Advances of Resource Utilization of Herbal Extraction Residues in China</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Tao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Jin</forename><forename type="middle">J</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename></persName>
+		</author>
+		<idno type="DOI">10.1007/s12649-021-01428-8</idno>
+		<ptr target="https://doi.org/10.1007/s12649-021-01428-8" />
+	</analytic>
+	<monogr>
+		<title level="j">Waste Biomass Valor</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="5853" to="5868" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Tao W, Jin J, Zheng Y, Li S. Current Advances of Resource Utilization of Herbal Extraction Residues in China. Waste Biomass Valor. 2021;12(11):5853-68. https://doi.org/10.1007/s12649-021-01428-8</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A regenerable N-rich hierarchical porous carbon synthesized from waste biomass for H2S removal at room temperature</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Yuan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Cen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.scitotenv.2020.144452</idno>
+		<ptr target="https://doi.org/10.1016/j.scitotenv.2020.144452PMID:33454487" />
+	</analytic>
+	<monogr>
+		<title level="j">Sci Total Environ</title>
+		<imprint>
+			<biblScope unit="volume">768</biblScope>
+			<biblScope unit="page">144452</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen L, Yuan J, Li T, Jiang X, Ma S, Cen W, et al. A regenerable N-rich hierarchical porous carbon synthesized from waste biomass for H2S removal at room temperature. Sci Total Environ. 2021;768:144452. https://doi.org/10.1016/j.scitotenv.2020.144452 PMID: 33454487</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Scope of value addition and utilization of residual biomass from medicinal and aromatic plants</title>
+		<author>
+			<persName><forename type="first">A</forename><surname>Saha</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">B</forename><surname>Basak</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.indcrop.2019.111979</idno>
+		<ptr target="https://doi.org/10.1016/j.indcrop.2019.111979" />
+	</analytic>
+	<monogr>
+		<title level="j">Industrial Crops and Products</title>
+		<imprint>
+			<biblScope unit="volume">145</biblScope>
+			<biblScope unit="page">111979</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Saha A, Basak BB. Scope of value addition and utilization of residual biomass from medicinal and aromatic plants. Industrial Crops and Products. 2020;145:111979. https://doi.org/10.1016/j.indcrop.2019.111979</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b6">
+	<analytic>
+		<title/>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">X</forename><surname>Lv</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><forename type="middle">Q</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><forename type="middle">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><forename type="middle">X</forename><surname>Zhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Adv New Renew Energy</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="264" to="272" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lv YX, Hu SQ, Jiang W, Xiong W, Zhang YJ, Zhao FX. Adv New Renew Energy. 2023;11(3):264-72.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b7">
+	<analytic>
+		<title level="a" type="main">High-value utilization technology and approach of Chinese medicinal residues under background of &quot;Dual Carbon</title>
+		<author>
+			<persName><forename type="first">Y-Y</forename><surname>Fang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H-F</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S-L</forename><surname>Su</surname></persName>
+		</author>
+		<idno type="DOI">10.19540/j.cnki.cjcmm.20230609.101</idno>
+		<ptr target="https://doi.org/10.19540/j.cnki.cjcmm.20230609.101PMID:38114104" />
+	</analytic>
+	<monogr>
+		<title level="j">Zhongguo Zhong Yao Za Zhi</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page" from="5142" to="5151" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fang Y-Y, Chen N, Xiao P, Zhang S, Liu H-F, Su S-L, et al. High-value utilization technology and approach of Chinese medicinal residues under background of &quot;Dual Carbon&quot;. Zhongguo Zhong Yao Za Zhi. 2023;48(19):5142-51. https://doi.org/10.19540/j.cnki.cjcmm.20230609.101 PMID: 38114104</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Synergistic citric acid-surfactant catalyzed hydrothermal liquefaction of pomelo peel for production of hydrocarbon-rich bio-oil</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Fakudze</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Han</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.scitotenv.2022.159235</idno>
+		<ptr target="https://doi.org/10.1016/j.scitotenv.2022.159235PMID:36208756" />
+	</analytic>
+	<monogr>
+		<title level="j">Sci Total Environ</title>
+		<imprint>
+			<biblScope unit="volume">857</biblScope>
+			<biblScope unit="issue">Pt 1</biblScope>
+			<biblScope unit="page">159235</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wei Y, Fakudze S, Yang S, Zhang Y, Xue T, Han J, et al. Synergistic citric acid-surfactant catalyzed hydrothermal liquefaction of pomelo peel for production of hydrocarbon-rich bio-oil. Sci Total Environ. 2023;857(Pt 1):159235. https://doi.org/10.1016/j.scitotenv.2022.159235 PMID: 36208756</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b9">
+	<analytic>
+		<title level="a" type="main">An experimental investigation on biogases production from Chinese herb residues based on dual circulating fluidized bed</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.ijhydene.2018.05.141</idno>
+		<ptr target="https://doi.org/10.1016/j.ijhydene.2018.05.141" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Hydrogen Energy</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">28</biblScope>
+			<biblScope unit="page" from="12618" to="12626" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guan H, Fan X, Zhao B, Yang L, Sun R, Li C, et al. An experimental investigation on biogases production from Chinese herb residues based on dual circulating fluidized bed. International Journal of Hydrogen Energy. 2018;43(28):12618-26. https://doi.org/10.1016/j.ijhydene.2018.05.141</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Removal of chromium (VI) from water using nanoscale zerovalent iron particles supported on herb-residue biochar</title>
+		<author>
+			<persName><forename type="first">J</forename><surname>Shang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Zong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Kong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Du</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Liao</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jenvman.2017.03.085</idno>
+		<ptr target="https://doi.org/10.1016/j.jenvman.2017.03.085PMID:28402915" />
+	</analytic>
+	<monogr>
+		<title level="j">J Environ Manage</title>
+		<imprint>
+			<biblScope unit="volume">197</biblScope>
+			<biblScope unit="page" from="331" to="337" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shang J, Zong M, Yu Y, Kong X, Du Q, Liao Q. Removal of chromium (VI) from water using nanoscale zerovalent iron particles supported on herb-residue biochar. J Environ Manage. 2017;197:331-7. https://doi.org/10.1016/j.jenvman.2017.03.085 PMID: 28402915</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Preparation of Two Kinds of Biochar and the Factors Influencing Tetracycline Removal from Aqueous Solution</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q-B</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z-D</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X-Y</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T-P</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z-Z</forename><surname>Liao</surname></persName>
+		</author>
+		<idno type="DOI">10.13227/j.hjkx.201807076</idno>
+		<ptr target="https://doi.org/10.13227/j.hjkx.201807076PMID:31087981" />
+	</analytic>
+	<monogr>
+		<title level="j">Huan Jing Ke Xue</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="1328" to="1336" />
+			<date type="published" when="2019">2019</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cheng Y, Shen Q-B, Liu Z-D, Yang X-Y, Zhang T-P, Liao Z-Z. Preparation of Two Kinds of Biochar and the Factors Influencing Tetracycline Removal from Aqueous Solution. Huan Jing Ke Xue. 2019;40(3):1328-36. https://doi.org/10.13227/j.hjkx.201807076 PMID: 31087981</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Physicochemical properties of herb-residue biochar and its sorption to ionizable antibiotic sulfamethoxazole</title>
+		<author>
+			<persName><forename type="first">F</forename><surname>Lian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Qi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Xing</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chem Eng J</title>
+		<imprint>
+			<biblScope unit="volume">248</biblScope>
+			<biblScope unit="page" from="128" to="134" />
+			<date type="published" when="2014">2014</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lian F, Sun B, Song Z, Zhu L, Qi X, Xing B. Physicochemical properties of herb-residue biochar and its sorption to ionizable antibiotic sulfamethox- azole. Chem Eng J. 2014;248:128-34.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Study on the technology of dealing with medicine herb residue by thermal cracking and liquescence</title>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">K</forename><surname>Jiang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><forename type="middle">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ye</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><forename type="middle">J</forename><surname>Cheng</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chem Bioeng</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">78</biblScope>
+			<date type="published" when="2009">2009</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Jiang LK, Zhang KC, Ye H, Cheng BJ. Study on the technology of dealing with medicine herb residue by thermal cracking and liquescence. Chem Bioeng. 2009;26(10):66-8, 78.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Influence of Reaction Atmosphere (N2, CO, CO2, and H2) on ZSM-5 Catalyzed Microwave-Induced Fast Pyrolysis of Medicinal Herb Residue for Biofuel Production</title>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1021/acs.energyfuels.7b02106</idno>
+		<ptr target="https://doi.org/10.1021/acs.energyfuels.7b02106" />
+	</analytic>
+	<monogr>
+		<title level="j">Energy Fuels</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page" from="9627" to="9632" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang B, Zhang J. Influence of Reaction Atmosphere (N2, CO, CO2, and H2) on ZSM-5 Catalyzed Microwave-Induced Fast Pyrolysis of Medicinal Herb Residue for Biofuel Production. Energy Fuels. 2017;31(9):9627-32. https://doi.org/10.1021/acs.energyfuels.7b02106</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b15">
+	<analytic>
+		<title level="a" type="main">TG-FTIR and thermodynamic analysis of the herb residue pyrolysis with in-situ CO2 capture using CaO catalyst</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Ding</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jaap.2018.07.005</idno>
+		<ptr target="https://doi.org/10.1016/j.jaap.2018.07.005" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Analytical and Applied Pyrolysis</title>
+		<imprint>
+			<biblScope unit="volume">134</biblScope>
+			<biblScope unit="page" from="389" to="394" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Ding W, Zhang X, Zhao B, Zhou W, Xu A, Chen L, et al. TG-FTIR and thermodynamic analysis of the herb residue pyrolysis with in-situ CO2 cap- ture using CaO catalyst. Journal of Analytical and Applied Pyrolysis. 2018;134:389-94. https://doi.org/10.1016/j.jaap.2018.07.005</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Characterization of herb residue and high ash-containing paper sludge blends from fixed bed pyrolysis</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F</forename><surname>Guo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Jiang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.wasman.2018.04.002</idno>
+		<ptr target="https://doi.org/10.1016/j.wasman.2018.04.002PMID:29653883" />
+	</analytic>
+	<monogr>
+		<title level="j">Waste Manag</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="page" from="544" to="554" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li T, Guo F, Li X, Liu Y, Peng K, Jiang X, et al. Characterization of herb residue and high ash-containing paper sludge blends from fixed bed pyroly- sis. Waste Manag. 2018;76:544-54. https://doi.org/10.1016/j.wasman.2018.04.002 PMID: 29653883</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b17">
+	<monogr>
+		<title level="m" type="main">Preliminary study on the characteristics of textile dyeing sludge and Chinese medicine residue solid waste synergistic heat treatment</title>
+		<author>
+			<persName><forename type="first">Z</forename><forename type="middle">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2022">2022</date>
+			<pubPlace>Guangzhou</pubPlace>
+		</imprint>
+		<respStmt>
+			<orgName>Guangdong University of Technology</orgName>
+		</respStmt>
+	</monogr>
+	<note type="raw_reference">Chen ZY. Preliminary study on the characteristics of textile dyeing sludge and Chinese medicine residue solid waste synergistic heat treatment. Guangzhou: Guangdong University of Technology, 2022.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Autocatalytic sludge pyrolysis by biochar derived from pharmaceutical sludge for biogas upgrading</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Li</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.energy.2021.120802</idno>
+		<ptr target="https://doi.org/10.1016/j.energy.2021.120802" />
+	</analytic>
+	<monogr>
+		<title level="j">Energy</title>
+		<imprint>
+			<biblScope unit="volume">229</biblScope>
+			<biblScope unit="page">120802</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Liu H, Xu G, Li G. Autocatalytic sludge pyrolysis by biochar derived from pharmaceutical sludge for biogas upgrading. Energy. 2021;229:120802. https://doi.org/10.1016/j.energy.2021.120802</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Recent advances in biomass valorization through thermochemical processes, bio-oil production and AI strategies: a concise review</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Saleh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Ali</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Altarawneh</surname></persName>
+		</author>
+		<idno type="DOI">10.1039/d5ra05770a</idno>
+		<ptr target="https://doi.org/10.1039/d5ra05770aPMID:41293291" />
+	</analytic>
+	<monogr>
+		<title level="j">RSC Adv</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">54</biblScope>
+			<biblScope unit="page" from="45943" to="45978" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Saleh Y, Ali L, Altarawneh M. Recent advances in biomass valorization through thermochemical processes, bio-oil production and AI strategies: a concise review. RSC Adv. 2025;15(54):45943-78. https://doi.org/10.1039/d5ra05770a PMID: 41293291</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Theophylline-regulated pyrolysis synthesis of nitrogen-doped carbon nanotubes with iron-cobalt nanoparticles for greatly boosting oxygen reduction reaction</title>
+		<author>
+			<persName><forename type="first">W</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y-P</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J-J</forename><surname>Feng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X-S</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A-J</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jcis.2022.06.130</idno>
+		<ptr target="https://doi.org/10.1016/j.jcis.2022.06.130PMID:35810704" />
+	</analytic>
+	<monogr>
+		<title level="j">J Colloid Interface Sci</title>
+		<imprint>
+			<biblScope unit="volume">626</biblScope>
+			<biblScope unit="page" from="653" to="661" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang W, Chen Y-P, Zhang L, Feng J-J, Li X-S, Wang A-J. Theophylline-regulated pyrolysis synthesis of nitrogen-doped carbon nanotubes with iron-cobalt nanoparticles for greatly boosting oxygen reduction reaction. J Colloid Interface Sci. 2022;626:653-61. https://doi.org/10.1016/j. jcis.2022.06.130 PMID: 35810704</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Agricultural waste to real worth biochar as a sustainable material for supercapacitor</title>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">P</forename><surname>Khedulkar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Pandit</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">V</forename><forename type="middle">D</forename><surname>Dang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R-A</forename><surname>Doong</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.scitotenv.2023.161441</idno>
+		<ptr target="https://doi.org/10.1016/j.scitotenv.2023.161441PMID:36638993" />
+	</analytic>
+	<monogr>
+		<title level="j">Sci Total Environ</title>
+		<imprint>
+			<biblScope unit="volume">869</biblScope>
+			<biblScope unit="page">161441</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Khedulkar AP, Pandit B, Dang VD, Doong R-A. Agricultural waste to real worth biochar as a sustainable material for supercapacitor. Sci Total Envi- ron. 2023;869:161441. https://doi.org/10.1016/j.scitotenv.2023.161441 PMID: 36638993</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b22">
+	<monogr>
+		<title level="m" type="main">The Eco-Friendly Biochar and Valuable Bio-Oil from Caragana korshinskii: Pyrolysis Preparation, Characterization, and Adsorption Applications</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Duan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">R</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>She</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ma13153391</idno>
+		<ptr target="https://doi.org/10.3390/ma13153391PMID:32751862" />
+		<imprint>
+			<date type="published" when="2020">2020</date>
+			<publisher>Materials</publisher>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page">3391</biblScope>
+			<pubPlace>Basel</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang T, Liu H, Duan C, Xu R, Zhang Z, She D, et al. The Eco-Friendly Biochar and Valuable Bio-Oil from Caragana korshinskii: Pyrolysis Prepara- tion, Characterization, and Adsorption Applications. Materials (Basel). 2020;13(15):3391. https://doi.org/10.3390/ma13153391 PMID: 32751862</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Watermelon peels biochar-S for adsorption of Cu2+ from water</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>El-Nemr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yilmaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ragab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">El</forename><surname>Nemr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+		<idno type="DOI">10.5004/dwt.2022.28506</idno>
+		<ptr target="https://doi.org/10.5004/dwt.2022.28506" />
+	</analytic>
+	<monogr>
+		<title level="j">Desalination and Water Treatment</title>
+		<imprint>
+			<biblScope unit="volume">261</biblScope>
+			<biblScope unit="page" from="195" to="213" />
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">El-Nemr MA, Yilmaz M, Ragab S, El Nemr A. Watermelon peels biochar-S for adsorption of Cu2+ from water. Desalination and Water Treatment. 2022;261:195-213. https://doi.org/10.5004/dwt.2022.28506</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Fabrication of Pea pods biochar-NH2 (PBN) for the adsorption of toxic Cr6+ ion from aqueous solution</title>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>El-Nemr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yılmaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Ragab</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Al-Mur</forename><surname>Ba</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">A</forename><surname>Hassaan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">El</forename><surname>Nemr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+		<idno type="DOI">10.1007/s13201-023-02007-z</idno>
+		<ptr target="https://doi.org/10.1007/s13201-023-02007-z" />
+	</analytic>
+	<monogr>
+		<title level="j">Appl Water Sci</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">El-Nemr MA, Yılmaz M, Ragab S, Al-Mur BA, Hassaan MA, El Nemr A. Fabrication of Pea pods biochar-NH2 (PBN) for the adsorption of toxic Cr6+ ion from aqueous solution. Appl Water Sci. 2023;13(10). https://doi.org/10.1007/s13201-023-02007-z</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Synthesis and characterization of iron oxide-commercial activated carbon nanocomposite for removal of hexavalent chromium (Cr6+) ions and Mordant Violet 40 (MV40) dye</title>
+		<author>
+			<persName><forename type="first">Smi</forename><surname>Mohamed</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yılmaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">K</forename><surname>Güner</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">El</forename><surname>Nemr</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename></persName>
+		</author>
+		<idno type="DOI">10.1038/s41598-024-51587-6</idno>
+		<ptr target="https://doi.org/10.1038/s41598-024-51587-6PMID:38216620" />
+	</analytic>
+	<monogr>
+		<title level="j">Sci Rep</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">1241</biblScope>
+			<date type="published" when="2024">2024</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Mohamed SMI, Yılmaz M, Güner EK, El Nemr A. Synthesis and characterization of iron oxide-commercial activated carbon nanocomposite for removal of hexavalent chromium (Cr6+) ions and Mordant Violet 40 (MV40) dye. Sci Rep. 2024;14(1):1241. https://doi.org/10.1038/s41598-024- 51587-6 PMID: 38216620</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b26">
+	<monogr>
+		<title level="m" type="main">Analytical methods for soil and agro-chemistry</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">K</forename><surname>Lu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2000">2000</date>
+			<publisher>China Agricultural Science and Technology Press</publisher>
+			<pubPlace>Beijing</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Lu RK. Analytical methods for soil and agro-chemistry. Beijing: China Agricultural Science and Technology Press. 2000.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Utilization of Jujube Biomass to Prepare Biochar by Pyrolysis and Activation: Characterization, Adsorption Characteristics, and Mechanisms for Nitrogen</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ma13245594</idno>
+		<ptr target="https://doi.org/10.3390/ma13245594PMID:33302478" />
+	</analytic>
+	<monogr>
+		<title level="j">Materials</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">24</biblScope>
+			<biblScope unit="page">5594</biblScope>
+			<date type="published" when="2020">2020</date>
+			<pubPlace>Basel</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang D, Wang T, Zhi J, Zheng Q, Chen Q, Zhang C, et al. Utilization of Jujube Biomass to Prepare Biochar by Pyrolysis and Activation: Charac- terization, Adsorption Characteristics, and Mechanisms for Nitrogen. Materials (Basel). 2020;13(24):5594. https://doi.org/10.3390/ma13245594 PMID: 33302478</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Adsorption characteristics and mechanisms of Pb2+ and Cd2+ by a new agricultural waste-Caragana korshinskii biomass derived biochar</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zheng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1007/s11356-020-11571-9</idno>
+		<ptr target="https://doi.org/10.1007/s11356-020-11571-9PMID:33191469" />
+	</analytic>
+	<monogr>
+		<title level="j">Environ Sci Pollut Res Int</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="13800" to="13818" />
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang T, Zheng J, Liu H, Peng Q, Zhou H, Zhang X. Adsorption characteristics and mechanisms of Pb2+ and Cd2+ by a new agricultural waste-Caragana korshinskii biomass derived biochar. Environ Sci Pollut Res Int. 2021;28(11):13800-18. https://doi.org/10.1007/s11356-020- 11571-9 PMID: 33191469</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Surface properties and suspension stability of low-temperature pyrolyzed biochar nanoparticles: Effects of solution chemistry and feedstock sources</title>
+		<author>
+			<persName><forename type="first">C-Y</forename><surname>Xu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Q-R</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z-C</forename><surname>Geng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">F-N</forename><surname>Hu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S-W</forename><surname>Zhao</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.chemosphere.2020.127510</idno>
+		<ptr target="https://doi.org/10.1016/j.chemosphere.2020.127510PMID:32650172" />
+	</analytic>
+	<monogr>
+		<title level="j">Chemosphere</title>
+		<imprint>
+			<biblScope unit="volume">259</biblScope>
+			<biblScope unit="page">127510</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xu C-Y, Li Q-R, Geng Z-C, Hu F-N, Zhao S-W. Surface properties and suspension stability of low-temperature pyrolyzed biochar nanoparticles: Effects of solution chemistry and feedstock sources. Chemosphere. 2020;259:127510. https://doi.org/10.1016/j.chemosphere.2020.127510 PMID: 32650172</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Enhanced ammonium removal on biochar from a new forestry waste by ultrasonic activation: Characteristics, mechanisms and evaluation</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Cai</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.scitotenv.2021.146295</idno>
+		<ptr target="https://doi.org/10.1016/j.scitotenv.2021.146295PMID:33721637" />
+	</analytic>
+	<monogr>
+		<title level="j">Sci Total Environ</title>
+		<imprint>
+			<biblScope unit="volume">778</biblScope>
+			<biblScope unit="page">146295</biblScope>
+			<date type="published" when="2021">2021</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang T, Li G, Yang K, Zhang X, Wang K, Cai J, et al. Enhanced ammonium removal on biochar from a new forestry waste by ultrasonic activation: Characteristics, mechanisms and evaluation. Sci Total Environ. 2021;778:146295. https://doi.org/10.1016/j.scitotenv.2021.146295 PMID: 33721637</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Mechanisms of metal sorption by biochars: Biochar characteristics and modifications</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">E</forename><forename type="middle">B</forename><surname>Da Silva</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">M</forename><surname>De Oliveira</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><forename type="middle">Q</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.chemosphere.2017.03.072</idno>
+		<ptr target="https://doi.org/10.1016/j.chemosphere.2017.03.072PMID:28342995" />
+	</analytic>
+	<monogr>
+		<title level="j">Chemosphere</title>
+		<imprint>
+			<biblScope unit="volume">178</biblScope>
+			<biblScope unit="page" from="466" to="478" />
+			<date type="published" when="2017">2017</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li H, Dong X, da Silva EB, de Oliveira LM, Chen Y, Ma LQ. Mechanisms of metal sorption by biochars: Biochar characteristics and modifications. Chemosphere. 2017;178:466-78. https://doi.org/10.1016/j.chemosphere.2017.03.072 PMID: 28342995</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Enhanced Cadmium Adsorption Mechanisms Utilizing Biochar Derived from Different Parts of Wetland Emergent Plants Iris sibirica L</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Niu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/pr13051520</idno>
+		<ptr target="https://doi.org/10.3390/pr13051520" />
+	</analytic>
+	<monogr>
+		<title level="j">Processes</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page">1520</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li T, Wang Y, Niu Y, Zhang Z, Liu J, Wang X, et al. Enhanced Cadmium Adsorption Mechanisms Utilizing Biochar Derived from Different Parts of Wetland Emergent Plants Iris sibirica L. Processes. 2025;13(5):1520. https://doi.org/10.3390/pr13051520</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Adsorption kinetics of cadmium and lead by biochars in single-and bisolute brackish water systems</title>
+		<author>
+			<persName><forename type="first">S</forename><surname>Rafiq</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wongrod</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Vinitnantharat</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACS Omega</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">48</biblScope>
+			<biblScope unit="page" from="45262" to="45276" />
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Rafiq S, Wongrod S, Vinitnantharat S. Adsorption kinetics of cadmium and lead by biochars in single-and bisolute brackish water systems. ACS Omega. 2023;8(48):45262-76.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Graphitic carbon nitride/biochar composite synthesized by a facile ball-milling method for the adsorption and photocatalytic degradation of enrofloxacin</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Xiao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Lyu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Zhao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Tang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jes.2020.10.006</idno>
+		<ptr target="https://doi.org/10.1016/j.jes.2020.10.006PMID:33743922" />
+	</analytic>
+	<monogr>
+		<title level="j">J Environ Sci</title>
+		<imprint>
+			<biblScope unit="volume">103</biblScope>
+			<biblScope unit="page" from="93" to="107" />
+			<date type="published" when="2021">2021</date>
+			<pubPlace>China</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Xiao Y, Lyu H, Yang C, Zhao B, Wang L, Tang J. Graphitic carbon nitride/biochar composite synthesized by a facile ball-milling method for the adsorption and photocatalytic degradation of enrofloxacin. J Environ Sci (China). 2021;103:93-107. https://doi.org/10.1016/j.jes.2020.10.006 PMID: 33743922</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Study on the Product Characteristics of Pyrolysis Lignin with Calcium Salt Additives</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Chang</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/ma12101609</idno>
+		<ptr target="https://doi.org/10.3390/ma12101609PMID:31100820" />
+	</analytic>
+	<monogr>
+		<title level="j">Materials</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page">1609</biblScope>
+			<date type="published" when="2019">2019</date>
+			<pubPlace>Basel</pubPlace>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Cui Y, Wang W, Chang J. Study on the Product Characteristics of Pyrolysis Lignin with Calcium Salt Additives. Materials (Basel). 2019;12(10):1609. https://doi.org/10.3390/ma12101609 PMID: 31100820</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b36">
+	<analytic>
+		<title level="a" type="main">IUPAC manual of symbols and terminology for physicochemical quantities and units</title>
+		<author>
+			<persName><forename type="first">D</forename><forename type="middle">H</forename><surname>Hverett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pure Appl Chem</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="579" to="638" />
+			<date type="published" when="1972">1972</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Hverett DH. IUPAC manual of symbols and terminology for physicochemical quantities and units. Pure Appl Chem. 1972;31(4):579-638.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Efficient adsorption of typical antibiotics by petroleum coke-based ultra-large surface porous carbon materials: Mechanism and cost analysis</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Shi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chem Eng Res Des</title>
+		<imprint>
+			<biblScope unit="volume">222</biblScope>
+			<biblScope unit="page" from="557" to="572" />
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang D, Yang X, Wang T, Wang H, Cao S, Shi H. Efficient adsorption of typical antibiotics by petroleum coke-based ultra-large surface porous carbon materials: Mechanism and cost analysis. Chem Eng Res Des. 2025;222:557-72.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Efficient visible-light photocatalysis of chloramphenicol using novel engineered biochar-based Ti-doped Bi2WO6 composite: Mechanisms, degradation pathways, and applications</title>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Shi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Sep Purif Technol</title>
+		<imprint>
+			<biblScope unit="volume">314</biblScope>
+			<biblScope unit="page">125780</biblScope>
+			<date type="published" when="2023">2023</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wang T, Shi H, Kumar A, Zhang D, Wang H, Wang S, et al. Efficient visible-light photocatalysis of chloramphenicol using novel engineered biochar-based Ti-doped Bi2WO6 composite: Mechanisms, degradation pathways, and applications. Sep Purif Technol. 2023; 314:125780.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Biochar facilitated bioprocessing and biorefinery for productions of biofuel and chemicals: A review</title>
+		<author>
+			<persName><forename type="first">X</forename><surname>Sun</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><forename type="middle">K</forename><surname>Atiyeh</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.biortech.2019.122252</idno>
+		<ptr target="https://doi.org/10.1016/j.biortech.2019.122252PMID:31669180" />
+	</analytic>
+	<monogr>
+		<title level="j">Bioresour Technol</title>
+		<imprint>
+			<biblScope unit="volume">295</biblScope>
+			<biblScope unit="page">122252</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Sun X, Atiyeh HK, Li M, Chen Y. Biochar facilitated bioprocessing and biorefinery for productions of biofuel and chemicals: A review. Bioresour Technol. 2020;295:122252. https://doi.org/10.1016/j.biortech.2019.122252 PMID: 31669180</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Preparation of Solid Fuel Hydrochar over Hydrothermal Carbonization of Red Jujube Branch</title>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Yi</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Tian</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.3390/en13020480</idno>
+		<ptr target="https://doi.org/10.3390/en13020480" />
+	</analytic>
+	<monogr>
+		<title level="j">Energies</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">480</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Li Z, Yi W, Li Z, Tian C, Fu P, Zhang Y, et al. Preparation of Solid Fuel Hydrochar over Hydrothermal Carbonization of Red Jujube Branch. Ener- gies. 2020;13(2):480. https://doi.org/10.3390/en13020480</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Production of crude bio-oil and biochar from hydrothermal conversion of jujube stones with metal carbonates</title>
+		<author>
+			<persName><forename type="first">G</forename><forename type="middle">N</forename><surname>Aykaç</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Tekin</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">K</forename><surname>Akalın</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Karagöz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">P</forename><surname>Srinivasan</surname></persName>
+		</author>
+		<idno type="DOI">10.1080/17597269.2018.1442661</idno>
+		<ptr target="https://doi.org/10.1080/17597269.2018.1442661" />
+	</analytic>
+	<monogr>
+		<title level="j">Biofuels</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="613" to="623" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Aykaç GN, Tekin K, Akalın MK, Karagöz S, Srinivasan MP. Production of crude bio-oil and biochar from hydrothermal conversion of jujube stones with metal carbonates. Biofuels. 2018;9(5):613-23. https://doi.org/10.1080/17597269.2018.1442661</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Operating parameters for bio-oil production in biomass pyrolysis: A review</title>
+		<author>
+			<persName><forename type="first">R</forename><forename type="middle">E</forename><surname>Guedes</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">S</forename><surname>Luna</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">R</forename><surname>Torres</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jaap.2017.11.019</idno>
+		<ptr target="https://doi.org/10.1016/j.jaap.2017.11.019" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Analytical and Applied Pyrolysis</title>
+		<imprint>
+			<biblScope unit="volume">129</biblScope>
+			<biblScope unit="page" from="134" to="149" />
+			<date type="published" when="2018">2018</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Guedes RE, Luna AS, Torres AR. Operating parameters for bio-oil production in biomass pyrolysis: A review. Journal of Analytical and Applied Pyrolysis. 2018;129:134-49. https://doi.org/10.1016/j.jaap.2017.11.019</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Effects of cellulose-lignin interaction on the evolution of biomass pyrolysis bio-oil heavy components</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Qiu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhong</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Zeng</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Flamant</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Nzihou</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.fuel.2022.124413</idno>
+		<ptr target="https://doi.org/10.1016/j.fuel.2022.124413" />
+	</analytic>
+	<monogr>
+		<title level="j">Fuel</title>
+		<imprint>
+			<biblScope unit="volume">323</biblScope>
+			<biblScope unit="page">124413</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Qiu Y, Zhong D, Zeng K, Li J, Flamant G, Nzihou A, et al. Effects of cellulose-lignin interaction on the evolution of biomass pyrolysis bio-oil heavy components. Fuel. 2022;323:124413. https://doi.org/10.1016/j.fuel.2022.124413</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Insight into biomass pyrolysis mechanism based on cellulose, hemicellulose, and lignin: Evolution of volatiles and kinetics, elucidation of reaction pathways, and characterization of gas, biochar and bio-oil</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">K</forename><surname>Cen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Zhuang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Z</forename><surname>Gan</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.combustflame.2022.112142</idno>
+		<ptr target="https://doi.org/10.1016/j.combustflame.2022.112142" />
+	</analytic>
+	<monogr>
+		<title level="j">Combustion and Flame</title>
+		<imprint>
+			<biblScope unit="volume">242</biblScope>
+			<biblScope unit="page">112142</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Chen D, Cen K, Zhuang X, Gan Z, Zhou J, Zhang Y, et al. Insight into biomass pyrolysis mechanism based on cellulose, hemicellulose, and lignin: Evolution of volatiles and kinetics, elucidation of reaction pathways, and characterization of gas, biochar and bio-oil. Combustion and Flame. 2022;242:112142. https://doi.org/10.1016/j.combustflame.2022.112142</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b45">
+	<analytic>
+		<title level="a" type="main">By-products recycling for syngas cleanup in biomass pyrolysis -An overview</title>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Shen</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">J</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">X</forename><surname>Ge</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Chen</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.rser.2016.01.077</idno>
+		<ptr target="https://doi.org/10.1016/j.rser.2016.01.077" />
+	</analytic>
+	<monogr>
+		<title level="j">Renewable and Sustainable Energy Reviews</title>
+		<imprint>
+			<biblScope unit="volume">59</biblScope>
+			<biblScope unit="page" from="1246" to="1268" />
+			<date type="published" when="2016">2016</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Shen Y, Wang J, Ge X, Chen M. By-products recycling for syngas cleanup in biomass pyrolysis -An overview. Renewable and Sustainable Energy Reviews. 2016;59:1246-68. https://doi.org/10.1016/j.rser.2016.01.077</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b46">
+	<analytic>
+		<title level="a" type="main">High-purity syngas production by cascaded catalytic reforming of biomass pyrolysis vapors</title>
+		<author>
+			<persName><forename type="first">H</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Y</forename><surname>Cui</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Han</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">L</forename><surname>Sandström</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">P</forename><surname>Jönsson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">W</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.apenergy.2022.119501</idno>
+		<ptr target="https://doi.org/10.1016/j.apenergy.2022.119501" />
+	</analytic>
+	<monogr>
+		<title level="j">Applied Energy</title>
+		<imprint>
+			<biblScope unit="volume">322</biblScope>
+			<biblScope unit="page">119501</biblScope>
+			<date type="published" when="2022">2022</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Yang H, Cui Y, Han T, Sandström L, Jönsson P, Yang W. High-purity syngas production by cascaded catalytic reforming of biomass pyrolysis vapors. Applied Energy. 2022;322:119501. https://doi.org/10.1016/j.apenergy.2022.119501</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Co-pyrolysis of lignocellulosic and macroalgae biomasses for the production of biochar -A review</title>
+		<author>
+			<persName><forename type="first">O</forename><forename type="middle">A</forename><surname>Fakayode</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">Eaa</forename><surname>Aboagarib</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">C</forename><surname>Zhou</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">H</forename><surname>Ma</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.biortech.2019.122408</idno>
+		<ptr target="https://doi.org/10.1016/j.biortech.2019.122408PMID:31767426" />
+	</analytic>
+	<monogr>
+		<title level="j">Bioresour Technol</title>
+		<imprint>
+			<biblScope unit="volume">297</biblScope>
+			<biblScope unit="page">122408</biblScope>
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Fakayode OA, Aboagarib EAA, Zhou C, Ma H. Co-pyrolysis of lignocellulosic and macroalgae biomasses for the production of biochar -A review. Bioresour Technol. 2020;297:122408. https://doi.org/10.1016/j.biortech.2019.122408 PMID: 31767426</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Production and characterization of bio-oil and biochar from ablative pyrolysis of lignocellulosic biomass residues</title>
+		<author>
+			<persName><forename type="first">N</forename><surname>Khuenkaeo</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><surname>Tippayawong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Chem Eng Commun</title>
+		<imprint>
+			<biblScope unit="volume">207</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="153" to="160" />
+			<date type="published" when="2020">2020</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Khuenkaeo N, Tippayawong N. Production and characterization of bio-oil and biochar from ablative pyrolysis of lignocellulosic biomass residues. Chem Eng Commun. 2020;207(2):153-60.</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Production and characterization of bio-oil and biochar from the pyrolysis of residual bacterial biomass from a polyhydroxyalkanoate production process</title>
+		<author>
+			<persName><forename type="first">L</forename><surname>Wei</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">S</forename><surname>Liang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">N</forename><forename type="middle">M</forename><surname>Guho</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><forename type="middle">J</forename><surname>Hanson</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><forename type="middle">W</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Garcia-Perez</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.jaap.2015.08.005</idno>
+		<ptr target="https://doi.org/10.1016/j.jaap.2015.08.005" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Analytical and Applied Pyrolysis</title>
+		<imprint>
+			<biblScope unit="volume">115</biblScope>
+			<biblScope unit="page" from="268" to="278" />
+			<date type="published" when="2015">2015</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Wei L, Liang S, Guho NM, Hanson AJ, Smith MW, Garcia-Perez M, et al. Production and characterization of bio-oil and biochar from the pyroly- sis of residual bacterial biomass from a polyhydroxyalkanoate production process. Journal of Analytical and Applied Pyrolysis. 2015;115:268-78. https://doi.org/10.1016/j.jaap.2015.08.005</note>
+</biblStruct>
+
+<biblStruct status="extracted" xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Multi-mechanism synergistic adsorption of lead and cadmium in water by structure-functionally adapted modified biochar: A review</title>
+		<author>
+			<persName><forename type="first">D</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">B</forename><surname>Wu</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">T</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">M</forename><surname>Yılmaz</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">G</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName><forename type="first">A</forename><surname>Kumar</surname></persName>
+		</author>
+		<idno type="DOI">10.1016/j.dwt.2025.101156</idno>
+		<ptr target="https://doi.org/10.1016/j.dwt.2025.101156" />
+	</analytic>
+	<monogr>
+		<title level="j">Desalination and Water Treatment</title>
+		<imprint>
+			<biblScope unit="volume">322</biblScope>
+			<biblScope unit="page">101156</biblScope>
+			<date type="published" when="2025">2025</date>
+		</imprint>
+	</monogr>
+	<note type="raw_reference">Zhang D, Wu B, Wang T, Yılmaz M, Sharma G, Kumar A, et al. Multi-mechanism synergistic adsorption of lead and cadmium in water by structure-functionally adapted modified biochar: A review. Desalination and Water Treatment. 2025;322:101156. https://doi.org/10.1016/j. dwt.2025.101156</note>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
